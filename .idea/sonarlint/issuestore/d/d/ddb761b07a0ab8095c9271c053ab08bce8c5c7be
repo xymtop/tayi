@@ -1,9 +1,6 @@
 
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‡¯Ğıÿÿÿÿ8ü—Ê1
 _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‹¢û—Ê1
 O
 java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8¤îô—Ê1
-
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(‡¯Ğıÿÿÿÿ8ü—Ê1
 L	java:S106""+Replace this use of System.out by a logger.(æ°âóıÿÿÿÿ8Î¢õ—Ê1
