@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="libp2p-jvm-libp2p" />
+      <option name="name" value="libp2p-jvm-libp2p" />
+      <option name="url" value="https://dl.cloudsmith.io/public/libp2p/jvm-libp2p/maven/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="aliyun-repos" />
       <option name="name" value="aliyun-repos" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
@@ -10,6 +15,11 @@
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Consensys" />
+      <option name="name" value="Consensys" />
+      <option name="url" value="https://artifacts.consensys.net/public/maven/maven/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -30,6 +40,11 @@
       <option name="id" value="jeesite-repos" />
       <option name="name" value="jeesite-repos" />
       <option name="url" value="http://maven.jeesite.net/repository/maven-public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="JitPack" />
+      <option name="name" value="JitPack" />
+      <option name="url" value="https://jitpack.io" />
     </remote-repository>
   </component>
 </project>
