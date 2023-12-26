@@ -5,3 +5,5 @@ _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8†åÔœÊ1
 O
 java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8ùÿÿ—Ê1
+s
+java:S1128"VRemove this unused import 'org.springframework.boot.autoconfigure.AutoConfigureOrder'.(œ¾ü‰8ûœ¾Ê1
