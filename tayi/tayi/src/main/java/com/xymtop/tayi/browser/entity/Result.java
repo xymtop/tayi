@@ -46,7 +46,7 @@ public class Result {
     }
 
     //ok
-    public static Result ok(Object data) {
+    public static Result okData(Object data) {
         Result result = new Result();
         result.setResult(true);
         result.setMessage("ok");

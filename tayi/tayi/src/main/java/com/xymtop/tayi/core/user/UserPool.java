@@ -1,8 +1,9 @@
 package com.xymtop.tayi.core.user;
 
 import com.xymtop.tayi.core.utils.encrypt.ECDSAUtil;
+import com.xymtop.tayi.core.utils.encrypt.HashUtils;
 import com.xymtop.tayi.core.utils.jsonutils.XJsonUtils;
-import com.xymtop.tayi.store.DBUtils;
+import com.xymtop.tayi.core.store.DBUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -35,13 +36,17 @@ public class UserPool {
     private XJsonUtils xJsonUtils;
 
 
+    @Autowired
+    HashUtils hashUtils;
+
+
     //生成一个用户
     public SystemUser generateUser() throws InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchProviderException {
         KeyPair keyPair = ecdsaUtil.generateKeyPair();
         String publicKeyString = Base64.getEncoder().encodeToString(keyPair.getPublic().getEncoded());
         String privateKeyString = Base64.getEncoder().encodeToString(keyPair.getPrivate().getEncoded());
         SystemUser user = new SystemUser();
-        user.setAddress(publicKeyString);
+        user.setAddress(hashUtils.hashHex(publicKeyString));
         user.setPrivateKey(privateKeyString);
         user.setBalance(0);
         user.setNonce(0);
@@ -89,6 +94,5 @@ public class UserPool {
     public void updateUserToDB(SystemUser user) throws Exception {
         dbUtils.put(user.getAddress(), xJsonUtils.objToJson(user));
     }
-
 
 }

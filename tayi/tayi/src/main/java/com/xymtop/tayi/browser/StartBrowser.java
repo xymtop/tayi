@@ -1,6 +1,6 @@
 package com.xymtop.tayi.browser;
 
-import com.xymtop.tayi.system.Runner;
+import com.xymtop.tayi.core.system.Runner;
 import org.springframework.stereotype.Component;
 
 /**

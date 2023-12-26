@@ -1,6 +1,6 @@
 package com.xymtop.tayi.core.oprate;
 
-import com.xymtop.tayi.cmd.ExecResult;
+import com.xymtop.tayi.core.cmd.ExecResult;
 import lombok.Data;
 
 /**

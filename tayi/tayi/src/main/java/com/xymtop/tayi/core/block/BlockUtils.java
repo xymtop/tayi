@@ -4,7 +4,7 @@ import cn.hutool.core.map.MapUtil;
 import cn.hutool.json.JSONUtil;
 import com.xymtop.tayi.core.block.entity.Block;
 import com.xymtop.tayi.core.block.entity.BlockHead;
-import com.xymtop.tayi.store.DBUtils;
+import com.xymtop.tayi.core.store.DBUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

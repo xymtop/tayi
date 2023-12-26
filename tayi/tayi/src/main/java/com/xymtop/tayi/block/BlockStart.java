@@ -1,7 +1,7 @@
 package com.xymtop.tayi.block;
 
 import com.xymtop.tayi.core.block.BlockChainUtils;
-import com.xymtop.tayi.system.Runner;
+import com.xymtop.tayi.core.system.Runner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

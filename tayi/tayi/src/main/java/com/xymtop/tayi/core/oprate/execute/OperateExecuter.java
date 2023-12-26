@@ -1,12 +1,12 @@
 package com.xymtop.tayi.core.oprate.execute;
 
-import com.xymtop.tayi.cmd.BuildCmd;
-import com.xymtop.tayi.cmd.ExecResult;
+import com.xymtop.tayi.core.cmd.BuildCmd;
+import com.xymtop.tayi.core.cmd.ExecResult;
 import com.xymtop.tayi.core.oprate.OperateEntity;
 import com.xymtop.tayi.core.oprate.OperateReceipt;
 import com.xymtop.tayi.core.oprate.OperateStatus;
 import com.xymtop.tayi.core.utils.jsonutils.XJsonUtils;
-import com.xymtop.tayi.store.DBUtils;
+import com.xymtop.tayi.core.store.DBUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
