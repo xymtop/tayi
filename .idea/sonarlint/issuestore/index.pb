@@ -1933,3 +1933,11 @@ m
 =src/main/java/com/xymtop/tayi/cmd/cmdbuilder/ArgsBuilder.java,3\f\3f7ead4e6d24e447dc019803f53f0396a6738d51
 i
 9src/main/java/com/xymtop/tayi/cmd/apis/ann/CmdApiFun.java,f\d\fd5ebf6ef002d46d308238581b09e2246da4c035
+f
+6src/main/java/com/xymtop/tayi/cmd/apis/ann/CmdApi.java,7\c\7c866142b96c5fc4a1163106653975fc48a90523
+y
+Isrc/main/java/com/xymtop/tayi/core/oprate/execute/OperateEntityUtils.java,b\b\bb569be570d581a55962c9da4ca28859ae42f0d6
+t
+Dsrc/main/java/com/xymtop/tayi/core/oprate/execute/PoolItemUtils.java,6\6\666de4804aea225b12ae4accc21ef121bbef9c08
+e
+5src/main/java/com/xymtop/tayi/core/inter/Builder.java,3\e\3eefc972653c7e68391a9cdb1349078930598c95
