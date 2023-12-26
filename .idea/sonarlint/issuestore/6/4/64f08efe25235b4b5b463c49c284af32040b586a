@@ -1,3 +1,19 @@
 
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8æáÊ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8æáÊ1
+_
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8æáÊ1
 O
-java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8ı³˜Ê1
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8çáÊ1
+X
+java:S1854*";Remove this useless assignment to local variable "address".(ÿ…Ç‹8êáÊ1
+Z
+java:S1854("=Remove this useless assignment to local variable "signature".(Ù«’‰8êáÊ1
+K
+java:S1481(".Remove this unused "signature" local variable.(Ù«’‰8ìáÊ1
+I
+java:S1481*",Remove this unused "address" local variable.(ÿ…Ç‹8íáÊ1
+E	java:S1080")Either remove or fill this block of code.(Å¡Ù8îáÊ1
+E	java:S1084")Either remove or fill this block of code.(ßõ‡†8îáÊ1
