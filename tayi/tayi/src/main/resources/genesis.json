@@ -1,0 +1,15 @@
+{
+  "blockNumber": 1,
+  "hash": "c22b5f9178342609428d6f51b2c5af4c0bde6a42",
+  "blockHead": {
+    "version": "1.0",
+    "previousHash": "0",
+    "merkleRootHash": "c22b5f9178342609428d6f51b2c5af4c0bde6a42",
+    "timeStamp": "0",
+    "target": "0",
+    "nonce": "0"
+  },
+  "operateList": [],
+  "blockSize": "0",
+  "extraData": "Genesis Block"
+}

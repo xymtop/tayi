@@ -16,6 +16,21 @@
     <properties>
         <java.version>17</java.version>
     </properties>
+    <repositories>
+        <repository>
+            <id>libp2p-jvm-libp2p</id>
+            <url>https://dl.cloudsmith.io/public/libp2p/jvm-libp2p/maven/</url>
+        </repository>
+        <repository>
+            <id>JitPack</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>Consensys</id>
+            <url>https://artifacts.consensys.net/public/maven/maven/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -45,6 +60,69 @@
             <artifactId>rocksdbjni</artifactId>
             <version>6.20.3</version>
         </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.24</version>
+        </dependency>
+        <!-- 必须引入 -->
+        <dependency>
+            <groupId>com.turbo-rpc</groupId>
+            <artifactId>turbo-rpc</artifactId>
+            <version>0.0.9</version>
+        </dependency>
+
+        <!-- 序列化方式，kryo protostuff 两个中任选一个 -->
+        <dependency>
+            <groupId>com.turbo-rpc</groupId>
+            <artifactId>turbo-kryo</artifactId>
+            <version>0.0.9</version>
+        </dependency>
+
+        <!-- 序列化方式，kryo protostuff 两个中任选一个 -->
+        <dependency>
+            <groupId>com.turbo-rpc</groupId>
+            <artifactId>turbo-protostuff</artifactId>
+            <version>0.0.9</version>
+        </dependency>
+
+        <!-- zk注册中心，可选引入 -->
+        <dependency>
+            <groupId>com.turbo-rpc</groupId>
+            <artifactId>turbo-register-zk</artifactId>
+            <version>0.0.9</version>
+        </dependency>
+
+        <!-- SpringBoot集成，可选引入 -->
+        <dependency>
+            <groupId>com.turbo-rpc</groupId>
+            <artifactId>turbo-spring-boot-starter</artifactId>
+            <version>0.0.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-rsocket</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.neo4j/neo4j -->
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+            <version>5.15.0</version>
+        </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.63.Final</version> <!-- 使用最新的稳定版本 -->
+            </dependency>
+
 
 
     </dependencies>
@@ -65,5 +143,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

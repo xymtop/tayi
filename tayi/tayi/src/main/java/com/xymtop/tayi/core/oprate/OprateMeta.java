@@ -15,10 +15,13 @@ public class OprateMeta {
     //操作源对象
     private String sourceObject;
 
-//    操作目标对象
+
+    //    操作目标对象
     private String targetObject;
 
-//    操作类型
-    private OperateType operateType;
+
+
+    //负载数据
+    private String payload;
 
 }

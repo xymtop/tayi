@@ -1,2 +1,20 @@
 db:
-  filePath: data.db
+  filePath: ./data
+
+block:
+  genesisBlockPath: ./genesis.json
+  isSync: true
+  version: 1
+  target: 1
+
+neo4j:
+  path: neo4j
+
+
+spring:
+  rsocket:
+    server:
+      port: 7545
+      transport: tcp
+
+

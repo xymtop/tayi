@@ -1,6 +1,7 @@
 package com.xymtop.tayi;
 
 import com.xymtop.tayi.system.Runner;
+import com.xymtop.tayi.test.TestApp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -22,8 +23,18 @@ public class SystemRunner {
     @Autowired
     private ApplicationContext applicationContext;
 
+    @Autowired
+    private TestApp testApp;
+
     @EventListener(ApplicationReadyEvent.class)
     public void  startBlockSystem() {
-        applicationContext.getBeansOfType(Runner.class).values().forEach(Runner::run);
+        applicationContext.getBeansOfType(Runner.class).values().forEach(runner -> {
+            try {
+                runner.run();
+                testApp.test();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
 }

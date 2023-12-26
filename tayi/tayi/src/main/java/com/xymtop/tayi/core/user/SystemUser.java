@@ -20,4 +20,10 @@ public class SystemUser {
     //用户私钥
     private String privateKey;
 
+    //用户交易次数
+    private long nonce;
+
+    //用户余额
+    private long balance;
+
 }

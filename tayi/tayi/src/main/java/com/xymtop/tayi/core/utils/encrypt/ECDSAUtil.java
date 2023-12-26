@@ -11,4 +11,5 @@ public interface ECDSAUtil {
 
     // 使用公钥验证签名
     boolean verify(PublicKey publicKey, byte[] data, byte[] sigBytes) throws NoSuchAlgorithmException, InvalidKeyException, SignatureException;
+    PublicKey convertStringToPublicKey(String publicKeyStr);
 }

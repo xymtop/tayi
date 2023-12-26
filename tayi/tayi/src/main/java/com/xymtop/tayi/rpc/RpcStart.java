@@ -1,6 +1,8 @@
 package com.xymtop.tayi.rpc;
 
+import com.xymtop.tayi.core.oprate.execute.OperateEntrance;
 import com.xymtop.tayi.system.Runner;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,6 +13,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class RpcStart implements Runner {
+
+
+
     @Override
     public void run() {
         System.out.println("rpc start");

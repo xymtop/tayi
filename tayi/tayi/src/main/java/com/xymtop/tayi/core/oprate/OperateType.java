@@ -7,10 +7,12 @@ import lombok.Getter;
 @Getter
 public enum OperateType {
 
-    //初始化
-    INIT("init"),
+    //新增NFT
+    ADD("add"),
+
    //    修改
     UPDATE("update"),
+
     //查询
     QUERY("query"),
 
