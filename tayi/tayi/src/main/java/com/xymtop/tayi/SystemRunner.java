@@ -25,6 +25,8 @@ public class SystemRunner {
     @Autowired
     private TestApp testApp;
 
+
+
     @EventListener(ApplicationReadyEvent.class)
     public void  startBlockSystem() {
         applicationContext.getBeansOfType(Runner.class).values().forEach(runner -> {

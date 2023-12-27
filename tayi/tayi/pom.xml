@@ -10,11 +10,12 @@
     </parent>
     <groupId>com.xymtop.tayi</groupId>
     <artifactId>tayi</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>tayi</name>
     <description>tayi</description>
     <properties>
         <java.version>17</java.version>
+            <maven.test.skip>true</maven.test.skip>
     </properties>
     <repositories>
         <repository>
@@ -122,25 +123,42 @@
                 <artifactId>netty-all</artifactId>
                 <version>4.1.63.Final</version> <!-- 使用最新的稳定版本 -->
             </dependency>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.9.2</version>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.github.ipfs/java-ipfs-http-client -->
+        <dependency>
+            <groupId>com.github.ipfs</groupId>
+            <artifactId>java-ipfs-http-client</artifactId>
+            <version>v1.4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>2.6.3</version> <!-- 请使用与您的Spring Boot版本相匹配的版本 -->
+        </dependency>
 
 
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <excludes>-->
+<!--                        <exclude>-->
+<!--                            <groupId>org.projectlombok</groupId>-->
+<!--                            <artifactId>lombok</artifactId>-->
+<!--                        </exclude>-->
+<!--                    </excludes>-->
+
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 </project>

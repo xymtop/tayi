@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
@@ -29,6 +30,10 @@ public class RunTest {
            } catch (SignatureException e) {
                throw new RuntimeException(e);
            } catch (InvalidKeyException e) {
+               throw new RuntimeException(e);
+           } catch (IOException e) {
+               throw new RuntimeException(e);
+           } catch (Exception e) {
                throw new RuntimeException(e);
            }
        });

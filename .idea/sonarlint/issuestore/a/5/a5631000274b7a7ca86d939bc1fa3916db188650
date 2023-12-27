@@ -1,0 +1,68 @@
+
+g	java:S112U"FDefine and throw a dedicated exception instead of using a generic one.(«íøÿÿÿÿ8ş„õİÊ1
+g	java:S112h"FDefine and throw a dedicated exception instead of using a generic one.(é£Ãäıÿÿÿÿ8ÿ„õİÊ1
+b	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(×÷µà8ÿ„õİÊ1
+h	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(ìë¾—ûÿÿÿÿ8ÿ„õİÊ1
+h	java:S112ª"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ8ÿ„õİÊ1
+h	java:S112¯"FDefine and throw a dedicated exception instead of using a generic one.(¨¤Á”ûÿÿÿÿ8ÿ„õİÊ1
+h	java:S112Ş"FDefine and throw a dedicated exception instead of using a generic one.(«íøÿÿÿÿ8ÿ„õİÊ1
+h	java:S112ç"FDefine and throw a dedicated exception instead of using a generic one.(³ğ¬´ûÿÿÿÿ8ÿ„õİÊ1
+h	java:S112ª"FDefine and throw a dedicated exception instead of using a generic one.(é£Ãäıÿÿÿÿ8ÿ„õİÊ1
+c	java:S112°"FDefine and throw a dedicated exception instead of using a generic one.(×÷µà8ÿ„õİÊ1
+h	java:S112É"FDefine and throw a dedicated exception instead of using a generic one.(³ğ¬´ûÿÿÿÿ8ÿ„õİÊ1
+j
+java:S1192M"MDefine a constant instead of duplicating this literal "contract.jar" 3 times.(•„¾8€…õİÊ1
+k
+java:S1192N"IDefine a constant instead of duplicating this literal "data.ser" 3 times.(úş–ûÿÿÿÿÿ8€…õİÊ1
+~
+java:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "contract".(œáß8…õİÊ1
+_
+java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ÿ…õİÊ1
+_
+java:S6813+"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ÿ…õİÊ1
+_
+java:S68131"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ÿ…õİÊ1
+_
+java:S68134"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ÿ…õİÊ1
+_
+java:S68137"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ÿ…õİÊ1
+_
+java:S6813:"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ÿ…õİÊ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8¡…õİÊ1
+]
+java:S1854Z"@Remove this useless assignment to local variable "contractInfo".(í‹ç—8£…õİÊ1
+C
+java:S1075L"&Remove this hard-coded path-delimiter.(ş´õ8¥…õİÊ1
+C
+java:S1075L"&Remove this hard-coded path-delimiter.(ş´õ8¥…õİÊ1
+U
+java:S1874e"3Remove this use of "newInstance"; it is deprecated.(ºÎ‡øúÿÿÿÿ8§…õİÊ1
+F	java:S108²")Either remove or fill this block of code.(ºä¼˜8«…õİÊ1
+H	java:S106¹"+Replace this use of System.out by a logger.(öÜ”8«…õİÊ1
+M	java:S106À"+Replace this use of System.out by a logger.(²¯ËÍøÿÿÿÿ8¬…õİÊ1
+H	java:S106Ê"+Replace this use of System.out by a logger.(·ëÕÏ8­…õİÊ1
+D
+java:S1075Ö"&Remove this hard-coded path-delimiter.(”ß–Ñ8®…õİÊ1
+D
+java:S1075Ö"&Remove this hard-coded path-delimiter.(”ß–Ñ8®…õİÊ1
+D
+java:S1075×"&Remove this hard-coded path-delimiter.(ü¾Œó8®…õİÊ1
+D
+java:S1075×"&Remove this hard-coded path-delimiter.(ü¾Œó8®…õİÊ1
+H	java:S106ó"+Replace this use of System.out by a logger.(‰ƒáº8°…õİÊ1
+^
+java:S1854›"@Remove this useless assignment to local variable "contractInfo".(í‹ç—8²…õİÊ1
+a
+java:S1854‘"CRemove this useless assignment to local variable "contractAddress".(õÛÑ¬8²…õİÊ1
+R
+java:S1481‘"4Remove this unused "contractAddress" local variable.(õÛÑ¬8³…õİÊ1
+I
+java:S1075—"&Remove this hard-coded path-delimiter.(Ã¾õ‹ûÿÿÿÿ8³…õİÊ1
+I
+java:S1075—"&Remove this hard-coded path-delimiter.(Ã¾õ‹ûÿÿÿÿ8³…õİÊ1
+D
+java:S1075˜"&Remove this hard-coded path-delimiter.(ÍÆßĞ8³…õİÊ1
+D
+java:S1075˜"&Remove this hard-coded path-delimiter.(ÍÆßĞ8³…õİÊ1
+H	java:S106Ù"+Replace this use of System.out by a logger.(•Şœ™8·…õİÊ1

@@ -1,0 +1,44 @@
+{
+  "msg": {
+    "address": "0x1234abcd5678efgh",
+    "signature": "0x9abcdef0123456789abcdef0123456789abcdef0",
+    "data": {
+      "operateType": "ADD",
+      "operateCmd": "createNFT",
+      "sender": "0xabcdef1234567890",
+      "recipient": "0x1234abcd5678efgh",
+      "timestamp": 1617625500000,
+      "nftId": "nft12345",
+      "nonce": 5,
+      "oprateMeta": {
+        "sourceObject": "sourceObjId",
+        "targetObject": "targetObjId",
+        "payload": {
+          "address": "0x1234567890abcdef1234567890abcdef12345678",
+          "owner": "0xabcdef1234567890abcdef1234567890abcdef12",
+          "meta": {
+            "title": "Mystical Forest",
+            "description": "A digital artwork depicting a serene mystical forest.",
+            "image": "https://example.com/nft/mystical-forest.png",
+            "attributes": [
+              {
+                "traitType": "Color",
+                "traitValue": "Green"
+              },
+              {
+                "traitType": "Mood",
+                "traitValue": "Mystical"
+              },
+              {
+                "traitType": "Resolution",
+                "traitValue": "4K"
+              }
+            ]
+          },
+          "resource": "https://example.com/nft-resources/mystical-forest",
+          "time": "2023-01-01T00:00:00Z"
+        }
+      }
+    }
+  }
+}

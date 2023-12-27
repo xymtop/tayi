@@ -46,6 +46,8 @@ public class OperateEntityBuilder implements Builder<OperateMessage, OperateEnti
        OperateEntity operateEntity =   xJsonUtils.jsonToObj(data, OperateEntity.class);
 
 
+       //设置发送者
+        operateEntity.setSender(address);
 
 
        //生成ID

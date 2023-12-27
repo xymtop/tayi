@@ -1,0 +1,21 @@
+
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+H
+java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ
+Q	java:S125"<This block of commented-out lines of code should be removed.(¥²˜Ô
+E	java:S106""+Replace this use of System.out by a logger.(÷í£¡þÿÿÿÿ
+^
+java:S3878#"CDisambiguate this call by either casting as "Object" or "Object[]".(ë³ªöýÿÿÿÿ
+E	java:S106$"+Replace this use of System.out by a logger.(¨ÆÀþýÿÿÿÿ
+K
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ
+Y
+java:S1128	">Remove this unused import 'java.security.InvalidKeyException'.(ì£ð»ÿÿÿÿÿ
+^
+java:S1128
+"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾þÿÿÿÿ
+S
+java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃþŠ

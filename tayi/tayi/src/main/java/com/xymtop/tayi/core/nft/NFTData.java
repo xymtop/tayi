@@ -18,6 +18,7 @@ public class NFTData {
 
     //    所有者
     private String owner;
+
     //    元数据
     private NFTMeta meta;
 

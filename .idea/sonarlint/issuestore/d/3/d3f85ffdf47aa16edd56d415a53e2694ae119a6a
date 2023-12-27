@@ -1,0 +1,14 @@
+
+€
+java:S14888"^Immediately return this expression instead of assigning it to the temporary variable "newObj".(‰­Ü‘üÿÿÿÿ8ž›ÆÝÊ1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(É‡®ø8Áõ‡ÝÊ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ8Áõ‡ÝÊ1
+X	java:S125"<This block of commented-out lines of code should be removed.(¤ÎäÁ8Åõ‡ÝÊ1
+]	java:S125$"<This block of commented-out lines of code should be removed.(¹µøùÿÿÿÿ8Åõ‡ÝÊ1
+–
+java:S1130*"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(¬×€û8Æõ‡ÝÊ1
+X	java:S1254"<This block of commented-out lines of code should be removed.(™µ¢À8ó·ŒÝÊ1
+q
+java:S1128"TRemove this unused import 'com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract'.(í¼ç±8¤ÛÝÊ1

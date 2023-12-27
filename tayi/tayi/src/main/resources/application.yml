@@ -1,8 +1,8 @@
 db:
-  filePath: ./data
+  filePath: data
 
 block:
-  genesisBlockPath: ./genesis.json
+  genesisBlockPath: genesis.json
   isSync: true
   version: 1
   target: 1
@@ -10,6 +10,13 @@ block:
 neo4j:
   path: neo4j
 
+tayi:
+  vm:
+    path: vm
+    ipfs:
+      host: /ip4/127.0.0.1/tcp/5001
+    contract:
+      path: contracts
 
 spring:
   rsocket:
@@ -17,4 +24,5 @@ spring:
       port: 7545
       transport: tcp
 
-
+server:
+  port: 8081
