@@ -1,21 +1,18 @@
 
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-H
-java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ
-Q	java:S125"<This block of commented-out lines of code should be removed.(¥²˜Ô
-E	java:S106""+Replace this use of System.out by a logger.(÷í£¡þÿÿÿÿ
-^
-java:S3878#"CDisambiguate this call by either casting as "Object" or "Object[]".(ë³ªöýÿÿÿÿ
-E	java:S106$"+Replace this use of System.out by a logger.(¨ÆÀþýÿÿÿÿ
-K
-java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ
-Y
-java:S1128	">Remove this unused import 'java.security.InvalidKeyException'.(ì£ð»ÿÿÿÿÿ
-^
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ñ±·ÞÊ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ò±·ÞÊ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ8ó±·ÞÊ1
+X	java:S125"<This block of commented-out lines of code should be removed.(¥²˜Ô8õ±·ÞÊ1
+L	java:S106&"+Replace this use of System.out by a logger.(Õ•¶©úÿÿÿÿ8Öâ·ÞÊ1
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8ö±·ÞÊ1
+`
+java:S1128	">Remove this unused import 'java.security.InvalidKeyException'.(ì£ð»ÿÿÿÿÿ8ö±·ÞÊ1
+e
 java:S1128
-"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾þÿÿÿÿ
-S
-java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃþŠ
+"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾þÿÿÿÿ8ö±·ÞÊ1
+Z
+java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃþŠ8ö±·ÞÊ1
