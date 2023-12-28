@@ -8,8 +8,8 @@
             <entry>
               <key>
                 <RunConfigurationRef>
-                  <option name="icon" value="SpringBoot.svg)" />
-                  <option name="name" value="TayiApplication" />
+                  <option name="icon" value="application.svg)" />
+                  <option name="name" value="Main" />
                 </RunConfigurationRef>
               </key>
               <value>

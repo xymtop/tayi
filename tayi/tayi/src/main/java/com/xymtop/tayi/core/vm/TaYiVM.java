@@ -1,6 +1,7 @@
 package com.xymtop.tayi.core.vm;
 
 import cn.hutool.core.io.FileUtil;
+import com.xymtop.tayi.TayiApplication;
 import com.xymtop.tayi.core.store.DBUtils;
 import com.xymtop.tayi.core.system.Runner;
 import com.xymtop.tayi.core.utils.encrypt.HashUtils;
@@ -17,6 +18,7 @@ import com.xymtop.tayi.core.vm.virtual.object.TaYiStreamUtils;
 import com.xymtop.tayi.core.vm.zip.ZIPUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -69,9 +71,60 @@ public class TaYiVM implements Runner {
     }
 
 
+
+    //调试智能合约
+    public Object debug(Class clazz,String funName,Object... args) throws Exception {
+          //获取所有方法
+        Method[] methods = clazz.getMethods();
+        if (methods == null){
+            throw new RuntimeException("方法不存在");
+        }
+        //获取方法
+        for (Method method : methods) {
+            if (method.getName().equals(funName)){
+                //初始化对象
+                Object instance = clazz.newInstance();
+
+                //注入that
+                setThat(instance);
+
+                //调用方法
+                Object result = method.invoke(clazz.newInstance(),args);
+
+                return result;
+            }
+        }
+        throw new RuntimeException("调试错误");
+    }
+
+    public Object debug(Class clazz,String funName) throws Exception {
+        //获取所有方法
+        Method[] methods = clazz.getMethods();
+        if (methods == null){
+            throw new RuntimeException("方法不存在");
+        }
+        //获取方法
+        for (Method method : methods) {
+            if (method.getName().equals(funName)){
+                //初始化对象
+                Object instance = clazz.newInstance();
+
+                //注入that
+                setThat(instance);
+
+                //调用方法
+                Object result = method.invoke(clazz.newInstance());
+
+                return result;
+            }
+        }
+        throw new RuntimeException("调试错误");
+    }
+
     //部署合约
     public String deploy(String hash) throws Exception {
         String id = hashUtils.hashHex(hash);
+
         //获取文件
         String filePath = contractPath+"/"+id+"/";
         String contractJar = filePath +"contract.jar";
@@ -151,6 +204,55 @@ public class TaYiVM implements Runner {
        return id;
     }
 
+    public Object call(String id,String funName) throws Exception {
+        //获取合约信息
+        Contract contractInfo = getContractInfo(id);
+
+        if (contractInfo == null){
+            throw new RuntimeException("合约不存在");
+        }
+
+        //组装合约方法
+        contractInfo =    getMethedsAndFields(contractInfo);
+
+        //调用方法
+        Method method = contractInfo.getMethods().get(funName);
+
+        if (method == null){
+            throw new RuntimeException("方法不存在");
+        }
+
+        Object obj = contractInfo.getContract();
+        if (obj == null){
+            throw new RuntimeException("合约初始化失败");
+        }
+
+        if (!(obj instanceof TaYiJavaContract)){
+
+        }
+
+
+        //注入当前环境
+        setThat(obj);
+
+        Object result = method.invoke(obj);
+
+
+        System.out.println("调用合约中...");
+
+        return result;
+    }
+
+    //注入环境
+    private void setThat(Object obj) throws Exception {
+        Field field = obj.getClass().getSuperclass().getDeclaredField("that");
+        field.setAccessible(true);
+        if (that == null){
+            throw new RuntimeException("当前环境错误");
+        }
+        field.set(obj,that);
+    }
+
     //调用合约
     public Object call(String id,String funName,Object ...args) throws Exception {
         //获取合约信息
@@ -178,6 +280,10 @@ public class TaYiVM implements Runner {
         if (!(obj instanceof TaYiJavaContract)){
 
         }
+
+
+        //注入当前环境
+        setThat(obj);
 
         Object result = method.invoke(obj, args);
 
@@ -213,13 +319,22 @@ public class TaYiVM implements Runner {
         //合约代码地址
         String filePath = contractPath+"/"+id+"/"+"contract.jar";
         String dataPath = contractPath+"/"+id+"/"+"data.ser";
+        //除了路径
+        filePath = FileUtils.getResourcesFilePath(filePath);
+        dataPath = FileUtils.getResourcesFilePath(dataPath);
+
+        //存在合约代码
+        boolean haveCode =false;
+        //存在合约数据
+        boolean haveData = false;
 
         //判断文件是否存在
         if (!FileUtil.exist(filePath)){
             //下载文件
             boolean flag =  ipfsUtils.downloadFile(id,filePath);
-            if (!flag){
-                throw new RuntimeException("获取合约代码失败");
+            if (flag){
+//                throw new RuntimeException("获取合约代码失败");
+                haveCode = true;
             }
         }
 
@@ -227,15 +342,26 @@ public class TaYiVM implements Runner {
         if (!FileUtil.exist(dataPath)){
             //下载文件
             boolean flag =  ipfsUtils.downloadFile(contractInfo.getStatusAddress(),dataPath);
-            if (!flag){
-                throw new RuntimeException("获取合约状态数据失败");
+            if (flag){
+              haveData = true;
             }
         }
 
+        String zipPath = contractPath+id+".tayi";
+
 //        压缩为合约导出文件
-        ZIPUtils contractZip =  new ZIPUtils(contractPath+id+".tayi");
-        contractZip.addFileToZip(filePath);
-        contractZip.addFileToZip(dataPath);
+        ZIPUtils contractZip =  new ZIPUtils(zipPath);
+
+        if (!FileUtil.exist(zipPath)){
+            contractZip.createZipFile();
+        }
+        if (haveCode){
+            contractZip.addFileToZip(filePath);
+        }
+        if (haveData){
+            contractZip.addFileToZip(dataPath);
+        }
+
 
         //上传合约导出文件
         String resHash = ipfsUtils.uploadFile(contractPath + id + ".tayi");
@@ -339,6 +465,8 @@ public class TaYiVM implements Runner {
         return contract;
 
     }
+
+
 
     @Override
     public void run() throws Exception {

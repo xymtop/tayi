@@ -1,13 +1,0 @@
-
-m
-java:S1104"PMake that a static final constant or non-public and provide accessors if needed.(Ùôõ8Õ›·äÊ1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÈ¯èÿÿÿÿÿ8²ì£İÊ1
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ú¡­,8³ì£İÊ1
-£
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À–®»ÿÿÿÿÿ8³ì£İÊ1
-C
-java:S1948"&Make "that" transient or serializable.(Ùôõ8€ıäãÊ1
-O
-java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8–Â“İÊ1

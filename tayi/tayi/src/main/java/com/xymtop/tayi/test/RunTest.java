@@ -22,20 +22,6 @@ public class RunTest {
     private ApplicationContext applicationContext;
 
     public void run(){
-       applicationContext.getBeansOfType(TestApp.class).forEach((k,v)->{
-           try {
-               v.test();
-           } catch (NoSuchAlgorithmException e) {
-               throw new RuntimeException(e);
-           } catch (SignatureException e) {
-               throw new RuntimeException(e);
-           } catch (InvalidKeyException e) {
-               throw new RuntimeException(e);
-           } catch (IOException e) {
-               throw new RuntimeException(e);
-           } catch (Exception e) {
-               throw new RuntimeException(e);
-           }
-       });
+
     }
 }

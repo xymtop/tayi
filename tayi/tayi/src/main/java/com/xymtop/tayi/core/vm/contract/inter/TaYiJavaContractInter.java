@@ -16,8 +16,4 @@ public interface TaYiJavaContractInter {
     //合约信息
     public ContractInfo info();
 
-
-    //getThat
-    public That getThat();
-
 }

@@ -1,6 +1,8 @@
 package com.xymtop.tayi;
 
 import com.xymtop.tayi.core.system.Runner;
+import com.xymtop.tayi.core.system.SystemStatus;
+import com.xymtop.tayi.core.system.TestStarter;
 import com.xymtop.tayi.test.TestApp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -23,16 +25,16 @@ public class SystemRunner {
     private ApplicationContext applicationContext;
 
     @Autowired
-    private TestApp testApp;
-
-
+    TestStarter testStarter;
 
     @EventListener(ApplicationReadyEvent.class)
-    public void  startBlockSystem() {
+    public void  startBlockSystem() throws Exception {
+        if (SystemStatus.debug) {
+             testStarter.startTest();
+        }
         applicationContext.getBeansOfType(Runner.class).values().forEach(runner -> {
             try {
                 runner.run();
-                testApp.test();
             } catch (Exception e) {
                 e.printStackTrace();
             }

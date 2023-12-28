@@ -40,6 +40,9 @@ public class IPFSUtils {
     public boolean downloadFile(String hash,String filePath) throws IOException {
         filePath = FileUtils.getResourcesFilePath(filePath);
         byte[] bytes = downloadFile(hash);
+        if (bytes == null){
+            return false;
+        }
         //bytes写入到文件
         FileUtil.writeBytes(bytes,new File(filePath));
 

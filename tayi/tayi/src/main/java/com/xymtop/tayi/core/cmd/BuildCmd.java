@@ -64,12 +64,19 @@ public class BuildCmd {
             Object[] args = buildArgs(operateCmd,operate);
             result.setArgs(args);
             //执行指令并获取执行结果
-            result.setResult(cmdSystem.exec(operateCmd,args));
+            Object execRes = cmdSystem.exec(operateCmd, args);
+            if (!(execRes instanceof Void)){
+                result.setResult(execRes);
+            }
+
             result.setResultFlag(true);
 
         }else {
             //不需要参数,直接执行指令
-            result.setResult(cmdSystem.exec(operateCmd));
+            Object execRes = cmdSystem.exec(operateCmd);
+            if (!(execRes instanceof Void)){
+                result.setResult(execRes);
+            }
             result.setResultFlag(true);
         }
         log.info(result.toString());

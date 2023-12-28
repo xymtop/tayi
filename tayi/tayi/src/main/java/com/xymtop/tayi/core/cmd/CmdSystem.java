@@ -99,7 +99,14 @@ public class CmdSystem {
         if (cmdMap == null) {
             throw new Exception("指令不存在");
         }
-        return cmdMap.getMethod().invoke(applicationContext.getBean(cmdMap.getMethod().getDeclaringClass()),args);
+        Method method = cmdMap.getMethod();
+        if (method == null) {
+            throw new Exception("指令不存在");
+        }
+        Object bean = applicationContext.getBean(cmdMap.getMethod().getDeclaringClass());
+
+
+        return method.invoke(bean,args);
     }
 
     //获取指令内容

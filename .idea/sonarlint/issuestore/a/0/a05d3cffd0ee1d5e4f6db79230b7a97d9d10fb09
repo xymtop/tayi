@@ -1,9 +1,0 @@
-
-
-java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "block".(‹Ì†Ñûÿÿÿÿ8–£í–Ê1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Õ¨é–Ê1
-O
-java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ8Ö¨é–Ê1
-O
-java:S1874"2Remove this use of "readString"; it is deprecated.(§øˆ¤8Ú¨é–Ê1

@@ -8,6 +8,7 @@ package com.xymtop.tayi.core.task;
  */
 import com.xymtop.tayi.core.oprate.execute.ExecuterEntrance;
 import com.xymtop.tayi.core.oprate.listener.PackageType;
+import com.xymtop.tayi.core.pool.Pool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -18,9 +19,16 @@ public class ScheduledTasks {
     @Autowired
     private ExecuterEntrance executerEntrance;
 
+    @Autowired
+    Pool pool;
+
 
     @Scheduled(fixedRate = 3000)
     public void scheduleTaskWithFixedRate() throws Exception {
-        executerEntrance.startPackage(PackageType.TIME);
+
+        if (pool.getSize()>10){
+            executerEntrance.startPackage(PackageType.NUM);
+        }
+
     }
 }

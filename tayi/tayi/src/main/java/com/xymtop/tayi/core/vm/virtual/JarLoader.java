@@ -20,6 +20,7 @@ public class JarLoader {
         url = FileUtils.getResourcesFilePath(url);
         File jarFile = new File(url);
         URL[] urls = { new URL("file:///"+url) };
+
         URLClassLoader classLoader = URLClassLoader.newInstance(urls);
 
         List<Object> instances = new ArrayList<>();

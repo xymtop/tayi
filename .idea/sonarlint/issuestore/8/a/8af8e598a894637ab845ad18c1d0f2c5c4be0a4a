@@ -1,0 +1,10 @@
+
+[	java:S112	"FDefine and throw a dedicated exception instead of using a generic one.(ÄÉÍ‚
+K
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ
+Y
+java:S1128">Remove this unused import 'java.security.InvalidKeyException'.(ì£ð»ÿÿÿÿÿ
+^
+java:S1128"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾þÿÿÿÿ
+S
+java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃþŠ

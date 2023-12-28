@@ -16,6 +16,8 @@ import java.io.Serializable;
 @Data
 public class TaYiJavaContract implements Serializable, TaYiJavaContractInter{
 
+    public That that;
+
     @Override
     public void deploy() {
 
@@ -33,11 +35,7 @@ public class TaYiJavaContract implements Serializable, TaYiJavaContractInter{
 
     @Override
     public ContractInfo info() {
-        return null;
+        return new ContractInfo();
     }
 
-    @Override
-    public That getThat() {
-        return null;
-    }
 }

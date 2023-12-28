@@ -23,6 +23,7 @@ public class BlockStart implements Runner {
         //初始化区块链
         blockChainUtils.initBlockChain();
 
+
         //同步数据
 
         //启动区块链

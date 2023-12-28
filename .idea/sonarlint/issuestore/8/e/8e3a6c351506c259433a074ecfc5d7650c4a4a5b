@@ -1,0 +1,15 @@
+
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(çÊÃŸøÿÿÿÿ8í•­şÊ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8Õ¢‹şÊ1
+]	java:S125"<This block of commented-out lines of code should be removed.(öŒÊ úÿÿÿÿ8®ë¬şÊ1
+]	java:S125"<This block of commented-out lines of code should be removed.(”½Øˆøÿÿÿÿ8ğ•­şÊ1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ğ•­şÊ1
+v
+java:S1128"YRemove this unused import 'org.springframework.boot.context.event.ApplicationReadyEvent'.(Ğ‰“8ğ•­şÊ1
+n
+java:S1128"LRemove this unused import 'org.springframework.context.event.EventListener'.(¦ñÛĞüÿÿÿÿ8ğ•­şÊ1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8ğ•­şÊ1

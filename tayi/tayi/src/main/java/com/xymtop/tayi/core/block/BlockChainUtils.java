@@ -84,6 +84,7 @@ public class BlockChainUtils {
 
         //循环获取区块
         for (long i = 0; i < blockHeight; i++) {
+
             Block block = blockUtils.getBlock(i);
 
             //从区块中验证并恢复图数据
@@ -98,6 +99,9 @@ public class BlockChainUtils {
 
         //区块高度加一
         blockChainHeightUtils.addBlockHeight();
+
+        System.out.println("区块高度为"+block.getBlockNumber()+"的区块，哈希值为 "+block.getHash()+" 已经写入区块链");
+
     }
 
     //获取某个区块

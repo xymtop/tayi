@@ -1,0 +1,104 @@
+2023/12/28-13:46:54.697252 4db8 RocksDB version: 6.20.3
+2023/12/28-13:46:54.697393 4db8 Git sha 8608d75d85f8e1b3b64b73a4fb6d19baec61ba5c
+2023/12/28-13:46:54.697409 4db8 Compile date 2021-05-07 18:16:49
+2023/12/28-13:46:54.697448 4db8 DB SUMMARY
+2023/12/28-13:46:54.697459 4db8 DB Session ID:  Y93PEWONWS8TNR2LZ3KJ
+2023/12/28-13:46:54.700133 4db8 CURRENT file:  CURRENT
+2023/12/28-13:46:54.700176 4db8 IDENTITY file:  IDENTITY
+2023/12/28-13:46:54.700252 4db8 MANIFEST file:  MANIFEST-000474 size: 839 Bytes
+2023/12/28-13:46:54.700270 4db8 SST files in data dir, Total Num: 1, files: 000478.sst 
+2023/12/28-13:46:54.700280 4db8 Write Ahead Log file in data: 000475.log size: 0 ; 
+2023/12/28-13:46:54.700291 4db8                         Options.error_if_exists: 0
+2023/12/28-13:46:54.700625 4db8                       Options.create_if_missing: 1
+2023/12/28-13:46:54.700651 4db8                         Options.paranoid_checks: 1
+2023/12/28-13:46:54.700659 4db8                               Options.track_and_verify_wals_in_manifest: 0
+2023/12/28-13:46:54.700666 4db8                                     Options.env: 0000028377F2DD60
+2023/12/28-13:46:54.700674 4db8                                      Options.fs: WinFS
+2023/12/28-13:46:54.700682 4db8                                Options.info_log: 0000028377F40260
+2023/12/28-13:46:54.700689 4db8                Options.max_file_opening_threads: 16
+2023/12/28-13:46:54.700696 4db8                              Options.statistics: 0000000000000000
+2023/12/28-13:46:54.700703 4db8                               Options.use_fsync: 0
+2023/12/28-13:46:54.700710 4db8                       Options.max_log_file_size: 0
+2023/12/28-13:46:54.700718 4db8                  Options.max_manifest_file_size: 1073741824
+2023/12/28-13:46:54.700725 4db8                   Options.log_file_time_to_roll: 0
+2023/12/28-13:46:54.700732 4db8                       Options.keep_log_file_num: 1000
+2023/12/28-13:46:54.700739 4db8                    Options.recycle_log_file_num: 0
+2023/12/28-13:46:54.700746 4db8                         Options.allow_fallocate: 1
+2023/12/28-13:46:54.700753 4db8                        Options.allow_mmap_reads: 0
+2023/12/28-13:46:54.700760 4db8                       Options.allow_mmap_writes: 0
+2023/12/28-13:46:54.700767 4db8                        Options.use_direct_reads: 0
+2023/12/28-13:46:54.700774 4db8                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/12/28-13:46:54.700781 4db8          Options.create_missing_column_families: 0
+2023/12/28-13:46:54.700788 4db8                              Options.db_log_dir: 
+2023/12/28-13:46:54.700795 4db8                                 Options.wal_dir: data
+2023/12/28-13:46:54.700803 4db8                Options.table_cache_numshardbits: 6
+2023/12/28-13:46:54.700809 4db8                         Options.WAL_ttl_seconds: 0
+2023/12/28-13:46:54.700816 4db8                       Options.WAL_size_limit_MB: 0
+2023/12/28-13:46:54.700823 4db8                        Options.max_write_batch_group_size_bytes: 1048576
+2023/12/28-13:46:54.700831 4db8             Options.manifest_preallocation_size: 4194304
+2023/12/28-13:46:54.700838 4db8                     Options.is_fd_close_on_exec: 1
+2023/12/28-13:46:54.700845 4db8                   Options.advise_random_on_open: 1
+2023/12/28-13:46:54.700852 4db8                    Options.db_write_buffer_size: 0
+2023/12/28-13:46:54.700859 4db8                    Options.write_buffer_manager: 0000028377F98DC0
+2023/12/28-13:46:54.700866 4db8         Options.access_hint_on_compaction_start: 1
+2023/12/28-13:46:54.700873 4db8  Options.new_table_reader_for_compaction_inputs: 0
+2023/12/28-13:46:54.700880 4db8           Options.random_access_max_buffer_size: 1048576
+2023/12/28-13:46:54.700887 4db8                      Options.use_adaptive_mutex: 0
+2023/12/28-13:46:54.700894 4db8                            Options.rate_limiter: 0000000000000000
+2023/12/28-13:46:54.700902 4db8     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/12/28-13:46:54.700910 4db8                       Options.wal_recovery_mode: 2
+2023/12/28-13:46:54.700917 4db8                  Options.enable_thread_tracking: 0
+2023/12/28-13:46:54.700989 4db8                  Options.enable_pipelined_write: 0
+2023/12/28-13:46:54.701002 4db8                  Options.unordered_write: 0
+2023/12/28-13:46:54.701009 4db8         Options.allow_concurrent_memtable_write: 1
+2023/12/28-13:46:54.701016 4db8      Options.enable_write_thread_adaptive_yield: 1
+2023/12/28-13:46:54.701023 4db8             Options.write_thread_max_yield_usec: 100
+2023/12/28-13:46:54.701030 4db8            Options.write_thread_slow_yield_usec: 3
+2023/12/28-13:46:54.701037 4db8                               Options.row_cache: None
+2023/12/28-13:46:54.701044 4db8                              Options.wal_filter: None
+2023/12/28-13:46:54.701052 4db8             Options.avoid_flush_during_recovery: 0
+2023/12/28-13:46:54.701059 4db8             Options.allow_ingest_behind: 0
+2023/12/28-13:46:54.701066 4db8             Options.preserve_deletes: 0
+2023/12/28-13:46:54.701073 4db8             Options.two_write_queues: 0
+2023/12/28-13:46:54.701079 4db8             Options.manual_wal_flush: 0
+2023/12/28-13:46:54.701086 4db8             Options.atomic_flush: 0
+2023/12/28-13:46:54.701093 4db8             Options.avoid_unnecessary_blocking_io: 0
+2023/12/28-13:46:54.701100 4db8                 Options.persist_stats_to_disk: 0
+2023/12/28-13:46:54.701107 4db8                 Options.write_dbid_to_manifest: 0
+2023/12/28-13:46:54.701114 4db8                 Options.log_readahead_size: 0
+2023/12/28-13:46:54.701121 4db8                 Options.file_checksum_gen_factory: Unknown
+2023/12/28-13:46:54.701129 4db8                 Options.best_efforts_recovery: 0
+2023/12/28-13:46:54.701136 4db8                Options.max_bgerror_resume_count: 2147483647
+2023/12/28-13:46:54.701143 4db8            Options.bgerror_resume_retry_interval: 1000000
+2023/12/28-13:46:54.701150 4db8             Options.allow_data_in_errors: 0
+2023/12/28-13:46:54.701157 4db8             Options.db_host_id: __hostname__
+2023/12/28-13:46:54.701164 4db8             Options.max_background_jobs: 2
+2023/12/28-13:46:54.701171 4db8             Options.max_background_compactions: -1
+2023/12/28-13:46:54.701178 4db8             Options.max_subcompactions: 1
+2023/12/28-13:46:54.701185 4db8             Options.avoid_flush_during_shutdown: 0
+2023/12/28-13:46:54.701192 4db8           Options.writable_file_max_buffer_size: 1048576
+2023/12/28-13:46:54.701199 4db8             Options.delayed_write_rate : 16777216
+2023/12/28-13:46:54.701206 4db8             Options.max_total_wal_size: 0
+2023/12/28-13:46:54.701213 4db8             Options.delete_obsolete_files_period_micros: 21600000000
+2023/12/28-13:46:54.701221 4db8                   Options.stats_dump_period_sec: 600
+2023/12/28-13:46:54.701228 4db8                 Options.stats_persist_period_sec: 600
+2023/12/28-13:46:54.701235 4db8                 Options.stats_history_buffer_size: 1048576
+2023/12/28-13:46:54.701242 4db8                          Options.max_open_files: -1
+2023/12/28-13:46:54.701250 4db8                          Options.bytes_per_sync: 0
+2023/12/28-13:46:54.701257 4db8                      Options.wal_bytes_per_sync: 0
+2023/12/28-13:46:54.701264 4db8                   Options.strict_bytes_per_sync: 0
+2023/12/28-13:46:54.701271 4db8       Options.compaction_readahead_size: 0
+2023/12/28-13:46:54.701278 4db8                  Options.max_background_flushes: -1
+2023/12/28-13:46:54.701307 4db8 Compression algorithms supported:
+2023/12/28-13:46:54.701315 4db8 	kZSTD supported: 1
+2023/12/28-13:46:54.701322 4db8 	kSnappyCompression supported: 1
+2023/12/28-13:46:54.701329 4db8 	kBZip2Compression supported: 0
+2023/12/28-13:46:54.701336 4db8 	kZlibCompression supported: 1
+2023/12/28-13:46:54.701343 4db8 	kLZ4Compression supported: 1
+2023/12/28-13:46:54.701350 4db8 	kXpressCompression supported: 0
+2023/12/28-13:46:54.701357 4db8 	kLZ4HCCompression supported: 1
+2023/12/28-13:46:54.701364 4db8 	kZSTDNotFinalCompression supported: 1
+2023/12/28-13:46:54.701419 4db8 Fast CRC32 supported: Supported on x86
+2023/12/28-13:46:54.702902 4db8 [WARN] [db\db_impl\db_impl_open.cc:1843] Persisting Option File error: OK
+2023/12/28-13:46:54.703018 4db8 [db\db_impl\db_impl.cc:463] Shutdown: canceling all background work
+2023/12/28-13:46:54.703107 4db8 [db\db_impl\db_impl.cc:642] Shutdown complete

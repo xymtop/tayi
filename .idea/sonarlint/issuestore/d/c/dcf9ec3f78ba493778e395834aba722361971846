@@ -1,0 +1,110 @@
+
+g	java:S112P"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ8—ŒĞüÊ1
+g	java:S112a"FDefine and throw a dedicated exception instead of using a generic one.(Šíí«úÿÿÿÿ8˜ŒĞüÊ1
+g	java:S112h"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ8˜ŒĞüÊ1
+g	java:S112y"FDefine and throw a dedicated exception instead of using a generic one.(Šíí«úÿÿÿÿ8™ŒĞüÊ1
+h	java:S112Š"FDefine and throw a dedicated exception instead of using a generic one.(«íøÿÿÿÿ8™ŒĞüÊ1
+h	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(é£Ãäıÿÿÿÿ8›ŒĞüÊ1
+c	java:S112£"FDefine and throw a dedicated exception instead of using a generic one.(×÷µà8›ŒĞüÊ1
+h	java:S112Ô"FDefine and throw a dedicated exception instead of using a generic one.(ìë¾—ûÿÿÿÿ8›ŒĞüÊ1
+h	java:S112Ş"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ8›ŒĞüÊ1
+h	java:S112ã"FDefine and throw a dedicated exception instead of using a generic one.(¨¤Á”ûÿÿÿÿ8œŒĞüÊ1
+h	java:S112û"FDefine and throw a dedicated exception instead of using a generic one.(˜‡¼Äøÿÿÿÿ8ŒĞüÊ1
+c	java:S112÷"FDefine and throw a dedicated exception instead of using a generic one.(¾æÖÙ8›ŒĞüÊ1
+h	java:S112†"FDefine and throw a dedicated exception instead of using a generic one.(ìë¾—ûÿÿÿÿ8ŒĞüÊ1
+h	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ8ŒĞüÊ1
+h	java:S112•"FDefine and throw a dedicated exception instead of using a generic one.(¨¤Á”ûÿÿÿÿ8ŒĞüÊ1
+h	java:S112¨"FDefine and throw a dedicated exception instead of using a generic one.(é£Ãäıÿÿÿÿ8ä˜ÒüÊ1
+c	java:S112®"FDefine and throw a dedicated exception instead of using a generic one.(×÷µà8÷şçüÊ1
+h	java:S112Ç"FDefine and throw a dedicated exception instead of using a generic one.(³ğ¬´ûÿÿÿÿ8÷şçüÊ1
+L
+java:S3740L"/Provide the parametrized type for this generic.(ïêˆù8—ÊÏüÊ1
+Q
+java:S3740d"/Provide the parametrized type for this generic.(¿Áúáşÿÿÿÿ8ûşçüÊ1
+k
+java:S1192‚"MDefine a constant instead of duplicating this literal "contract.jar" 3 times.(•„¾8™ÊÏüÊ1
+l
+java:S1192ƒ"IDefine a constant instead of duplicating this literal "data.ser" 3 times.(úş–ûÿÿÿÿÿ8 ŒĞüÊ1
+r
+java:S1192P"PDefine a constant instead of duplicating this literal "æ–¹æ³•ä¸å­˜åœ¨" 4 times.(˜€åŠùÿÿÿÿ8¢ŒĞüÊ1
+€
+java:S1488\"^Immediately return this expression instead of assigning it to the temporary variable "result".(‹Š¼¥úÿÿÿÿ8Ó±ÑüÊ1
+{
+java:S1488t"^Immediately return this expression instead of assigning it to the temporary variable "result".(óûÏâ8ÿçüÊ1
+~
+java:S1488†"`Immediately return this expression instead of assigning it to the temporary variable "contract".(œáß8£ŒĞüÊ1
+b
+java:S2583¢"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢8ÑŒĞüÊ1
+b
+java:S2583­"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢8ÑŒĞüÊ1
+_
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8äÊÏüÊ1
+_
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ8äÊÏüÊ1
+_
+java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8äÊÏüÊ1
+_
+java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8äÊÏüÊ1
+_
+java:S68139"BRemove this field injection and use constructor injection instead.(êæÄŞ8äÊÏüÊ1
+_
+java:S6813<"BRemove this field injection and use constructor injection instead.(êæÄŞ8äÊÏüÊ1
+O
+java:S1135 "2Complete the task associated to this TODO comment.(›ËÓ8ìÊÏüÊ1
+U
+java:S1874V"3Remove this use of "newInstance"; it is deprecated.(¥Ï ªşÿÿÿÿ8£²ÑüÊ1
+U
+java:S1874\"3Remove this use of "newInstance"; it is deprecated.(‹Š¼¥úÿÿÿÿ8ğ­ÕüÊ1
+U
+java:S1874n"3Remove this use of "newInstance"; it is deprecated.(¥Ï ªşÿÿÿÿ8†İØüÊ1
+P
+java:S1874t"3Remove this use of "newInstance"; it is deprecated.(óûÏâ8ıÿçüÊ1
+^
+java:S1854"@Remove this useless assignment to local variable "contractInfo".(í‹ç—8ÛŒĞüÊ1
+D
+java:S1075"&Remove this hard-coded path-delimiter.(ş´õ8ËÏüÊ1
+D
+java:S1075"&Remove this hard-coded path-delimiter.(ş´õ8ËÏüÊ1
+V
+java:S1874š"3Remove this use of "newInstance"; it is deprecated.(ºÎ‡øúÿÿÿÿ8…€èüÊ1
+F	java:S108æ")Either remove or fill this block of code.(ºä¼˜8áŒĞüÊ1
+H	java:S106ñ"+Replace this use of System.out by a logger.(öÜ”8âŒĞüÊ1
+J
+java:S3011ù",This accessibility update should be removed.(˜ÂÓ˜8äŒĞüÊ1
+J
+java:S3011ı",This accessibility bypass should be removed.(ì»‹á8åŒĞüÊ1
+F	java:S108˜")Either remove or fill this block of code.(ºä¼˜8éŒĞüÊ1
+H	java:S106£"+Replace this use of System.out by a logger.(öÜ”8éŒĞüÊ1
+M	java:S106ª"+Replace this use of System.out by a logger.(²¯ËÍøÿÿÿÿ8êŒĞüÊ1
+H	java:S106´"+Replace this use of System.out by a logger.(·ëÕÏ8ìŒĞüÊ1
+D
+java:S1075À"&Remove this hard-coded path-delimiter.(”ß–Ñ8¨ËÏüÊ1
+D
+java:S1075À"&Remove this hard-coded path-delimiter.(”ß–Ñ8¨ËÏüÊ1
+D
+java:S1075Á"&Remove this hard-coded path-delimiter.(ü¾Œó8íŒĞüÊ1
+D
+java:S1075Á"&Remove this hard-coded path-delimiter.(ü¾Œó8îŒĞüÊ1
+Y	java:S125Ğ"<This block of commented-out lines of code should be removed.(»µé”8îŒĞüÊ1
+H	java:S106ñ"+Replace this use of System.out by a logger.(‰ƒáº8ğŒĞüÊ1
+^
+java:S1854™"@Remove this useless assignment to local variable "contractInfo".(í‹ç—8óŒĞüÊ1
+a
+java:S1854"CRemove this useless assignment to local variable "contractAddress".(õÛÑ¬8óŒĞüÊ1
+R
+java:S1481"4Remove this unused "contractAddress" local variable.(õÛÑ¬8ôŒĞüÊ1
+I
+java:S1075•"&Remove this hard-coded path-delimiter.(Ã¾õ‹ûÿÿÿÿ8õŒĞüÊ1
+I
+java:S1075•"&Remove this hard-coded path-delimiter.(Ã¾õ‹ûÿÿÿÿ8õŒĞüÊ1
+D
+java:S1075–"&Remove this hard-coded path-delimiter.(ÍÆßĞ8öŒĞüÊ1
+D
+java:S1075–"&Remove this hard-coded path-delimiter.(ÍÆßĞ8öŒĞüÊ1
+H	java:S106Ù"+Replace this use of System.out by a logger.(•Şœ™8úŒĞüÊ1
+^
+java:S1128"<Remove this unused import 'com.xymtop.tayi.TayiApplication'.(‰îÒ¥øÿÿÿÿ8¬ƒÙüÊ1
+i
+java:S1128"GRemove this unused import 'org.springframework.boot.SpringApplication'.(¯ìÙÿÿÿÿÿ8¬ƒÙüÊ1
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8¬ƒÙüÊ1

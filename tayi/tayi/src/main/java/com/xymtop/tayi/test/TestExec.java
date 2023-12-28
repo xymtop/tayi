@@ -29,10 +29,12 @@ public class TestExec implements TestApp{
     @Override
     public void test() throws Exception {
 //        taYiVM.deploy("QmZk5PYiLTXcfTzDKKLzLQg1ipKsNdehcMzC5XgSQzv9Jc");
-        String id = taYiVM.deploy("QmZQFoKwSPf1sbmPFiRTE8MJKVRDxdY6P6uvnnyBRtKdJe");
-
-        System.out.println("合约id:"+id);
-        Object res = taYiVM.call(id, "hello", new String[]{"TaYi"});
-        System.out.println("调用结果:"+res);
+//        String id = taYiVM.deploy("QmZQFoKwSPf1sbmPFiRTE8MJKVRDxdY6P6uvnnyBRtKdJe");
+//
+//        System.out.println("合约id:"+id);
+//        Object res = taYiVM.call(id, "hello", new String[]{"TaYi"});
+//        System.out.println("调用结果:"+res);
+        String res = taYiVM.export("a9ded01b85cb9dd371593f4fe92a354d2df4332656dddd53ec3130deef1fe195");
+        System.out.println("导出结果:"+res);
     }
 }

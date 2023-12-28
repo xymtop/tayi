@@ -13,6 +13,6 @@ import org.springframework.stereotype.Component;
 public class GraphBlockUtils {
     public void recoverGraphFromBlock(Block block) {
 
-
+        System.out.println("正在恢复区块高度为"+block.getBlockNumber()+"的区块，哈希值为 "+block.getHash());
     }
 }

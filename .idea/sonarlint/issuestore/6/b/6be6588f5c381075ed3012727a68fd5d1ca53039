@@ -1,0 +1,22 @@
+
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8óˆ÷şÊ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ôˆ÷şÊ1
+O
+java:S1135
+"2Complete the task associated to this TODO comment.(›ËÓ8öˆ÷şÊ1
+\
+java:S1854*":Remove this useless assignment to local variable "object".(—•ûÿÿÿÿÿ8÷ˆ÷şÊ1
+V
+java:S1854-":Remove this useless assignment to local variable "object".(Ó°À8÷ˆ÷şÊ1
+G	java:S106"+Replace this use of System.out by a logger.(Ãıú¿8øˆ÷şÊ1
+L	java:S106"+Replace this use of System.out by a logger.(©ãåúÿÿÿÿ8øˆ÷şÊ1
+L	java:S106"+Replace this use of System.out by a logger.(”ù÷ùşÿÿÿÿ8øˆ÷şÊ1
+L	java:S106""+Replace this use of System.out by a logger.(—™ £úÿÿÿÿ8ùˆ÷şÊ1
+G	java:S106%"+Replace this use of System.out by a logger.(óêúš8ùˆ÷şÊ1
+M
+java:S1481*"+Remove this unused "object" local variable.(—•ûÿÿÿÿÿ8úˆ÷şÊ1
+G
+java:S1481-"+Remove this unused "object" local variable.(Ó°À8ûˆ÷şÊ1
+G	java:S1060"+Replace this use of System.out by a logger.(³Öİ¼8ûˆ÷şÊ1

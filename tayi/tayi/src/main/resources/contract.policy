@@ -1,0 +1,4 @@
+grant {
+  // 授予必要的权限，但不包括网络访问权限
+   permission java.io.FilePermission "<<ALL FILES>>", "read";
+};
