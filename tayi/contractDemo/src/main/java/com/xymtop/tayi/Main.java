@@ -11,6 +11,6 @@ import com.xymtop.tayi.core.vm.testsystem.TestSystem;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        TestSystem.RunContact(Application.class,"getHeight");
+        TestSystem.RunContact(Application.class,"getHeight",args);
     }
 }

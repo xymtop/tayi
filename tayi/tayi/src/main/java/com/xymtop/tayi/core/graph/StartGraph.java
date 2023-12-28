@@ -4,11 +4,15 @@ import com.xymtop.tayi.core.nft.NFTAttribute;
 import com.xymtop.tayi.core.nft.NFTData;
 import com.xymtop.tayi.core.nft.NFTMeta;
 import com.xymtop.tayi.core.system.Runner;
+import org.neo4j.graphdb.Node;
+import org.neo4j.graphdb.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author 小野喵
@@ -52,5 +56,9 @@ public class StartGraph implements Runner {
         nftUtils.createNFT(nftData);
 
         System.out.println("StartGraph");
+        List<Node> result = nftUtils.getAllNFTs();
+        Node node = result.get(0);
+        System.out.println(node.getProperty("address"));
+        System.out.println(result.size());
     }
 }

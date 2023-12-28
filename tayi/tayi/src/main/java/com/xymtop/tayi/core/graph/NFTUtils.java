@@ -6,7 +6,9 @@ import org.neo4j.graphdb.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Component
@@ -65,5 +67,14 @@ public class NFTUtils {
         properties.put("meta_image", meta.getImage());
         // Additional logic to handle attributes if needed
         return properties;
+    }
+    //获取所有的NFT
+    public List<Node> getAllNFTs() {
+        List<Node> nodes = new ArrayList<>();
+        List<Map<String, Object>> mapList = neo4jUtils.executeQuery("MATCH (n:NFT) RETURN n");
+        for (Map<String, Object> map : mapList) {
+            nodes.add((Node) map.get("n"));
+        }
+        return nodes;
     }
 }

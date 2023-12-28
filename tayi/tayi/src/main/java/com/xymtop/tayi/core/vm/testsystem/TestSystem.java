@@ -32,14 +32,14 @@ public class TestSystem {
         testObject.setFunName(funName);
     }
 
-    public static void RunContact(Class contracClass,String funName) throws Exception {
+    public static void RunContact(Class contracClass,String funName,String[] sysArgs) throws Exception {
         //初始化运行的方法
         System.out.println("启动TaYi系统");
         //设置调试模式
         SystemStatus.debug = true;
         //启动springboot内核
         System.out.println("启动springboot内核");
-        ConfigurableApplicationContext run = SpringApplication.run(TayiApplication.class);
+        ConfigurableApplicationContext run = SpringApplication.run(TayiApplication.class,sysArgs);
         //写入测试队列
         System.out.println("写入测试队列");
         TestObject testObject = run.getBean(TestObject.class);
@@ -48,6 +48,6 @@ public class TestSystem {
     }
 
     public static void main(String[] args) throws Exception {
-        TestSystem.RunContact(TestSystem.class,"test",null);
+        TestSystem.RunContact(TestSystem.class,"test",args);
     }
 }

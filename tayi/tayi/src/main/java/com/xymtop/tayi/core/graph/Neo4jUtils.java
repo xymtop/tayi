@@ -4,6 +4,8 @@ import org.neo4j.dbms.api.DatabaseManagementService;
 import org.neo4j.dbms.api.DatabaseManagementServiceBuilder;
 import org.neo4j.graphdb.*;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class Neo4jUtils {
@@ -60,11 +62,36 @@ public class Neo4jUtils {
         }
     }
 
-    public Result executeQuery(String query) {
+    /**
+     * 执行Cypher查询并返回结果列表。
+     *
+     * @param query 要执行的Cypher查询
+     * @return 查询结果的列表，每个元素是一行数据的键值映射
+     */
+    public List<Map<String, Object>> executeQuery(String query) {
+        List<Map<String, Object>> resultList = new ArrayList<>();
         try (Transaction tx = graphDb.beginTx()) {
             Result result = tx.execute(query);
+            while (result.hasNext()) {
+                resultList.add(result.next());
+            }
             tx.commit();
-            return result;
+            return resultList;
+        }
+    }
+
+    /**
+     * 获取指定节点的所有关系。
+     *
+     * @param node 要查询的节点
+     * @return 与该节点相关的所有关系
+     */
+    public List<Relationship> getAllRelationshipsOfNode(Node node) {
+        List<Relationship> relationships = new ArrayList<>();
+        try (Transaction tx = graphDb.beginTx()) {
+            node.getRelationships().forEach(relationships::add);
+            tx.commit();
+            return relationships;
         }
     }
 
