@@ -21,7 +21,7 @@ public class NFTUtils {
         this.neo4jUtils = neo4jUtils;
     }
 
-    public Node createNFT(NFTData nftData) {
+    public String createNFT(NFTData nftData) {
         Map<String, Object> properties = convertNFTDataToProperties(nftData);
         return neo4jUtils.createNode(Label.label("NFT"), properties);
     }

@@ -1,0 +1,13 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(øØù§8ÄÜ­µË1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8Ü§”µË1
+y
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ÅâÚæüÿÿÿÿ8à§”µË1
+T
+java:S1874"7Remove this use of "ReferenceConfig"; it is deprecated.(øØù§8ä§”µË1
+T
+java:S1874"7Remove this use of "ReferenceConfig"; it is deprecated.(øØù§8å§”µË1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8ì—–µË1

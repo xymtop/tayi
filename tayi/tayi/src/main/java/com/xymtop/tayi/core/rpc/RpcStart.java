@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 public class RpcStart implements Runner {
 
 
-
     @Override
     public void run() {
         System.out.println("rpc start");

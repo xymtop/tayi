@@ -1,0 +1,21 @@
+
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+X
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄÞ
+X
+java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄÞ
+H
+java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ
+R
+java:S18544"<Remove this useless assignment to local variable "poolItem".(ÁŒÞÿ
+C
+java:S14814"-Remove this unused "poolItem" local variable.(ÁŒÞÿ
+Y
+java:S1128">Remove this unused import 'java.security.InvalidKeyException'.(ì£ð»ÿÿÿÿÿ
+^
+java:S1128"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾þÿÿÿÿ
+S
+java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃþŠ

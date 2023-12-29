@@ -3,15 +3,21 @@ package com.xymtop.tayi.core.cmd.apis;
 import com.xymtop.tayi.core.cmd.apis.ann.CmdApi;
 import com.xymtop.tayi.core.cmd.apis.ann.CmdApiFun;
 import com.xymtop.tayi.core.cmd.cmdbuilder.ArgsBuilder;
+import com.xymtop.tayi.core.graph.NFTUtils;
+import com.xymtop.tayi.core.nft.NFTData;
+import com.xymtop.tayi.core.nft.NFTMeta;
+import com.xymtop.tayi.core.nft.builder.NFTBuilder;
 import com.xymtop.tayi.core.oprate.OperateEntity;
 import com.xymtop.tayi.core.user.SystemUser;
 import com.xymtop.tayi.core.user.UserPool;
+import org.neo4j.graphdb.Node;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
+import java.util.Arrays;
 
 /**
  * @author 小野喵
@@ -28,10 +34,37 @@ public class UserApi {
     private UserPool userPool;
 
 
+    @Autowired
+    private NFTBuilder nftBuilder;
+
+    @Autowired
+    private NFTUtils nftUtils;
+
+
     //新增用户
     @CmdApiFun(cmd = "addUser")
-    public SystemUser addUser() throws InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchProviderException {
-        return userPool.generateUser();
+    public SystemUser addUser() throws Exception {
+        SystemUser systemUser = userPool.generateUser();
+
+        //构建NFT
+        NFTData nftData = nftBuilder.getBaseNFT();
+        NFTMeta nftMeta = new NFTMeta();
+        nftData.setOwner(systemUser.getAddress());
+        nftData.setAddress(systemUser.getAddress());
+        nftMeta.setTitle(systemUser.getAddress());
+        nftMeta.setDescription("美好的生活从现在开始!");
+        nftMeta.setImage("https://upload.wikimedia.org/wikipedia/zh/4/4a/Xinjiang_University_logo.png");
+        nftMeta.setAttributes(Arrays.asList("user"));
+        nftData.setMeta(nftMeta);
+
+        //写入数据库
+        String nodeId = nftUtils.createNFT(nftData);
+
+        if (nodeId == null){
+            throw new Exception("创建失败");
+        }
+
+        return  systemUser;
     }
 
 

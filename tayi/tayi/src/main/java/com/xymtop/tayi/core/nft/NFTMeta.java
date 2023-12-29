@@ -42,6 +42,6 @@ public class NFTMeta {
 //        图片
         private String image;
 //        属性
-        private List<NFTAttribute> attributes;
+        private List<String> attributes;
 
 }

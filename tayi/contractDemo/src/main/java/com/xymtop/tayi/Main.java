@@ -1,6 +1,8 @@
 package com.xymtop.tayi;
 
 import com.xymtop.tayi.core.vm.testsystem.TestSystem;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * @author 小野喵

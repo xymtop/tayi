@@ -15,6 +15,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  */
 
 
+
 public class TestSystem {
     //直接运行和调试智能合约
     public static void RunContact(Class contracClass,String funName,Object ...args) throws Exception {

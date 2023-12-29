@@ -4,9 +4,7 @@ import org.neo4j.dbms.api.DatabaseManagementService;
 import org.neo4j.dbms.api.DatabaseManagementServiceBuilder;
 import org.neo4j.graphdb.*;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Neo4jUtils {
 
@@ -23,12 +21,18 @@ public class Neo4jUtils {
         managementService.shutdown();
     }
 
-    public Node createNode(Label label, Map<String, Object> properties) {
+    public String createNode(Label label, Map<String, Object> properties) {
         try (Transaction tx = graphDb.beginTx()) {
             Node node = tx.createNode(label);
-            properties.forEach(node::setProperty);
+            for (Map.Entry proper : properties.entrySet()){
+                if (proper.getKey()!=null && proper.getValue() !=null){
+                    node.setProperty(String.valueOf(proper.getKey()),proper.getValue());
+                }
+            }
+
+            String nodeId = node.getElementId();
             tx.commit();
-            return node;
+            return nodeId;
         }
     }
 
@@ -97,5 +101,32 @@ public class Neo4jUtils {
 
     private void registerShutdownHook(final DatabaseManagementService managementService) {
         Runtime.getRuntime().addShutdownHook(new Thread(managementService::shutdown));
+    }
+
+    /**
+     * 根据 tokenId 获取单个 NFT 节点的信息。
+     *
+     * @param id NFT 的唯一标识符
+     * @param nftLabel NFT 节点的标签
+     * @return 包含 NFT 信息的 Map，如果找不到则返回 Optional.empty()
+     */
+    public Optional<Map<String, Object>> getNFTByTokenId(String id, Label nftLabel) {
+        try (Transaction tx = graphDb.beginTx()) {
+            // 构建查询
+            String query = String.format("MATCH (n:%s {id: $tokenId}) RETURN n", nftLabel.name());
+            Map<String, Object> parameters = Collections.singletonMap("tokenId", id);
+
+            // 执行查询
+            Result result = tx.execute(query, parameters);
+            if (result.hasNext()) {
+                Node nftNode = (Node) result.next().get("n");
+                Map<String, Object> nftProperties = nftNode.getAllProperties();
+                tx.commit();
+                return Optional.of(nftProperties);
+            } else {
+                tx.commit();
+                return Optional.empty();
+            }
+        }
     }
 }

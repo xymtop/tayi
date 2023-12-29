@@ -1,14 +1,19 @@
 package com.xymtop.tayi.core.cmd.apis;
 
+import cn.hutool.core.lang.UUID;
 import com.xymtop.tayi.core.cmd.apis.ann.CmdApi;
 import com.xymtop.tayi.core.cmd.apis.ann.CmdApiFun;
 import com.xymtop.tayi.core.cmd.cmdbuilder.ArgsBuilder;
 import com.xymtop.tayi.core.nft.NFTData;
+import com.xymtop.tayi.core.nft.NFTMeta;
 import com.xymtop.tayi.core.oprate.OperateEntity;
 import com.xymtop.tayi.core.oprate.OprateMeta;
+import com.xymtop.tayi.core.utils.encrypt.HashUtils;
 import com.xymtop.tayi.core.utils.jsonutils.XJsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.Date;
 
 /**
  * @author 小野喵
@@ -24,13 +29,24 @@ public class NftApi {
     @Autowired
     private XJsonUtils xJsonUtils;
 
-    @CmdApiFun(cmd = "createNFT")
-    public NFTData createNFT(String user, NFTData nftData){
-        System.out.println("创建NFT");
-        //创建NFT唯一地址
+    @Autowired
+    HashUtils hashUtils;
 
+    @CmdApiFun(cmd = "createNFT")
+    public NFTData createNFT(String user, NFTMeta nftMeta){
+
+        System.out.println("创建NFT");
+        NFTData nftData = new NFTData();
+        nftData.setMeta(nftMeta);
 
         //设置所有权人
+        nftData.setOwner(user);
+        nftData.setTime(new Date());
+        nftData.setResource(null);
+        //创建NFT唯一地址
+        String id = hashUtils.hashHex(UUID.randomUUID().toString());
+        nftData.setAddress(id);
+        //获取到用户
 
 
         //设置关系为拥有
@@ -47,9 +63,9 @@ public class NftApi {
         //获取负载数据
         String payload = oprateMeta.getPayload();
 
-        NFTData nftData = xJsonUtils.jsonToObj(payload, NFTData.class);
+        NFTMeta nftMeta = xJsonUtils.jsonToObj(payload, NFTMeta.class);
 
-        return new Object[]{sender,nftData};
+        return new Object[]{sender,nftMeta};
     }
 
 }

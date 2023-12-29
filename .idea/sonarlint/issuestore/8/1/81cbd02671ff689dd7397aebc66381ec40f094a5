@@ -1,0 +1,15 @@
+
+
+java:S4165C"kRemove this useless assignment; "operateEntity" already holds the assigned value along all execution paths.(çğæüøÿÿÿÿ8Ãë¶Ë1
+
+java:S41656"kRemove this useless assignment; "operateEntity" already holds the assigned value along all execution paths.(çğæüøÿÿÿÿ8Äë¶Ë1
+‡
+java:S4165"kRemove this useless assignment; "operateEntity" already holds the assigned value along all execution paths.(İ†šE8Äë¶Ë1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8Çë¶Ë1
+L	java:S106%"+Replace this use of System.out by a logger.(Õä±µÿÿÿÿÿ8Ìë¶Ë1
+]
+java:S1128
+";Remove this unused import 'com.xymtop.tayi.core.vm.TaYiVM'.(æÀÂ£üÿÿÿÿ8µÅû¶Ë1
+V
+java:S1144B"4Remove this unused private "testBuildAddNFT" method.(À˜ñÎşÿÿÿÿ8·Åû¶Ë1

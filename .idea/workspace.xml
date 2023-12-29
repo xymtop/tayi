@@ -5,22 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9e9a02-c9b7-4068-9538-c6de9abd00d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tayi/contractDemo/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayi/tayi/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08f1ba00a9c0eb377bccd9802c0c34abe7d3f55d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08f1ba00a9c0eb377bccd9802c0c34abe7d3f55d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/test/TestNft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/165d1156bada58f761ab5a0b1aa7e0800320e3b1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/165d1156bada58f761ab5a0b1aa7e0800320e3b1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/3067d26b895c19a6ecb891d297ecb0156cf884a1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/3067d26b895c19a6ecb891d297ecb0156cf884a1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33501128090c818c619e2d25f715c2c4f4d040f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c2184f859363e8ba135a17daf2856048b7a33e5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4dc9b90d53a0e57a1fc2d5d1d1980499985e1496" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4dc9b90d53a0e57a1fc2d5d1d1980499985e1496" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/599bae4b9cffc5a44fc3d8aa5ee8c070e39ed63c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/599bae4b9cffc5a44fc3d8aa5ee8c070e39ed63c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c41ef7642b5d9dfa6de2b6e279ec3884291eddec" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c41ef7642b5d9dfa6de2b6e279ec3884291eddec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c51a4d57575da56dab09a0103ff42b04112ad5f8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c51a4d57575da56dab09a0103ff42b04112ad5f8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/3/33501128090c818c619e2d25f715c2c4f4d040f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/c/4c2184f859363e8ba135a17daf2856048b7a33e5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/000542.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/000546.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/000548.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/000621.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/000625.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/000631.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/000633.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/data/CURRENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/data/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/MANIFEST-000547" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000541" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000550" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/MANIFEST-000632" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000629" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000635" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/id-buffer.tmp.0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.counts.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.counts.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.indexstats.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.indexstats.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.id" afterDir="false" />
@@ -43,6 +51,7 @@
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.schemastore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.schemastore.db.id" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/1/index-1" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/1/index-1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/2/index-2" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/2/index-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/id-buffer.tmp.0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.counts.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.counts.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.indexstats.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.indexstats.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.id" afterDir="false" />
@@ -70,12 +79,27 @@
       <change beforePath="$PROJECT_DIR$/neo4j/data/transactions/neo4j/neostore.transaction.db.0" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/transactions/neo4j/neostore.transaction.db.0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/transactions/system/checkpoint.0" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/transactions/system/checkpoint.0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tayi/contractDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/contractDemo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tayi/contractDemo/src/main/java/com/xymtop/tayi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/contractDemo/src/main/java/com/xymtop/tayi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/contractDemo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/contractDemo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/NftApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/NftApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/UserApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/graph/NFTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/graph/NFTUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/graph/Neo4jUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/graph/Neo4jUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/graph/StartGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/graph/StartGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/nft/NFTMeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/nft/NFTMeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/nft/builder/NFTBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/nft/builder/NFTBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/NettyServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/StartP2P.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/StartP2P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/handler/NettyServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/handler/NettyServerHandlerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/rpc/RpcApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/rpc/RpcStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/rpc/RpcStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/rpc/rpc/RSocketRpc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/rpc/socket/SocketApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/rpc/socket/WebSocketConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/testsystem/TestSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/testsystem/TestSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +117,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2a9uG3MvNtg8lJN3Vz6Xho8bKAN" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -111,7 +138,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "Application.TestSystem.executor": "Debug",
     "Maven.tayi [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -122,7 +149,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "Spring Boot.TayiApplication.executor": "Debug",
+    "Spring Boot.Main.executor": "Run",
+    "Spring Boot.TayiApplication.executor": "Run",
+    "Spring Boot.TestNft.executor": "Debug",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
@@ -132,6 +161,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "ts.external.directory.path": "C:\\Users\\小野喵\\Desktop\\tayi\\tayi\\tayi-browser\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -144,7 +175,16 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.TayiApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TestNft">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xymtop.tayi.Main" />
       <module name="contractDemo" />
@@ -171,6 +211,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="contractDemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xymtop.tayi.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xymtop.tayi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TayiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="tayi" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xymtop.tayi.TayiApplication" />
@@ -184,9 +237,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNft" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tayi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xymtop.tayi.test.TestNft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xymtop.tayi.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.TestNft" />
         <item itemvalue="Spring Boot.TayiApplication" />
+        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestSystem" />
       </list>
@@ -200,7 +268,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703743017336</updated>
-      <workItem from="1703743019058" duration="16301000" />
+      <workItem from="1703743019058" duration="21423000" />
+      <workItem from="1703829789286" duration="628000" />
+      <workItem from="1703864086369" duration="10934000" />
     </task>
     <servers />
   </component>
@@ -214,9 +284,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/graph/StartGraph.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/rpc/consumer/config/RemoteServiceConfig.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/rpc/consumer/config/RemoteServiceConfig.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/NftApi.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/NftApi.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/oprate/execute/OperateExecuter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/UserApi.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
