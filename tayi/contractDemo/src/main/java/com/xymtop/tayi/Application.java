@@ -7,11 +7,14 @@ import com.xymtop.tayi.core.vm.code.that.BlockUtils;
 import com.xymtop.tayi.core.vm.code.that.That;
 import com.xymtop.tayi.core.vm.contract.ContractInfo;
 import com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract;
+import com.xymtop.tayi.entity.Cat;
 import lombok.Data;
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 //为了实现自己的合约内容并且调用，你只需要7步
 /*
@@ -28,6 +31,15 @@ import java.util.Arrays;
 public class Application extends TaYiJavaContract implements Serializable {
 
     private int count;
+
+    private List<Cat> cats = new ArrayList<>();
+
+    public boolean addCat(){
+        Cat cat = new Cat();
+        cat.setName("老王");
+        cats.add(cat);
+        return true;
+    }
 
 
     public int getName(){
