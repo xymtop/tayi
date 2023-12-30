@@ -13,7 +13,7 @@ import java.io.IOException;
 public class TaYiStreamUtils {
 
         // 序列化
-        public static void serialize(String serPath, TaYiJavaContract pro) throws IOException, IllegalAccessException {
+        public static void serialize(String serPath, Object pro) throws IOException, IllegalAccessException {
                 ObjectStreamUtils.serialize(serPath,pro);
 
         }

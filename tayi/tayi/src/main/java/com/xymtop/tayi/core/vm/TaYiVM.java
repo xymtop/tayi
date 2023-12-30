@@ -184,7 +184,7 @@ public class TaYiVM implements Runner {
 
         //获取状态数据
 
-       String stateHash =  writeState(contractObj,statusFilePath);
+        String stateHash =  writeState(contractObj,statusFilePath);
 
        //设置状态id
         contract.setStatusAddress(stateHash);
@@ -256,7 +256,36 @@ public class TaYiVM implements Runner {
 
         System.out.println("调用合约中...");
 
+
+        //写入合约数据
+        contractInfo.setContract(obj);
+
+
+
+        String filePath = contractPath+"/"+id+"/";
+        String statusFilePath = filePath +"data.ser";
+
+        String stateHash =  writeState(obj,statusFilePath);
+
+        //设置状态id
+        contractInfo.setStatusAddress(stateHash);
+
+
+        //运行完毕，写入状态数据和合约数据
+        writeContractData(contractInfo);
+
         return result;
+    }
+
+
+    //写入合约运行后的数据
+    private void writeRunData(Contract contract, Object obj) throws Exception {
+        ContractInfo contractInfo = contract.getContractInfo();
+        if (contractInfo == null){
+            throw new Exception("合约信息不存在");
+        }
+        String id = contract.getId();
+
     }
 
     //注入环境
@@ -281,6 +310,7 @@ public class TaYiVM implements Runner {
         //组装合约方法
         contractInfo =    getMethedsAndFields(contractInfo);
 
+
         //调用方法
         Method method = contractInfo.getMethods().get(funName);
 
@@ -293,18 +323,37 @@ public class TaYiVM implements Runner {
             throw new RuntimeException("合约初始化失败");
         }
 
+
         if (!(obj instanceof TaYiJavaContract)){
 
         }
 
 
+
         //注入当前环境
         setThat(obj);
 
-        Object result = method.invoke(obj, args);
+
+//        再次获取方法
+        method = obj.getClass().getDeclaredMethod(funName);
+        if (method == null){
+            throw new RuntimeException("类方法获取失败");
+        }
+        //判断是否是实践类
+        Class<?> methodDeclaringClass = method.getDeclaringClass();
+        if (!methodDeclaringClass.isInstance(obj)){
+
+            throw new Exception("不是实现类");
+
+        }
+
+        Object result = method.invoke(obj,args);
 
 
         System.out.println("调用合约中...");
+
+        contractInfo.setContract(obj);
+        writeContractData(contractInfo);
 
         return result;
     }
@@ -316,7 +365,7 @@ public class TaYiVM implements Runner {
     }
 
     //写入状态
-    public String writeState(TaYiJavaContract contract,String contracDatatPath) throws IOException, IllegalAccessException {
+    public String writeState(Object contract,String contracDatatPath) throws IOException, IllegalAccessException {
         TaYiStreamUtils.serialize(contracDatatPath,contract);
 
         //上传数据文件
@@ -393,6 +442,9 @@ public class TaYiVM implements Runner {
 
         temp.setMethods(null);
         temp.setFields(null);
+
+        //写入智能合约的数据部分
+
         //将合约数据写入数据库
         dbUtils.put(contract.getId(), xJsonUtils.objToJson(temp));
     }
@@ -405,6 +457,13 @@ public class TaYiVM implements Runner {
         //将合约数据转换为合约对象
         Contract contract = xJsonUtils.jsonToObj(contractData, Contract.class);
 
+        //获取到合约的数据
+        Object contractObj = new Object();
+
+        //通过哈希值加载合约数据
+
+
+        contract.setContract(contractObj);
 
         return contract;
     }
