@@ -217,3 +217,35 @@ Ptayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/server/SocketServerService.jav
 Ptayi/tayi/src/main/java/com/xymtop/tayi/core/p2p/server/SocketClientService.java,f\e\fe4beba55626124d5a260f27fe35c94a1b298ac1
 p
 @tayi/tayi/src/main/java/com/xymtop/tayi/core/user/UserUtils.java,8\c\8ca21f9d844257fd39cec6fc12de4ae0b6f5455d
+D
+tayijs/tsconfig.json,d\0\d08699f46fdbbd6d0c8e20460ae4ce2d1b6e8c97
+C
+tayijs/src/index.ts,1\5\15db161a11fb5be5a3884322d42a768c11b2d5d5
+C
+tayijs/package.json,1\f\1fb078c31abd9267d972b776f1ef490ac2d70dbe
+D
+tayijs/dist/index.js,8\c\8ce52291d0c490e1f6d06297ec982d689de51861
+F
+tayijs/dist/index.d.ts,4\9\49ebc9c41adbfb5036d129527be572bef97702a4
+Q
+!tayijs/src/socket/SocketClient.ts,2\1\21aa8fe8ce731f6b6c6f3314e37cba4cb2999da3
+G
+tayijs/src/web3/TaYi.ts,4\1\41e28a041897bf2eb5555aa83a1da2f21dd38a4b
+I
+tayi_web_test/src/main.ts,c\d\cdd644aaafa0e1c5f72df46aaa0ff1bffdd02def
+U
+%tayi_web_test/src/views/AboutView.vue,6\9\699a85419e7254bba9e4b7203efb5ff5eda79fee
+T
+$tayi_web_test/src/views/HomeView.vue,9\9\99d1b8070f1e0f88e9ecf1e6d659491a2059a641
+Q
+!tayi_web_test/src/router/index.ts,5\b\5ba61635572eaf1caca5f792af26942485474aea
+X
+(tayijs/src/web3/blockchain/BlockChain.ts,9\3\93c68a9dfde711f2cb706e91146ba58fef20041f
+T
+$tayijs/src/web3/contract/Contract.ts,b\2\b2fb0eb854ece8f6939c8c97ab985173f2e84f11
+O
+tayijs/src/web3/events/Event.ts,f\a\fa59bda9177fe876da7fe9cf5b0826ae96292a0b
+P
+ tayijs/src/web3/oprate/Oprate.ts,7\9\791a093b23885355aa2906782a23337a830fef04
+F
+tayijs/src/web3/NFT.ts,4\b\4bc597f85c4c83bb2ed179e678993fc78d816f56
