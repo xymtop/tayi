@@ -1,21 +1,0 @@
-
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ğÂ¹Åÿÿÿÿÿ8˜¾¾ÿÊ1
-g	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(¾ÁÌëüÿÿÿÿ8™¾¾ÿÊ1
-Q
-java:S3740"/Provide the parametrized type for this generic.(ğÂ¹Åÿÿÿÿÿ8™¾¾ÿÊ1
-Q
-java:S3740$"/Provide the parametrized type for this generic.(¾ÁÌëüÿÿÿÿ8™¾¾ÿÊ1
-O
-java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8¤¾¾ÿÊ1
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÂ¹Åÿÿÿÿÿ8¤¾¾ÿÊ1
-M
-java:S1172"+Remove this unused method parameter "args".(ğÂ¹Åÿÿÿÿÿ8¥¾¾ÿÊ1
-G	java:S106"+Replace this use of System.out by a logger.(¦Øî™8¥¾¾ÿÊ1
-L	java:S106"+Replace this use of System.out by a logger.(ÆÉ×™şÿÿÿÿ8¦¾¾ÿÊ1
-G	java:S106"+Replace this use of System.out by a logger.(¸ıïİ8¨¾¾ÿÊ1
-o	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾ÁÌëüÿÿÿÿ8¨¾¾ÿÊ1
-G	java:S106&"+Replace this use of System.out by a logger.(¦Øî™8ª¾¾ÿÊ1
-L	java:S106*"+Replace this use of System.out by a logger.(ÆÉ×™şÿÿÿÿ8ª¾¾ÿÊ1
-G	java:S106-"+Replace this use of System.out by a logger.(¸ıïİ8ŠÏè±Ë1
-]
-java:S1128";Remove this unused import 'com.xymtop.tayi.core.vm.TaYiVM'.(æÀÂ£üÿÿÿÿ8¬¢æ±Ë1

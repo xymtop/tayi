@@ -1,152 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="1d9e9a02-c9b7-4068-9538-c6de9abd00d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tayijs/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/src/socket/SocketClient.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/src/web3/TaYi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/src/web3/blockchain/BlockChain.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/src/web3/contract/Contract.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/src/web3/events/Event.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/src/web3/nft/NFT.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/src/web3/oprate/Oprate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tayijs/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Vue Composition API Component" />
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2a9uG3MvNtg8lJN3Vz6Xho8bKAN" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Debug",
-    "Application.TestSystem.executor": "Debug",
-    "Maven.contractDemo [package].executor": "Run",
-    "Maven.tayi [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main.executor": "Run",
-    "Spring Boot.TayiApplication.executor": "Debug",
-    "Spring Boot.TestNft.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/小野喵/Desktop/tayi/tayijs/src/web3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\小野喵\\Desktop\\tayi\\tayi_web_test\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.SocketClientService.executor": "Run"
-  },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
-    ]
-  }
-}]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\小野喵\Desktop\tayi\tayijs\src\web3" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\小野喵\Desktop\tayi\tayijs\src\web3\nft" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="MicronautRunConfigurationType" />
-        <option value="QuarkusRunConfigurationType" />
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.TayiApplication">
-    <configuration name="SocketClientService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xymtop.tayi.core.p2p.server.SocketClientService" />
-      <module name="tayi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xymtop.tayi.core.p2p.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xymtop.tayi.core.vm.testsystem.TestSystem" />
-      <module name="tayi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xymtop.tayi.core.vm.testsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="应用程序.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xymtop.tayi.Main" />
       <module name="contractDemo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xymtop.tayi.Main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.xymtop.tayi.*" />
@@ -170,73 +33,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNft" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="tayi" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xymtop.tayi.test.TestNft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xymtop.tayi.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.SocketClientService" />
+        <item itemvalue="应用程序.Main" />
         <item itemvalue="Spring Boot.TayiApplication" />
-        <item itemvalue="Spring Boot.TestNft" />
-        <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="1d9e9a02-c9b7-4068-9538-c6de9abd00d3" name="Changes" comment="" />
-      <created>1703743017336</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1703743017336</updated>
-      <workItem from="1703743019058" duration="21423000" />
-      <workItem from="1703829789286" duration="628000" />
-      <workItem from="1703864086369" duration="33474000" />
-      <workItem from="1703961207650" duration="889000" />
-      <workItem from="1703962377242" duration="15000" />
-      <workItem from="1703962652878" duration="3890000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VgoProject">
-    <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="DlvErrorBreakpoint" />
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="key" />
-        <PinnedItemInfo parentTag="java.lang.reflect.Method" memberName="returnType" />
-        <PinnedItemInfo parentTag="org.neo4j.kernel.impl.core.NodeEntity" memberName="nodeId" />
-        <PinnedItemInfo parentTag="org.neo4j.kernel.impl.core.NodeEntity" memberName="internalTransaction" />
-      </pinned-members>
-    </pin-to-top-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

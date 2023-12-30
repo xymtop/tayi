@@ -1,0 +1,11 @@
+
+[	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(Õ¿ò¡
+[	java:S112F"FDefine and throw a dedicated exception instead of using a generic one.(þñÈç
+A
+java:S1948#"&Make "cats" transient or serializable.(Ú´Ã‘ûÿÿÿÿ
+‚
+java:S1130>"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Õ¿ò¡
+‚
+java:S1130F"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(þñÈç
+U
+java:S1128"?Remove this unused import 'com.xymtop.tayi.core.cmd.CmdSystem'.(¨ÑÀå

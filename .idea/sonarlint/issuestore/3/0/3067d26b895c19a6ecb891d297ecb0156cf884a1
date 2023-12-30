@@ -1,24 +1,0 @@
-
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ä‘í€Ë1
-O
-java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ8Ç‘í€Ë1
-X	java:S125!"<This block of commented-out lines of code should be removed.(”ª±®8ø¯’¶Ë1
-_
-java:S1128"BRemove this unused import 'com.xymtop.tayi.core.nft.NFTAttribute'.(ñÇ²‰8ø¯’¶Ë1
-Z
-java:S1128"=Remove this unused import 'com.xymtop.tayi.core.nft.NFTData'.(•É8ø¯’¶Ë1
-_
-java:S1128"=Remove this unused import 'com.xymtop.tayi.core.nft.NFTMeta'.(»Ó‡øÿÿÿÿ8ø¯’¶Ë1
-P
-java:S1128"3Remove this unused import 'org.neo4j.graphdb.Node'.(Âú©ç8ø¯’¶Ë1
-R
-java:S1128"5Remove this unused import 'org.neo4j.graphdb.Result'.(Áù™ö8ø¯’¶Ë1
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ù¯’¶Ë1
-H
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8ù¯’¶Ë1
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ú¯’¶Ë1
-L
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8ú¯’¶Ë1
