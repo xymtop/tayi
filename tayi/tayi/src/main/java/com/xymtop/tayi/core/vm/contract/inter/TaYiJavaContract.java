@@ -1,6 +1,6 @@
 package com.xymtop.tayi.core.vm.contract.inter;
 
-import com.xymtop.tayi.core.vm.code.That;
+import com.xymtop.tayi.core.vm.code.that.That;
 import com.xymtop.tayi.core.vm.contract.ContractInfo;
 import lombok.Data;
 

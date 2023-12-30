@@ -1,8 +1,8 @@
-package com.xymtop.tayi.core.vm.code;
+package com.xymtop.tayi.core.vm.code.that;
 
 import com.xymtop.tayi.core.block.BlockChainUtils;
-import com.xymtop.tayi.core.block.BlockUtils;
 import com.xymtop.tayi.core.cmd.CmdSystem;
+import com.xymtop.tayi.core.graph.NFTUtils;
 import com.xymtop.tayi.core.oprate.execute.OperateEntityUtils;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,5 +19,8 @@ import org.springframework.stereotype.Component;
 @Data
 public class That {
     @Autowired
-    private CmdSystem cmdSystem;
+    NFTUtils nftUtils;
+
+    @Autowired
+    BlockUtils blockUtils;
 }

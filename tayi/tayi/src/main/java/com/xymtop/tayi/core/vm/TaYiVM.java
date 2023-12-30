@@ -2,13 +2,12 @@ package com.xymtop.tayi.core.vm;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.json.JSONObject;
-import com.xymtop.tayi.TayiApplication;
 import com.xymtop.tayi.core.store.DBUtils;
 import com.xymtop.tayi.core.system.Runner;
 import com.xymtop.tayi.core.utils.encrypt.HashUtils;
 import com.xymtop.tayi.core.utils.fileutils.FileUtils;
 import com.xymtop.tayi.core.utils.jsonutils.XJsonUtils;
-import com.xymtop.tayi.core.vm.code.That;
+import com.xymtop.tayi.core.vm.code.that.That;
 import com.xymtop.tayi.core.vm.contract.Contract;
 import com.xymtop.tayi.core.vm.contract.ContractInfo;
 import com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract;
@@ -20,10 +19,8 @@ import com.xymtop.tayi.core.vm.virtual.object.TaYiStreamUtils;
 import com.xymtop.tayi.core.vm.zip.ZIPUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

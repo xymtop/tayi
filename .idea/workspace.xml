@@ -5,90 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9e9a02-c9b7-4068-9538-c6de9abd00d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tayi/tayi/src/main/resources/block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/6927fe470e03f55c43dc15982e431c6f44fc0494" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/6927fe470e03f55c43dc15982e431c6f44fc0494" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72952553262d2cc7a996b3826797f6c26c6205dd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72952553262d2cc7a996b3826797f6c26c6205dd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81cbd02671ff689dd7397aebc66381ec40f094a5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81cbd02671ff689dd7397aebc66381ec40f094a5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a5b750e96f4b6605201b91c2ff832c36509cb43" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a5b750e96f4b6605201b91c2ff832c36509cb43" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcf9ec3f78ba493778e395834aba722361971846" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcf9ec3f78ba493778e395834aba722361971846" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/dea71d49921fe30afc2f30f3db1197774803e49c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/dea71d49921fe30afc2f30f3db1197774803e49c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33aae61ccca210430d231a72de98b03445ea5f5c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8bc5a0e8ddb6b30e888e9de4a9dcbe33f5fc342" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec082e2a43397e8aa8dadd8284541668b86abd30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/3/33aae61ccca210430d231a72de98b03445ea5f5c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/8/c8bc5a0e8ddb6b30e888e9de4a9dcbe33f5fc342" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/c/ec082e2a43397e8aa8dadd8284541668b86abd30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/code/that/BlockUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/code/that/NFTUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/code/that/impl/BlockUtilsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/code/that/impl/NFTUtilsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/0866e3b8706859deac3f28f0ae923ffb8a0d38ee" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/0866e3b8706859deac3f28f0ae923ffb8a0d38ee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/06661bc852345760ce2aa58abf02734a254ddf8cfb132deb527772533a4c3886/contract.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/06661bc852345760ce2aa58abf02734a254ddf8cfb132deb527772533a4c3886/data.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/3fecc93582debfd848a969fbb1392bea43c612a7491b4cd8a064329d6f08dd83/contract.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/3fecc93582debfd848a969fbb1392bea43c612a7491b4cd8a064329d6f08dd83/data.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/46ef55ecf4f45cc4a5b9f6412caf7785262d8e17f03a4b06ffc06fc324962709/contract.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/46ef55ecf4f45cc4a5b9f6412caf7785262d8e17f03a4b06ffc06fc324962709/data.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/70e8f7c0e6ba85833c9b9b915c6cf5585546dc4a10912d84d533c227c6a9552a/contract.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/70e8f7c0e6ba85833c9b9b915c6cf5585546dc4a10912d84d533c227c6a9552a/data.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/74def82568c08942134762d98100ebbeedb39583385145390f1680dd7141a827/contract.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/74def82568c08942134762d98100ebbeedb39583385145390f1680dd7141a827/data.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/a9ded01b85cb9dd371593f4fe92a354d2df4332656dddd53ec3130deef1fe195/contract.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/a9ded01b85cb9dd371593f4fe92a354d2df4332656dddd53ec3130deef1fe195/data.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/000789.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/000798.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/000800.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/data/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/LOCK" beforeDir="false" afterPath="$PROJECT_DIR$/data/LOCK" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/data/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/MANIFEST-000799" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000796" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000802" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.counts.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.counts.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.indexstats.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.indexstats.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.names.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.names.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.nodestore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.nodestore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.nodestore.db.labels.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.nodestore.db.labels.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.arrays.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.arrays.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.index.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.index.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.index.keys.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.index.keys.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.strings.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.propertystore.db.strings.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshipgroupstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshipgroupstore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshipgroupstore.degrees.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshipgroupstore.degrees.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshipstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshipstore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshiptypestore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshiptypestore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshiptypestore.db.names.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.relationshiptypestore.db.names.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.schemastore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.schemastore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/1/index-1" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/1/index-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/2/index-2" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/2/index-2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.counts.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.counts.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.indexstats.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.indexstats.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.names.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.names.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.nodestore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.nodestore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.nodestore.db.labels.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.nodestore.db.labels.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.arrays.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.arrays.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.index.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.index.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.index.keys.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.index.keys.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.strings.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.propertystore.db.strings.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshipgroupstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshipgroupstore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshipgroupstore.degrees.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshipgroupstore.degrees.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshipstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshipstore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshiptypestore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshiptypestore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshiptypestore.db.names.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.relationshiptypestore.db.names.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.schemastore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.schemastore.db.id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/3/index-3" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/3/index-3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/4/index-4" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/4/index-4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/7/index-7" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/7/index-7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/8/index-8" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/range-1.0/8/index-8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/1/index-1" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/1/index-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/2/index-2" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/2/index-2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/transactions/neo4j/checkpoint.0" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/transactions/neo4j/checkpoint.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/data/transactions/system/checkpoint.0" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/transactions/system/checkpoint.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tayi/contractDemo/src/main/java/com/xymtop/tayi/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/contractDemo/src/main/java/com/xymtop/tayi/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/VmApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/cmd/apis/VmApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/task/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/task/ScheduledTasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/TaYiVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/TaYiVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/JarEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/JarEnv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/JarLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/JarLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/object/ObjectStreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/object/ObjectStreamUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/object/TaYiStreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/object/TaYiStreamUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/code/That.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/code/that/That.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/contract/inter/TaYiJavaContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/contract/inter/TaYiJavaContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/contract/inter/TaYiJavaContractInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/contract/inter/TaYiJavaContractInter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/test/TestContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/test/TestContract.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Composition API Component" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -139,6 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
     "Spring Boot.TayiApplication.executor": "Debug",
     "Spring Boot.TestNft.executor": "Debug",
@@ -260,7 +199,7 @@
       <updated>1703743017336</updated>
       <workItem from="1703743019058" duration="21423000" />
       <workItem from="1703829789286" duration="628000" />
-      <workItem from="1703864086369" duration="26985000" />
+      <workItem from="1703864086369" duration="28396000" />
     </task>
     <servers />
   </component>
@@ -282,6 +221,11 @@
           <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/virtual/JarLoader.java</url>
           <line>54</line>
           <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/tayi/src/main/java/com/xymtop/tayi/core/vm/TaYiVM.java</url>
+          <line>481</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

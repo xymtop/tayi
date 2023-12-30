@@ -1,10 +1,10 @@
 package com.xymtop.tayi;
 
 
-import cn.hutool.json.JSONUtil;
 import com.xymtop.tayi.core.cmd.CmdSystem;
 import com.xymtop.tayi.core.nft.NFTMeta;
-import com.xymtop.tayi.core.vm.code.That;
+import com.xymtop.tayi.core.vm.code.that.BlockUtils;
+import com.xymtop.tayi.core.vm.code.that.That;
 import com.xymtop.tayi.core.vm.contract.ContractInfo;
 import com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract;
 import lombok.Data;
@@ -49,9 +49,9 @@ public class Application extends TaYiJavaContract implements Serializable {
     //获取单属性
     public String getHeight() throws Exception {
         That that = getThat();
-        CmdSystem cmdSystem = that.getCmdSystem();
-        long h = (long) cmdSystem.exec("getBlockHeight");
-        return "当前区块高度:" + h;
+        BlockUtils blockUtils = that.getBlockUtils();
+        long chainBlockHeight = blockUtils.getChainBlockHeight();
+        return "当前区块高度:" + chainBlockHeight;
     }
 
     //获取对象
