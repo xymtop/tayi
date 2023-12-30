@@ -1,0 +1,6 @@
+
+b	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(şñÈç8ª©¥ÔË1
+‰
+java:S1130:"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(şñÈç8·©¥ÔË1
+Q
+java:S1128"4Remove this unused import 'cn.hutool.json.JSONUtil'.( «ı¢8ˆÖË1

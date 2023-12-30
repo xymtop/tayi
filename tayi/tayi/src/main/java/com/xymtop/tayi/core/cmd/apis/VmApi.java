@@ -44,7 +44,7 @@ public class VmApi {
 
     //执行合约方法
     @CmdApiFun(cmd = "executeContract")
-    public Object executeContract(String id,String method, String... args) throws Exception {
+    public Object executeContract(String id,String method, Object... args) throws Exception {
 
         if (args == null||args.length==0){
             return taYiVM.call(id,method);

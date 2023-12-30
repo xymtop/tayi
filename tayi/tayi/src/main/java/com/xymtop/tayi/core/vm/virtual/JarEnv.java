@@ -36,6 +36,15 @@ public class JarEnv {
         this.loadedClass = instance.getClass();
     }
 
+    public JarEnv(String jarPath, String clazz) throws Exception {
+        jarPath = FileUtils.getResourcesFilePath(jarPath);
+        Class<?> aClass = JarLoader.loadClassFromJar(jarPath, clazz);
+
+        this.instance = aClass.newInstance();
+        this.loadedClass = instance.getClass();
+    }
+
+
     public Method[] getAllMethods() {
         return loadedClass.getDeclaredMethods();
     }

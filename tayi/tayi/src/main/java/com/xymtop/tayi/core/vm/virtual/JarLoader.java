@@ -42,4 +42,22 @@ public class JarLoader {
 
         return instances;
     }
+
+    /**
+     * 从指定 JAR 文件中加载类。
+     *
+     * @param jarFilePath JAR 文件的路径。
+     * @param className   要加载的类的完全限定名。
+     * @return 加载的类的 Class 对象。
+     * @throws Exception 如果无法加载类或文件不可读。
+     */
+    public static Class<?> loadClassFromJar(String jarFilePath, String className) throws Exception {
+        jarFilePath = FileUtils.getResourcesFilePath(jarFilePath);
+        File jarFile = new File(jarFilePath);
+        URL[] urls = { new URL("jar:file:" + jarFile.getAbsolutePath() + "!/") };
+        try (URLClassLoader classLoader = new URLClassLoader(urls)) {
+            return classLoader.loadClass(className);
+        }
+    }
+
 }

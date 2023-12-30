@@ -1,6 +1,7 @@
 package com.xymtop.tayi.core.vm;
 
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.json.JSONObject;
 import com.xymtop.tayi.TayiApplication;
 import com.xymtop.tayi.core.store.DBUtils;
 import com.xymtop.tayi.core.system.Runner;
@@ -14,6 +15,7 @@ import com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract;
 import com.xymtop.tayi.core.vm.ipfs.IPFSUtils;
 import com.xymtop.tayi.core.vm.virtual.ContractStore;
 import com.xymtop.tayi.core.vm.virtual.JarEnv;
+import com.xymtop.tayi.core.vm.virtual.object.ObjectStreamUtils;
 import com.xymtop.tayi.core.vm.virtual.object.TaYiStreamUtils;
 import com.xymtop.tayi.core.vm.zip.ZIPUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -215,6 +217,7 @@ public class TaYiVM implements Runner {
         //组装合约方法
         contractInfo =    getMethedsAndFields(contractInfo);
 
+
         //调用方法
         Method method = contractInfo.getMethods().get(funName);
 
@@ -227,13 +230,29 @@ public class TaYiVM implements Runner {
             throw new RuntimeException("合约初始化失败");
         }
 
+
         if (!(obj instanceof TaYiJavaContract)){
 
         }
 
 
+
         //注入当前环境
         setThat(obj);
+
+
+//        再次获取方法
+        method = obj.getClass().getDeclaredMethod(funName);
+        if (method == null){
+            throw new RuntimeException("类方法获取失败");
+        }
+        //判断是否是实践类
+        Class<?> methodDeclaringClass = method.getDeclaringClass();
+        if (!methodDeclaringClass.isInstance(obj)){
+
+            throw new Exception("不是实现类");
+
+        }
 
         Object result = method.invoke(obj);
 
@@ -300,7 +319,7 @@ public class TaYiVM implements Runner {
     }
 
     //写入状态
-    public String writeState(TaYiJavaContract contract,String contracDatatPath) throws IOException {
+    public String writeState(TaYiJavaContract contract,String contracDatatPath) throws IOException, IllegalAccessException {
         TaYiStreamUtils.serialize(contracDatatPath,contract);
 
         //上传数据文件
@@ -408,7 +427,10 @@ public class TaYiVM implements Runner {
 
         ContractInfo contractInfo = new ContractInfo();
 
-        JarEnv jarEnv = new JarEnv(filePath, TaYiJavaContract.class);
+        //判断数据文件是否存在
+        Object instance = ObjectStreamUtils.jsonObjectToBean(filePath, new JSONObject());
+
+        JarEnv jarEnv = new JarEnv(filePath, instance.getClass().getName());
 
         //获取方法
         Method[] allMethods = jarEnv.getAllMethods();
@@ -416,15 +438,13 @@ public class TaYiVM implements Runner {
         //获取参数
         Field[] allFields = jarEnv.getAllFields();
 
-        Object instance = jarEnv.getInstance();
-
 
 
         if (!(instance instanceof TaYiJavaContract)){
             throw new RuntimeException("不是标准合约");
         }
 
-        TaYiJavaContract contractObj = (TaYiJavaContract) instance;
+        Object contractObj =  instance;
 
         if (contractObj == null){
             throw new RuntimeException("合约构建失败");
@@ -433,7 +453,7 @@ public class TaYiVM implements Runner {
         contract.setClassName(contractObj.getClass().getName());
         contract.setContract(contractObj);
 
-        contractInfo = contractObj.info();
+        contractInfo = ((TaYiJavaContract) contractObj).info();
 
         for (Method method : allMethods) {
             contract.getMethods().put(method.getName(),method);
@@ -455,7 +475,7 @@ public class TaYiVM implements Runner {
                 throw new RuntimeException("获取合约状态数据失败");
             }
         }
-        Object contractData = TaYiStreamUtils.deserialize(dataPath);
+        Object contractData = TaYiStreamUtils.deserialize(filePath,dataPath);
 
         if (contractData instanceof TaYiJavaContract){
             contract.setContract(contractData);

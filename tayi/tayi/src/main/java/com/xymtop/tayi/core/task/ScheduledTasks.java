@@ -23,12 +23,13 @@ public class ScheduledTasks {
     Pool pool;
 
 
-    @Scheduled(fixedRate = 3000)
+    @Scheduled(fixedRate = 1000)
     public void scheduleTaskWithFixedRate() throws Exception {
 
-        if (pool.getSize()>10){
+        if (pool.getSize()<10){
+            executerEntrance.startPackage(PackageType.TIME);
+        }else{
             executerEntrance.startPackage(PackageType.NUM);
         }
-
     }
 }

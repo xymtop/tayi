@@ -1,7 +1,9 @@
 package com.xymtop.tayi;
 
 
+import cn.hutool.json.JSONUtil;
 import com.xymtop.tayi.core.cmd.CmdSystem;
+import com.xymtop.tayi.core.nft.NFTMeta;
 import com.xymtop.tayi.core.vm.code.That;
 import com.xymtop.tayi.core.vm.contract.ContractInfo;
 import com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract;
@@ -9,6 +11,7 @@ import lombok.Data;
 
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 //为了实现自己的合约内容并且调用，你只需要7步
 /*
@@ -24,6 +27,17 @@ import java.io.Serializable;
 @Data
 public class Application extends TaYiJavaContract implements Serializable {
 
+    private int count;
+
+
+    public int getName(){
+        return count;
+    }
+
+    public void  addName(){
+         count++;
+    }
+
     @Override
     public ContractInfo info() {
         ContractInfo info = new ContractInfo();
@@ -32,10 +46,26 @@ public class Application extends TaYiJavaContract implements Serializable {
     }
 
 
+    //获取单属性
     public String getHeight() throws Exception {
         That that = getThat();
         CmdSystem cmdSystem = that.getCmdSystem();
         long h = (long) cmdSystem.exec("getBlockHeight");
         return "当前区块高度:" + h;
     }
+
+    //获取对象
+    public  Object getObj() throws Exception {
+        //执行其他
+        NFTMeta nftMeta = new NFTMeta();
+
+        nftMeta.setTitle("TaYi");
+        nftMeta.setDescription("美好的生活从现在开始!");
+        nftMeta.setImage("https://upload.wikimedia.org/wikipedia/zh/4/4a/Xinjiang_University_logo.png");
+
+        nftMeta.setAttributes(Arrays.asList("hi","xju","xymtop"));
+
+        return nftMeta;
+    }
+
 }
