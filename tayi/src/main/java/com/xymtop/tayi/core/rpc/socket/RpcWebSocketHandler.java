@@ -1,9 +1,12 @@
 package com.xymtop.tayi.core.rpc.socket;
 
-import org.springframework.web.socket.CloseStatus;
-import org.springframework.web.socket.WebSocketHandler;
-import org.springframework.web.socket.WebSocketMessage;
-import org.springframework.web.socket.WebSocketSession;
+import cn.hutool.json.JSONUtil;
+import com.xymtop.tayi.core.utils.jsonutils.XJsonUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.socket.*;
+
+import java.io.IOException;
 
 /**
  * @author 小野喵
@@ -11,15 +14,42 @@ import org.springframework.web.socket.WebSocketSession;
  * @description: TODO
  * @date 2023/12/31 2:07
  */
+
+@Component
 public class RpcWebSocketHandler implements WebSocketHandler {
+
+
+
+    @Autowired
+    private SocketExec socketExec;
+
+
+    @Autowired
+    XJsonUtils xJsonUtils;
+
     @Override
     public void afterConnectionEstablished(WebSocketSession session) {
         // 连接建立后的逻辑
+
     }
 
     @Override
-    public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) {
-        // 处理收到的消息
+    public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) throws Exception {
+        //处理消息
+        Object payload = message.getPayload();
+
+        //判断是否为JSON格式
+        if (JSONUtil.isTypeJSON(String.valueOf(payload))){
+            Object executed = socketExec.executeTransaction(payload);
+
+            WebSocketMessage replaySocketMessage = new TextMessage(xJsonUtils.objToJson(executed));
+
+            //回复消息
+            session.sendMessage(replaySocketMessage);
+        }
+
+
+
     }
 
     @Override

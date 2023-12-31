@@ -1,4 +1,5 @@
+"use strict";
 // src/index.ts
-export function TaYiHi() {
+function TaYiHi() {
     return `Hi,TaYi!`;
 }

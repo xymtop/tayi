@@ -1,1 +1,1 @@
-export declare function TaYiHi(): string;
+declare function TaYiHi(): string;

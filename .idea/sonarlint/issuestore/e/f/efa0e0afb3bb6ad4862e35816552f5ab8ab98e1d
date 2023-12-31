@@ -1,0 +1,120 @@
+
+`	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ
+`	java:S112`"FDefine and throw a dedicated exception instead of using a generic one.(Šíí«úÿÿÿÿ
+`	java:S112g"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ
+`	java:S112x"FDefine and throw a dedicated exception instead of using a generic one.(Šíí«úÿÿÿÿ
+a	java:S112‰"FDefine and throw a dedicated exception instead of using a generic one.(«íøÿÿÿÿ
+a	java:S112œ"FDefine and throw a dedicated exception instead of using a generic one.(é£Ãäıÿÿÿÿ
+\	java:S112¢"FDefine and throw a dedicated exception instead of using a generic one.(×÷µà
+a	java:S112Ó"FDefine and throw a dedicated exception instead of using a generic one.(ìë¾—ûÿÿÿÿ
+a	java:S112Ş"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ
+a	java:S112ã"FDefine and throw a dedicated exception instead of using a generic one.(¨¤Á”ûÿÿÿÿ
+\	java:S112ô"FDefine and throw a dedicated exception instead of using a generic one.(§ Ü±
+[	java:S112ú"FDefine and throw a dedicated exception instead of using a generic one.(ÊîÚu
+\	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(†¥Ä¨
+a	java:S112š"FDefine and throw a dedicated exception instead of using a generic one.(Ÿ° èşÿÿÿÿ
+a	java:S112¨"FDefine and throw a dedicated exception instead of using a generic one.(˜‡¼Äøÿÿÿÿ
+\	java:S112¤"FDefine and throw a dedicated exception instead of using a generic one.(¾æÖÙ
+a	java:S112³"FDefine and throw a dedicated exception instead of using a generic one.(ìë¾—ûÿÿÿÿ
+a	java:S112¾"FDefine and throw a dedicated exception instead of using a generic one.(˜€åŠùÿÿÿÿ
+a	java:S112Ã"FDefine and throw a dedicated exception instead of using a generic one.(¨¤Á”ûÿÿÿÿ
+\	java:S112Ô"FDefine and throw a dedicated exception instead of using a generic one.(§ Ü±
+[	java:S112Ú"FDefine and throw a dedicated exception instead of using a generic one.(ÊîÚu
+a	java:S112ô"FDefine and throw a dedicated exception instead of using a generic one.(é£Ãäıÿÿÿÿ
+\	java:S112ú"FDefine and throw a dedicated exception instead of using a generic one.(×÷µà
+a	java:S112“"FDefine and throw a dedicated exception instead of using a generic one.(³ğ¬´ûÿÿÿÿ
+E
+java:S3740K"/Provide the parametrized type for this generic.(ïêˆù
+J
+java:S3740c"/Provide the parametrized type for this generic.(¿Áúáşÿÿÿÿ
+d
+java:S1192"MDefine a constant instead of duplicating this literal "contract.jar" 3 times.(•„¾
+e
+java:S1192‚"IDefine a constant instead of duplicating this literal "data.ser" 4 times.(úş–ûÿÿÿÿÿ
+k
+java:S1192O"PDefine a constant instead of duplicating this literal "æ–¹æ³•ä¸å­˜åœ¨" 4 times.(˜€åŠùÿÿÿÿ
+y
+java:S1488["^Immediately return this expression instead of assigning it to the temporary variable "result".(‹Š¼¥úÿÿÿÿ
+t
+java:S1488s"^Immediately return this expression instead of assigning it to the temporary variable "result".(óûÏâ
+[
+java:S2583¡"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢
+[
+java:S2583ù"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢
+X
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S68132"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S68135"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S68138"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813;"BRemove this field injection and use constructor injection instead.(êæÄŞ
+H
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
+N
+java:S1874U"3Remove this use of "newInstance"; it is deprecated.(¥Ï ªşÿÿÿÿ
+N
+java:S1874["3Remove this use of "newInstance"; it is deprecated.(‹Š¼¥úÿÿÿÿ
+N
+java:S1874m"3Remove this use of "newInstance"; it is deprecated.(¥Ï ªşÿÿÿÿ
+I
+java:S1874s"3Remove this use of "newInstance"; it is deprecated.(óûÏâ
+W
+java:S1854"@Remove this useless assignment to local variable "contractInfo".(í‹ç—
+=
+java:S1075€"&Remove this hard-coded path-delimiter.(ş´õ
+=
+java:S1075€"&Remove this hard-coded path-delimiter.(ş´õ
+O
+java:S1874™"3Remove this use of "newInstance"; it is deprecated.(ºÎ‡øúÿÿÿÿ
+?	java:S108ç")Either remove or fill this block of code.(ºä¼˜
+A	java:S106"+Replace this use of System.out by a logger.(öÜ”
+=
+java:S1075‰"&Remove this hard-coded path-delimiter.(ş´õ
+=
+java:S1075‰"&Remove this hard-coded path-delimiter.(ş´õ
+R
+java:S1854Ÿ"6Remove this useless assignment to local variable "id".(ò¶šıÿÿÿÿ
+F
+java:S1172š"*Remove this unused method parameter "obj".(Ÿ° èşÿÿÿÿ
+C
+java:S1481Ÿ"'Remove this unused "id" local variable.(ò¶šıÿÿÿÿ
+C
+java:S3011¦",This accessibility update should be removed.(˜ÂÓ˜
+C
+java:S3011ª",This accessibility bypass should be removed.(ì»‹á
+?	java:S108Ç")Either remove or fill this block of code.(ºä¼˜
+A	java:S106á"+Replace this use of System.out by a logger.(öÜ”
+F	java:S106ë"+Replace this use of System.out by a logger.(²¯ËÍøÿÿÿÿ
+A	java:S106õ"+Replace this use of System.out by a logger.(·ëÕÏ
+=
+java:S1075"&Remove this hard-coded path-delimiter.(”ß–Ñ
+=
+java:S1075"&Remove this hard-coded path-delimiter.(”ß–Ñ
+=
+java:S1075‚"&Remove this hard-coded path-delimiter.(ü¾Œó
+=
+java:S1075‚"&Remove this hard-coded path-delimiter.(ü¾Œó
+R	java:S125‘"<This block of commented-out lines of code should be removed.(»µé”
+A	java:S106²"+Replace this use of System.out by a logger.(‰ƒáº
+W
+java:S1854ä"@Remove this useless assignment to local variable "contractInfo".(í‹ç—
+Z
+java:S1854Ú"CRemove this useless assignment to local variable "contractAddress".(õÛÑ¬
+K
+java:S1481Ú"4Remove this unused "contractAddress" local variable.(õÛÑ¬
+B
+java:S1075à"&Remove this hard-coded path-delimiter.(Ã¾õ‹ûÿÿÿÿ
+B
+java:S1075à"&Remove this hard-coded path-delimiter.(Ã¾õ‹ûÿÿÿÿ
+=
+java:S1075á"&Remove this hard-coded path-delimiter.(ÍÆßĞ
+=
+java:S1075á"&Remove this hard-coded path-delimiter.(ÍÆßĞ
+A	java:S106¥"+Replace this use of System.out by a logger.(•Şœ™
+M
+java:S1144š"1Remove this unused private "writeRunData" method.(Ÿ° èşÿÿÿÿ

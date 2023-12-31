@@ -2,6 +2,7 @@ package com.xymtop.tayi.core.oprate.execute;
 
 import com.xymtop.tayi.core.oprate.OperateEntity;
 import com.xymtop.tayi.core.oprate.OperateMessage;
+import com.xymtop.tayi.core.oprate.OperateType;
 import com.xymtop.tayi.core.oprate.builder.OperateEntityBuilder;
 import com.xymtop.tayi.core.oprate.builder.OperateMessageBuilder;
 import com.xymtop.tayi.core.pool.PoolItem;
@@ -37,11 +38,18 @@ public class OperateEntrance {
     private OperateEntityUtils operateEntityUtils;
 
     //处理操作消息
-    public String execute(String msg) throws Exception {
+    public Object execute(String msg) throws Exception {
         //构建消息体
         OperateMessage operateMessage = operateMessageBuilder.build(msg);
          //构建操作数据实体
         OperateEntity operateEntity = operateEntityBuilder.build(operateMessage);
+
+        //到这一步已经构建了查询的模式，根据不同的模式进行查询
+        if (operateEntity.getOperateType()== OperateType.QUERY){
+
+            //如果只是一个查询请求，直接在这里处理即可，不需要上链计算
+            return getResult(operateEntity);
+        }
 
         String poolItemUtilsHash = operateEntityUtils.getHash(operateEntity);
 
@@ -54,5 +62,18 @@ public class OperateEntrance {
 
         //返回可以查询的ID
         return poolItemUtilsHash;
+    }
+
+
+    //执行查询的操作，比如查询结果
+    public Object getResult(OperateEntity operate) throws Exception {
+
+        String operateId = operate.getOperateId();
+        if (operateId == null){
+            return "操作id缺失";
+        }
+        OperateEntity result = operateEntityUtils.getResult(operateId);
+
+        return result;
     }
 }

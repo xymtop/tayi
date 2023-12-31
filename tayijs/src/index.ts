@@ -1,4 +1,4 @@
 // src/index.ts
-export function TaYiHi(): string {
+function TaYiHi(): string {
     return `Hi,TaYi!`;
 }

@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/tayi/pom.xml" />
         <option value="$PROJECT_DIR$/contractDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-tayi/pom.xml" />
+        <option value="$PROJECT_DIR$/tayidemo/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

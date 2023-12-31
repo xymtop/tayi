@@ -50,27 +50,24 @@ public class OperateEntityBuilder implements Builder<OperateMessage, OperateEnti
         operateEntity.setSender(address);
 
 
-       //生成ID
-       String id = UUID.fastUUID().toString(true);
+        if (operateEntity.getOperateId()==null){
+            //生成ID
+            String id = UUID.fastUUID().toString(true);
 
-         //设置ID
-        operateEntity.setOperateId(id);
-
-
-
-       //判断是什么类型
-        if (operateEntity.getOperateType()== OperateType.ADD){
-
+            //设置ID
+            operateEntity.setOperateId(id);
         }
 
-        if (operateEntity.getOperateType()== OperateType.QUERY){
 
-        }
-
-        if (operateEntity.getOperateType()== OperateType.UPDATE){
-            operateEntity =   updateBuilder.build(operateEntity);
-        }
-
+//
+//       //判断是什么类型
+//        if (operateEntity.getOperateType()== OperateType.QUERY){
+//
+//        }
+//
+//        if (operateEntity.getOperateType()== OperateType.EXEC){
+//            operateEntity =   updateBuilder.build(operateEntity);
+//        }
 
         return operateEntity;
     }

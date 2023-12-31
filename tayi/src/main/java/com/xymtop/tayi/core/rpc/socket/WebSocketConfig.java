@@ -1,5 +1,6 @@
 package com.xymtop.tayi.core.rpc.socket;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.WebSocketHandler;
@@ -17,13 +18,13 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
 
+
+    @Autowired
+    private WebSocketHandler webSocketHandler;
+
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        registry.addHandler(rpcWebSocketHandler(), "/rpc").setAllowedOrigins("*");
+        registry.addHandler(webSocketHandler, "/rpc").setAllowedOrigins("*");
     }
 
-    @Bean
-    public WebSocketHandler rpcWebSocketHandler() {
-        return new RpcWebSocketHandler();
-    }
 }

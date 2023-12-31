@@ -33,32 +33,32 @@ public class BlockController {
     private OperateEntityUtils operateEntityUtils;
 
     //获取创世区块
-    @RequestMapping("/getGenesisBlock")
-    public Result getGenesisBlock() {
-        return Result.okData(blockService.getGenesisBlock());
-    }
-
-    //获取某个id的区块
-    @RequestMapping("/getBlock/{id}")
-    public Result getBlock(@PathVariable("id") long id) throws Exception {
-        return Result.okData(blockService.getBlock(id));
-    }
+//    @RequestMapping("/getGenesisBlock")
+//    public Result getGenesisBlock() {
+//        return Result.okData(blockService.getGenesisBlock());
+//    }
+//
+//    //获取某个id的区块
+//    @RequestMapping("/getBlock/{id}")
+//    public Result getBlock(@PathVariable("id") long id) throws Exception {
+//        return Result.okData(blockService.getBlock(id));
+//    }
 
     //执行交易
-    @RequestMapping("/executeTransaction")
-    public  Result executeTransaction(@RequestBody String msg) throws Exception {
-        return Result.ok(operateEntrance.execute(JSONUtil.parseObj(msg).getStr("msg")));
-    }
+//    @RequestMapping("/executeTransaction")
+//    public  Result executeTransaction(@RequestBody String msg) throws Exception {
+//        return Result.ok(operateEntrance.execute(JSONUtil.parseObj(msg).getStr("msg")));
+//    }
 
-    //获取交易结果
-    @RequestMapping("/getTransactionResult/{id}")
-    public Result getTransactionResult(@PathVariable("id") String id) throws Exception {
-        return Result.okData(operateEntityUtils.getResult(id));
-    }
-
-    //获取区块高度
-    @RequestMapping("/getBlockHeight")
-    public Result getBlockHeight() throws Exception {
-        return Result.okData(blockService.getBlockHeight());
-    }
+//    //获取交易结果
+//    @RequestMapping("/getTransactionResult/{id}")
+//    public Result getTransactionResult(@PathVariable("id") String id) throws Exception {
+//        return Result.okData(operateEntityUtils.getResult(id));
+//    }
+//
+//    //获取区块高度
+//    @RequestMapping("/getBlockHeight")
+//    public Result getBlockHeight() throws Exception {
+//        return Result.okData(blockService.getBlockHeight());
+//    }
 }

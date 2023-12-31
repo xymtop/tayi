@@ -7,13 +7,12 @@ import lombok.Getter;
 @Getter
 public enum OperateType {
 
-    //新增NFT
-    ADD("add"),
+    //执行类操作，需要共识
+    EXEC("exec"),
 
-   //    修改
-    UPDATE("update"),
 
-    //查询
+
+    //查询，不需要共识
     QUERY("query"),
 
     ;

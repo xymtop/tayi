@@ -1,0 +1,23 @@
+
+€
+java:S1488K"^Immediately return this expression instead of assigning it to the temporary variable "result".(Å‰×îüÿÿÿÿ8ÿœé‚Ì1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‹é‚Ì1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‹é‚Ì1
+_
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œé‚Ì1
+_
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8Œé‚Ì1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8é‚Ì1
+Y
+java:S1854<"<Remove this useless assignment to local variable "poolItem".(ÁŒŞÿ8é‚Ì1
+J
+java:S1481<"-Remove this unused "poolItem" local variable.(ÁŒŞÿ8‘é‚Ì1
+`
+java:S1128">Remove this unused import 'java.security.InvalidKeyException'.(ì£ğ»ÿÿÿÿÿ8“é‚Ì1
+e
+java:S1128"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾şÿÿÿÿ8“é‚Ì1
+Z
+java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃşŠ8“é‚Ì1

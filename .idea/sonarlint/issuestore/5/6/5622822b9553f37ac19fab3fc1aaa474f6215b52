@@ -1,5 +1,4 @@
 
-[	java:S112="FDefine and throw a dedicated exception instead of using a generic one.(±ùåþ
 X
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
 X
@@ -8,5 +7,15 @@ X
 java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄÞ
 H
 java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ
-‚
-java:S1130="lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(±ùåþ
+X	java:S125%"<This block of commented-out lines of code should be removed.(Îêñý8Ë÷ì‚Ì1
+X	java:S1251"<This block of commented-out lines of code should be removed.(Öûª„8 ¼ì‚Ì1
+X	java:S1257"<This block of commented-out lines of code should be removed.(ÿÝ—Ç8¨×ì‚Ì1
+Q
+java:S1128"4Remove this unused import 'cn.hutool.json.JSONUtil'.( «ý¢8£¼ì‚Ì1
+_
+java:S1128"BRemove this unused import 'com.xymtop.tayi.browser.entity.Result'.(ƒ†±ò8Ì÷ì‚Ì1
+s
+java:S1128
+"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅþÿÿÿÿ8Ì÷ì‚Ì1
+r
+java:S1128"PRemove this unused import 'org.springframework.web.bind.annotation.RequestBody'.(â­½Àýÿÿÿÿ8£¼ì‚Ì1
