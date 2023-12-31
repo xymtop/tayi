@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52aa1ec8-ff9f-49a6-96b3-000c241e8ade" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/book/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="52aa1ec8-ff9f-49a6-96b3-000c241e8ade" name="更改" comment="更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contractDemo/contractDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/contractDemo/contractDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/book/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/assets/image.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,7 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.TayiApplication.executor": "Debug",
     "Spring Boot.TayidemoApplication.executor": "Debug",
     "git-widget-placeholder": "main",
@@ -69,6 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\小野喵\\Desktop\\tayi\\tayi_web_test\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true",
     "应用程序.Main.executor": "Run"
@@ -155,12 +153,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703967411492</updated>
-      <workItem from="1703967414164" duration="12842000" />
+      <workItem from="1703967414164" duration="13439000" />
     </task>
+    <task id="LOCAL-00001" summary="更新">
+      <option name="closed" value="true" />
+      <created>1704042086899</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704042086899</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
