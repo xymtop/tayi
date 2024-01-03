@@ -1,0 +1,4 @@
+
+^typescript:S1854"";Remove this useless assignment to variable "operateResult".(ÐÜ°ñ8ªÄ§ÒÌ1
+btypescript:S1121""?Extract the assignment of "operateResult" from this expression.(ÐÜ°ñ8¬Ä§ÒÌ1
+Atypescript:S1250"Remove this commented out code.(‚Ù“’8¬Ä§ÒÌ1

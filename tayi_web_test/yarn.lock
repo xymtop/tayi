@@ -5382,10 +5382,14 @@ tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
 "tayijs@file:../tayijs":
-  version "1.0.2"
+  version "1.0.3"
   resolved "file:../tayijs"
   dependencies:
+    crypto-js "^4.2.0"
+    elliptic "^6.5.4"
     socket.io-client "^4.7.2"
+    sockjs-client "^1.6.1"
+    ws "^8.16.0"
 
 terser-webpack-plugin@^5.1.1, terser-webpack-plugin@^5.3.7:
   version "5.3.10"

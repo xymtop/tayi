@@ -100,7 +100,7 @@ public class BlockChainUtils {
         //区块高度加一
         blockChainHeightUtils.addBlockHeight();
 
-        System.out.println("区块高度为"+block.getBlockNumber()+"的区块，哈希值为 "+block.getHash()+" 已经写入区块链");
+//        System.out.println("区块高度为"+block.getBlockNumber()+"的区块，哈希值为 "+block.getHash()+" 已经写入区块链");
 
     }
 

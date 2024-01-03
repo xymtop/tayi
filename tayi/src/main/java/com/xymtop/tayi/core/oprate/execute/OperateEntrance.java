@@ -5,6 +5,7 @@ import com.xymtop.tayi.core.oprate.OperateMessage;
 import com.xymtop.tayi.core.oprate.OperateType;
 import com.xymtop.tayi.core.oprate.builder.OperateEntityBuilder;
 import com.xymtop.tayi.core.oprate.builder.OperateMessageBuilder;
+import com.xymtop.tayi.core.oprate.poll.OpratePool;
 import com.xymtop.tayi.core.pool.PoolItem;
 import com.xymtop.tayi.core.pool.builder.PoolItemBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,9 @@ public class OperateEntrance {
     @Autowired
     private PoolItemBuilder poolItemBuilder;
 
+    @Autowired
+    private OpratePool opratePool;
+
 
     @Autowired
     private OperateEntityUtils operateEntityUtils;
@@ -51,9 +55,12 @@ public class OperateEntrance {
             return getResult(operateEntity);
         }
 
-        String poolItemUtilsHash = operateEntityUtils.getHash(operateEntity);
+        String poolItemUtilsHash = operateEntity.getOperateHash();
 
-        operateEntity.setOperateHash(poolItemUtilsHash);
+
+
+
+//        operateEntity.setOperateHash(poolItemUtilsHash);
 
 
         //构建操作item

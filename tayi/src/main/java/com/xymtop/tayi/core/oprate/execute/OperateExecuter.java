@@ -49,6 +49,7 @@ public class OperateExecuter {
         //写入数据库
         dbUtils.put(entity.getOperateHash(),xJsonUtils.objToJson(entity));
 
+
         return receipt;
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "tayijs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TaYi区块链的提供者",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,10 +11,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/crypto-js": "^4.2.1",
+    "@types/elliptic": "^6.4.18",
     "@types/node": "^20.10.6",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "socket.io-client": "^4.7.2"
+    "crypto-js": "^4.2.0",
+    "elliptic": "^6.5.4",
+    "socket.io-client": "^4.7.2",
+    "sockjs-client": "^1.6.1",
+    "ws": "^8.16.0"
   }
 }

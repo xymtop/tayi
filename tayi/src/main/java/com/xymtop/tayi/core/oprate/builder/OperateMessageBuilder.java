@@ -45,6 +45,6 @@ public class OperateMessageBuilder implements Builder<String, OperateMessage> {
         //获取数据
         String data = operateMessage.getData();
 
-        return ecdsaUtil.verify(ecdsaUtil.convertStringToPublicKey(address), data.getBytes(), signature.getBytes());
+        return ecdsaUtil.verify(ecdsaUtil.convertStringToPublicKey(address), xJsonUtils.objToJson(data).getBytes(), signature.getBytes());
     }
 }

@@ -34,4 +34,9 @@ public class BlockStart implements Runner {
         start();
         System.out.println("区块链启动");
     }
+
+    @Override
+    public int getOrder() {
+        return 0;
+    }
 }

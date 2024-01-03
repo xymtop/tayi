@@ -1,0 +1,104 @@
+2024/01/03-21:58:04.207132 aeb8 RocksDB version: 6.20.3
+2024/01/03-21:58:04.207260 aeb8 Git sha 8608d75d85f8e1b3b64b73a4fb6d19baec61ba5c
+2024/01/03-21:58:04.207276 aeb8 Compile date 2021-05-07 18:16:49
+2024/01/03-21:58:04.207311 aeb8 DB SUMMARY
+2024/01/03-21:58:04.207324 aeb8 DB Session ID:  NTNI16OKDL5H04USC0FD
+2024/01/03-21:58:04.213228 aeb8 CURRENT file:  CURRENT
+2024/01/03-21:58:04.213260 aeb8 IDENTITY file:  IDENTITY
+2024/01/03-21:58:04.213328 aeb8 MANIFEST file:  MANIFEST-001305 size: 885 Bytes
+2024/01/03-21:58:04.213345 aeb8 SST files in data dir, Total Num: 1, files: 001309.sst 
+2024/01/03-21:58:04.213354 aeb8 Write Ahead Log file in data: 001306.log size: 37 ; 
+2024/01/03-21:58:04.213367 aeb8                         Options.error_if_exists: 0
+2024/01/03-21:58:04.213725 aeb8                       Options.create_if_missing: 1
+2024/01/03-21:58:04.213753 aeb8                         Options.paranoid_checks: 1
+2024/01/03-21:58:04.213761 aeb8                               Options.track_and_verify_wals_in_manifest: 0
+2024/01/03-21:58:04.213770 aeb8                                     Options.env: 000001F8E8C58120
+2024/01/03-21:58:04.213778 aeb8                                      Options.fs: WinFS
+2024/01/03-21:58:04.213787 aeb8                                Options.info_log: 000001F8E9069E60
+2024/01/03-21:58:04.213794 aeb8                Options.max_file_opening_threads: 16
+2024/01/03-21:58:04.213802 aeb8                              Options.statistics: 0000000000000000
+2024/01/03-21:58:04.213810 aeb8                               Options.use_fsync: 0
+2024/01/03-21:58:04.213817 aeb8                       Options.max_log_file_size: 0
+2024/01/03-21:58:04.213825 aeb8                  Options.max_manifest_file_size: 1073741824
+2024/01/03-21:58:04.213833 aeb8                   Options.log_file_time_to_roll: 0
+2024/01/03-21:58:04.213841 aeb8                       Options.keep_log_file_num: 1000
+2024/01/03-21:58:04.213848 aeb8                    Options.recycle_log_file_num: 0
+2024/01/03-21:58:04.213856 aeb8                         Options.allow_fallocate: 1
+2024/01/03-21:58:04.213864 aeb8                        Options.allow_mmap_reads: 0
+2024/01/03-21:58:04.213871 aeb8                       Options.allow_mmap_writes: 0
+2024/01/03-21:58:04.213879 aeb8                        Options.use_direct_reads: 0
+2024/01/03-21:58:04.213886 aeb8                        Options.use_direct_io_for_flush_and_compaction: 0
+2024/01/03-21:58:04.213894 aeb8          Options.create_missing_column_families: 0
+2024/01/03-21:58:04.213902 aeb8                              Options.db_log_dir: 
+2024/01/03-21:58:04.213909 aeb8                                 Options.wal_dir: data
+2024/01/03-21:58:04.213917 aeb8                Options.table_cache_numshardbits: 6
+2024/01/03-21:58:04.213925 aeb8                         Options.WAL_ttl_seconds: 0
+2024/01/03-21:58:04.213932 aeb8                       Options.WAL_size_limit_MB: 0
+2024/01/03-21:58:04.213940 aeb8                        Options.max_write_batch_group_size_bytes: 1048576
+2024/01/03-21:58:04.213948 aeb8             Options.manifest_preallocation_size: 4194304
+2024/01/03-21:58:04.213955 aeb8                     Options.is_fd_close_on_exec: 1
+2024/01/03-21:58:04.213963 aeb8                   Options.advise_random_on_open: 1
+2024/01/03-21:58:04.213970 aeb8                    Options.db_write_buffer_size: 0
+2024/01/03-21:58:04.213978 aeb8                    Options.write_buffer_manager: 000001F8E90EFD50
+2024/01/03-21:58:04.213986 aeb8         Options.access_hint_on_compaction_start: 1
+2024/01/03-21:58:04.213993 aeb8  Options.new_table_reader_for_compaction_inputs: 0
+2024/01/03-21:58:04.214001 aeb8           Options.random_access_max_buffer_size: 1048576
+2024/01/03-21:58:04.214008 aeb8                      Options.use_adaptive_mutex: 0
+2024/01/03-21:58:04.214016 aeb8                            Options.rate_limiter: 0000000000000000
+2024/01/03-21:58:04.214024 aeb8     Options.sst_file_manager.rate_bytes_per_sec: 0
+2024/01/03-21:58:04.214032 aeb8                       Options.wal_recovery_mode: 2
+2024/01/03-21:58:04.214040 aeb8                  Options.enable_thread_tracking: 0
+2024/01/03-21:58:04.214108 aeb8                  Options.enable_pipelined_write: 0
+2024/01/03-21:58:04.214122 aeb8                  Options.unordered_write: 0
+2024/01/03-21:58:04.214130 aeb8         Options.allow_concurrent_memtable_write: 1
+2024/01/03-21:58:04.214138 aeb8      Options.enable_write_thread_adaptive_yield: 1
+2024/01/03-21:58:04.214145 aeb8             Options.write_thread_max_yield_usec: 100
+2024/01/03-21:58:04.214153 aeb8            Options.write_thread_slow_yield_usec: 3
+2024/01/03-21:58:04.214161 aeb8                               Options.row_cache: None
+2024/01/03-21:58:04.214168 aeb8                              Options.wal_filter: None
+2024/01/03-21:58:04.214177 aeb8             Options.avoid_flush_during_recovery: 0
+2024/01/03-21:58:04.214185 aeb8             Options.allow_ingest_behind: 0
+2024/01/03-21:58:04.214192 aeb8             Options.preserve_deletes: 0
+2024/01/03-21:58:04.214200 aeb8             Options.two_write_queues: 0
+2024/01/03-21:58:04.214207 aeb8             Options.manual_wal_flush: 0
+2024/01/03-21:58:04.214214 aeb8             Options.atomic_flush: 0
+2024/01/03-21:58:04.214222 aeb8             Options.avoid_unnecessary_blocking_io: 0
+2024/01/03-21:58:04.214229 aeb8                 Options.persist_stats_to_disk: 0
+2024/01/03-21:58:04.214237 aeb8                 Options.write_dbid_to_manifest: 0
+2024/01/03-21:58:04.214245 aeb8                 Options.log_readahead_size: 0
+2024/01/03-21:58:04.214252 aeb8                 Options.file_checksum_gen_factory: Unknown
+2024/01/03-21:58:04.214260 aeb8                 Options.best_efforts_recovery: 0
+2024/01/03-21:58:04.214268 aeb8                Options.max_bgerror_resume_count: 2147483647
+2024/01/03-21:58:04.214275 aeb8            Options.bgerror_resume_retry_interval: 1000000
+2024/01/03-21:58:04.214283 aeb8             Options.allow_data_in_errors: 0
+2024/01/03-21:58:04.214291 aeb8             Options.db_host_id: __hostname__
+2024/01/03-21:58:04.214298 aeb8             Options.max_background_jobs: 2
+2024/01/03-21:58:04.214306 aeb8             Options.max_background_compactions: -1
+2024/01/03-21:58:04.214314 aeb8             Options.max_subcompactions: 1
+2024/01/03-21:58:04.214321 aeb8             Options.avoid_flush_during_shutdown: 0
+2024/01/03-21:58:04.214329 aeb8           Options.writable_file_max_buffer_size: 1048576
+2024/01/03-21:58:04.214336 aeb8             Options.delayed_write_rate : 16777216
+2024/01/03-21:58:04.214344 aeb8             Options.max_total_wal_size: 0
+2024/01/03-21:58:04.214352 aeb8             Options.delete_obsolete_files_period_micros: 21600000000
+2024/01/03-21:58:04.214359 aeb8                   Options.stats_dump_period_sec: 600
+2024/01/03-21:58:04.214367 aeb8                 Options.stats_persist_period_sec: 600
+2024/01/03-21:58:04.214375 aeb8                 Options.stats_history_buffer_size: 1048576
+2024/01/03-21:58:04.214382 aeb8                          Options.max_open_files: -1
+2024/01/03-21:58:04.214390 aeb8                          Options.bytes_per_sync: 0
+2024/01/03-21:58:04.214398 aeb8                      Options.wal_bytes_per_sync: 0
+2024/01/03-21:58:04.214405 aeb8                   Options.strict_bytes_per_sync: 0
+2024/01/03-21:58:04.214413 aeb8       Options.compaction_readahead_size: 0
+2024/01/03-21:58:04.214420 aeb8                  Options.max_background_flushes: -1
+2024/01/03-21:58:04.214446 aeb8 Compression algorithms supported:
+2024/01/03-21:58:04.214455 aeb8 	kZSTD supported: 1
+2024/01/03-21:58:04.214462 aeb8 	kSnappyCompression supported: 1
+2024/01/03-21:58:04.214470 aeb8 	kBZip2Compression supported: 0
+2024/01/03-21:58:04.214478 aeb8 	kZlibCompression supported: 1
+2024/01/03-21:58:04.214485 aeb8 	kLZ4Compression supported: 1
+2024/01/03-21:58:04.214493 aeb8 	kXpressCompression supported: 0
+2024/01/03-21:58:04.214500 aeb8 	kLZ4HCCompression supported: 1
+2024/01/03-21:58:04.214508 aeb8 	kZSTDNotFinalCompression supported: 1
+2024/01/03-21:58:04.214537 aeb8 Fast CRC32 supported: Supported on x86
+2024/01/03-21:58:04.215696 aeb8 [WARN] [db\db_impl\db_impl_open.cc:1843] Persisting Option File error: OK
+2024/01/03-21:58:04.215807 aeb8 [db\db_impl\db_impl.cc:463] Shutdown: canceling all background work
+2024/01/03-21:58:04.215871 aeb8 [db\db_impl\db_impl.cc:642] Shutdown complete

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
-  <component name="AdditionalModuleElements">
-    <content url="file://$MODULE_DIR$" dumb="true">
-      <excludeFolder url="file://$MODULE_DIR$/.idea/inspectionProfiles" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint" />
-    </content>
-  </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="4bfb2f95-8262-4ae4-ac85-cd8e79a4effa" />
+    <option name="uniqueId" value="b18d09b0-852c-4a3d-99fa-2c40549772d1" />
   </component>
 </module>

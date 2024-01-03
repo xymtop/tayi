@@ -1,0 +1,298 @@
+2024/01/02-19:36:31.142398 df8 RocksDB version: 6.20.3
+2024/01/02-19:36:31.142529 df8 Git sha 8608d75d85f8e1b3b64b73a4fb6d19baec61ba5c
+2024/01/02-19:36:31.142547 df8 Compile date 2021-05-07 18:16:49
+2024/01/02-19:36:31.142591 df8 DB SUMMARY
+2024/01/02-19:36:31.142607 df8 DB Session ID:  CG7Y9NJ1D2EQ2GX5OKQ7
+2024/01/02-19:36:31.149485 df8 CURRENT file:  CURRENT
+2024/01/02-19:36:31.149533 df8 IDENTITY file:  IDENTITY
+2024/01/02-19:36:31.149606 df8 MANIFEST file:  MANIFEST-001112 size: 509 Bytes
+2024/01/02-19:36:31.149626 df8 SST files in data dir, Total Num: 4, files: 001080.sst 001089.sst 001100.sst 001111.sst 
+2024/01/02-19:36:31.149636 df8 Write Ahead Log file in data: 001113.log size: 0 ; 
+2024/01/02-19:36:31.149652 df8                         Options.error_if_exists: 0
+2024/01/02-19:36:31.149923 df8                       Options.create_if_missing: 1
+2024/01/02-19:36:31.149938 df8                         Options.paranoid_checks: 1
+2024/01/02-19:36:31.149941 df8                               Options.track_and_verify_wals_in_manifest: 0
+2024/01/02-19:36:31.149945 df8                                     Options.env: 00000247FD966E70
+2024/01/02-19:36:31.149948 df8                                      Options.fs: WinFS
+2024/01/02-19:36:31.149952 df8                                Options.info_log: 00000247FDD9A900
+2024/01/02-19:36:31.149955 df8                Options.max_file_opening_threads: 16
+2024/01/02-19:36:31.149958 df8                              Options.statistics: 0000000000000000
+2024/01/02-19:36:31.149961 df8                               Options.use_fsync: 0
+2024/01/02-19:36:31.149964 df8                       Options.max_log_file_size: 0
+2024/01/02-19:36:31.149967 df8                  Options.max_manifest_file_size: 1073741824
+2024/01/02-19:36:31.149971 df8                   Options.log_file_time_to_roll: 0
+2024/01/02-19:36:31.149974 df8                       Options.keep_log_file_num: 1000
+2024/01/02-19:36:31.149977 df8                    Options.recycle_log_file_num: 0
+2024/01/02-19:36:31.149980 df8                         Options.allow_fallocate: 1
+2024/01/02-19:36:31.149983 df8                        Options.allow_mmap_reads: 0
+2024/01/02-19:36:31.149986 df8                       Options.allow_mmap_writes: 0
+2024/01/02-19:36:31.149989 df8                        Options.use_direct_reads: 0
+2024/01/02-19:36:31.149992 df8                        Options.use_direct_io_for_flush_and_compaction: 0
+2024/01/02-19:36:31.149995 df8          Options.create_missing_column_families: 0
+2024/01/02-19:36:31.149998 df8                              Options.db_log_dir: 
+2024/01/02-19:36:31.150001 df8                                 Options.wal_dir: data
+2024/01/02-19:36:31.150004 df8                Options.table_cache_numshardbits: 6
+2024/01/02-19:36:31.150008 df8                         Options.WAL_ttl_seconds: 0
+2024/01/02-19:36:31.150011 df8                       Options.WAL_size_limit_MB: 0
+2024/01/02-19:36:31.150014 df8                        Options.max_write_batch_group_size_bytes: 1048576
+2024/01/02-19:36:31.150017 df8             Options.manifest_preallocation_size: 4194304
+2024/01/02-19:36:31.150020 df8                     Options.is_fd_close_on_exec: 1
+2024/01/02-19:36:31.150023 df8                   Options.advise_random_on_open: 1
+2024/01/02-19:36:31.150026 df8                    Options.db_write_buffer_size: 0
+2024/01/02-19:36:31.150029 df8                    Options.write_buffer_manager: 00000247FDD6CDF0
+2024/01/02-19:36:31.150032 df8         Options.access_hint_on_compaction_start: 1
+2024/01/02-19:36:31.150035 df8  Options.new_table_reader_for_compaction_inputs: 0
+2024/01/02-19:36:31.150038 df8           Options.random_access_max_buffer_size: 1048576
+2024/01/02-19:36:31.150041 df8                      Options.use_adaptive_mutex: 0
+2024/01/02-19:36:31.150044 df8                            Options.rate_limiter: 0000000000000000
+2024/01/02-19:36:31.150048 df8     Options.sst_file_manager.rate_bytes_per_sec: 0
+2024/01/02-19:36:31.150051 df8                       Options.wal_recovery_mode: 2
+2024/01/02-19:36:31.150054 df8                  Options.enable_thread_tracking: 0
+2024/01/02-19:36:31.150097 df8                  Options.enable_pipelined_write: 0
+2024/01/02-19:36:31.150106 df8                  Options.unordered_write: 0
+2024/01/02-19:36:31.150109 df8         Options.allow_concurrent_memtable_write: 1
+2024/01/02-19:36:31.150112 df8      Options.enable_write_thread_adaptive_yield: 1
+2024/01/02-19:36:31.150115 df8             Options.write_thread_max_yield_usec: 100
+2024/01/02-19:36:31.150119 df8            Options.write_thread_slow_yield_usec: 3
+2024/01/02-19:36:31.150122 df8                               Options.row_cache: None
+2024/01/02-19:36:31.150125 df8                              Options.wal_filter: None
+2024/01/02-19:36:31.150128 df8             Options.avoid_flush_during_recovery: 0
+2024/01/02-19:36:31.150131 df8             Options.allow_ingest_behind: 0
+2024/01/02-19:36:31.150134 df8             Options.preserve_deletes: 0
+2024/01/02-19:36:31.150137 df8             Options.two_write_queues: 0
+2024/01/02-19:36:31.150140 df8             Options.manual_wal_flush: 0
+2024/01/02-19:36:31.150143 df8             Options.atomic_flush: 0
+2024/01/02-19:36:31.150146 df8             Options.avoid_unnecessary_blocking_io: 0
+2024/01/02-19:36:31.150149 df8                 Options.persist_stats_to_disk: 0
+2024/01/02-19:36:31.150152 df8                 Options.write_dbid_to_manifest: 0
+2024/01/02-19:36:31.150155 df8                 Options.log_readahead_size: 0
+2024/01/02-19:36:31.150158 df8                 Options.file_checksum_gen_factory: Unknown
+2024/01/02-19:36:31.150162 df8                 Options.best_efforts_recovery: 0
+2024/01/02-19:36:31.150165 df8                Options.max_bgerror_resume_count: 2147483647
+2024/01/02-19:36:31.150168 df8            Options.bgerror_resume_retry_interval: 1000000
+2024/01/02-19:36:31.150171 df8             Options.allow_data_in_errors: 0
+2024/01/02-19:36:31.150175 df8             Options.db_host_id: __hostname__
+2024/01/02-19:36:31.150179 df8             Options.max_background_jobs: 2
+2024/01/02-19:36:31.150182 df8             Options.max_background_compactions: -1
+2024/01/02-19:36:31.150185 df8             Options.max_subcompactions: 1
+2024/01/02-19:36:31.150188 df8             Options.avoid_flush_during_shutdown: 0
+2024/01/02-19:36:31.150191 df8           Options.writable_file_max_buffer_size: 1048576
+2024/01/02-19:36:31.150194 df8             Options.delayed_write_rate : 16777216
+2024/01/02-19:36:31.150197 df8             Options.max_total_wal_size: 0
+2024/01/02-19:36:31.150200 df8             Options.delete_obsolete_files_period_micros: 21600000000
+2024/01/02-19:36:31.150209 df8                   Options.stats_dump_period_sec: 600
+2024/01/02-19:36:31.150213 df8                 Options.stats_persist_period_sec: 600
+2024/01/02-19:36:31.150216 df8                 Options.stats_history_buffer_size: 1048576
+2024/01/02-19:36:31.150219 df8                          Options.max_open_files: -1
+2024/01/02-19:36:31.150230 df8                          Options.bytes_per_sync: 0
+2024/01/02-19:36:31.150235 df8                      Options.wal_bytes_per_sync: 0
+2024/01/02-19:36:31.150239 df8                   Options.strict_bytes_per_sync: 0
+2024/01/02-19:36:31.150243 df8       Options.compaction_readahead_size: 0
+2024/01/02-19:36:31.150246 df8                  Options.max_background_flushes: -1
+2024/01/02-19:36:31.150263 df8 Compression algorithms supported:
+2024/01/02-19:36:31.150267 df8 	kZSTD supported: 1
+2024/01/02-19:36:31.150270 df8 	kSnappyCompression supported: 1
+2024/01/02-19:36:31.150273 df8 	kBZip2Compression supported: 0
+2024/01/02-19:36:31.150276 df8 	kZlibCompression supported: 1
+2024/01/02-19:36:31.150279 df8 	kLZ4Compression supported: 1
+2024/01/02-19:36:31.150282 df8 	kXpressCompression supported: 0
+2024/01/02-19:36:31.150285 df8 	kLZ4HCCompression supported: 1
+2024/01/02-19:36:31.150288 df8 	kZSTDNotFinalCompression supported: 1
+2024/01/02-19:36:31.150312 df8 Fast CRC32 supported: Supported on x86
+2024/01/02-19:36:31.151673 df8 [db\version_set.cc:4627] Recovering from manifest file: data/MANIFEST-001112
+2024/01/02-19:36:31.151959 df8 [db\column_family.cc:598] --------------- Options for column family [default]:
+2024/01/02-19:36:31.151973 df8               Options.comparator: leveldb.BytewiseComparator
+2024/01/02-19:36:31.151976 df8           Options.merge_operator: None
+2024/01/02-19:36:31.151980 df8        Options.compaction_filter: None
+2024/01/02-19:36:31.151982 df8        Options.compaction_filter_factory: None
+2024/01/02-19:36:31.151985 df8  Options.sst_partitioner_factory: None
+2024/01/02-19:36:31.151988 df8         Options.memtable_factory: SkipListFactory
+2024/01/02-19:36:31.151991 df8            Options.table_factory: BlockBasedTable
+2024/01/02-19:36:31.152027 df8            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000247FB87AD60)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 00000247FD82E940
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+2024/01/02-19:36:31.152031 df8        Options.write_buffer_size: 67108864
+2024/01/02-19:36:31.152035 df8  Options.max_write_buffer_number: 2
+2024/01/02-19:36:31.152038 df8          Options.compression: Snappy
+2024/01/02-19:36:31.152041 df8                  Options.bottommost_compression: Disabled
+2024/01/02-19:36:31.152044 df8       Options.prefix_extractor: nullptr
+2024/01/02-19:36:31.152047 df8   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2024/01/02-19:36:31.152050 df8             Options.num_levels: 7
+2024/01/02-19:36:31.152053 df8        Options.min_write_buffer_number_to_merge: 1
+2024/01/02-19:36:31.152056 df8     Options.max_write_buffer_number_to_maintain: 0
+2024/01/02-19:36:31.152059 df8     Options.max_write_buffer_size_to_maintain: 0
+2024/01/02-19:36:31.152062 df8            Options.bottommost_compression_opts.window_bits: -14
+2024/01/02-19:36:31.152065 df8                  Options.bottommost_compression_opts.level: 32767
+2024/01/02-19:36:31.152068 df8               Options.bottommost_compression_opts.strategy: 0
+2024/01/02-19:36:31.152071 df8         Options.bottommost_compression_opts.max_dict_bytes: 0
+2024/01/02-19:36:31.152074 df8         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2024/01/02-19:36:31.152080 df8         Options.bottommost_compression_opts.parallel_threads: 1
+2024/01/02-19:36:31.152084 df8                  Options.bottommost_compression_opts.enabled: false
+2024/01/02-19:36:31.152087 df8         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2024/01/02-19:36:31.152090 df8            Options.compression_opts.window_bits: -14
+2024/01/02-19:36:31.152093 df8                  Options.compression_opts.level: 32767
+2024/01/02-19:36:31.152096 df8               Options.compression_opts.strategy: 0
+2024/01/02-19:36:31.152099 df8         Options.compression_opts.max_dict_bytes: 0
+2024/01/02-19:36:31.152102 df8         Options.compression_opts.zstd_max_train_bytes: 0
+2024/01/02-19:36:31.152105 df8         Options.compression_opts.parallel_threads: 1
+2024/01/02-19:36:31.152108 df8                  Options.compression_opts.enabled: false
+2024/01/02-19:36:31.152111 df8         Options.compression_opts.max_dict_buffer_bytes: 0
+2024/01/02-19:36:31.152115 df8      Options.level0_file_num_compaction_trigger: 4
+2024/01/02-19:36:31.152123 df8          Options.level0_slowdown_writes_trigger: 20
+2024/01/02-19:36:31.152128 df8              Options.level0_stop_writes_trigger: 36
+2024/01/02-19:36:31.152132 df8                   Options.target_file_size_base: 67108864
+2024/01/02-19:36:31.152136 df8             Options.target_file_size_multiplier: 1
+2024/01/02-19:36:31.152142 df8                Options.max_bytes_for_level_base: 268435456
+2024/01/02-19:36:31.152149 df8 Options.level_compaction_dynamic_level_bytes: 0
+2024/01/02-19:36:31.152153 df8          Options.max_bytes_for_level_multiplier: 10.000000
+2024/01/02-19:36:31.152158 df8 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2024/01/02-19:36:31.152161 df8 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2024/01/02-19:36:31.152164 df8 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2024/01/02-19:36:31.152167 df8 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2024/01/02-19:36:31.152170 df8 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2024/01/02-19:36:31.152173 df8 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2024/01/02-19:36:31.152176 df8 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2024/01/02-19:36:31.152179 df8       Options.max_sequential_skip_in_iterations: 8
+2024/01/02-19:36:31.152182 df8                    Options.max_compaction_bytes: 1677721600
+2024/01/02-19:36:31.152185 df8                        Options.arena_block_size: 8388608
+2024/01/02-19:36:31.152188 df8   Options.soft_pending_compaction_bytes_limit: 68719476736
+2024/01/02-19:36:31.152191 df8   Options.hard_pending_compaction_bytes_limit: 274877906944
+2024/01/02-19:36:31.152193 df8       Options.rate_limit_delay_max_milliseconds: 100
+2024/01/02-19:36:31.152196 df8                Options.disable_auto_compactions: 0
+2024/01/02-19:36:31.152201 df8                        Options.compaction_style: kCompactionStyleLevel
+2024/01/02-19:36:31.152205 df8                          Options.compaction_pri: kMinOverlappingRatio
+2024/01/02-19:36:31.152208 df8 Options.compaction_options_universal.size_ratio: 1
+2024/01/02-19:36:31.152211 df8 Options.compaction_options_universal.min_merge_width: 2
+2024/01/02-19:36:31.152214 df8 Options.compaction_options_universal.max_merge_width: 4294967295
+2024/01/02-19:36:31.152217 df8 Options.compaction_options_universal.max_size_amplification_percent: 200
+2024/01/02-19:36:31.152220 df8 Options.compaction_options_universal.compression_size_percent: -1
+2024/01/02-19:36:31.152223 df8 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2024/01/02-19:36:31.152226 df8 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2024/01/02-19:36:31.152229 df8 Options.compaction_options_fifo.allow_compaction: 0
+2024/01/02-19:36:31.152237 df8                   Options.table_properties_collectors: 
+2024/01/02-19:36:31.152240 df8                   Options.inplace_update_support: 0
+2024/01/02-19:36:31.152243 df8                 Options.inplace_update_num_locks: 10000
+2024/01/02-19:36:31.152246 df8               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2024/01/02-19:36:31.152250 df8               Options.memtable_whole_key_filtering: 0
+2024/01/02-19:36:31.152252 df8   Options.memtable_huge_page_size: 0
+2024/01/02-19:36:31.152255 df8                           Options.bloom_locality: 0
+2024/01/02-19:36:31.152258 df8                    Options.max_successive_merges: 0
+2024/01/02-19:36:31.152261 df8                Options.optimize_filters_for_hits: 0
+2024/01/02-19:36:31.152264 df8                Options.paranoid_file_checks: 0
+2024/01/02-19:36:31.152267 df8                Options.force_consistency_checks: 1
+2024/01/02-19:36:31.152270 df8                Options.report_bg_io_stats: 0
+2024/01/02-19:36:31.152273 df8                               Options.ttl: 2592000
+2024/01/02-19:36:31.152276 df8          Options.periodic_compaction_seconds: 0
+2024/01/02-19:36:31.152279 df8                    Options.enable_blob_files: false
+2024/01/02-19:36:31.152282 df8                        Options.min_blob_size: 0
+2024/01/02-19:36:31.152286 df8                       Options.blob_file_size: 268435456
+2024/01/02-19:36:31.152350 df8                Options.blob_compression_type: NoCompression
+2024/01/02-19:36:31.152356 df8       Options.enable_blob_garbage_collection: false
+2024/01/02-19:36:31.152361 df8   Options.blob_garbage_collection_age_cutoff: 0.250000
+2024/01/02-19:36:31.155394 df8 [db\version_set.cc:4675] Recovered from manifest file:data/MANIFEST-001112 succeeded,manifest_file_number is 1112, next_file_number is 1114, last_sequence is 86211, log_number is 1108,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2024/01/02-19:36:31.155420 df8 [db\version_set.cc:4684] Column family [default] (ID 0), log number is 1108
+2024/01/02-19:36:31.164193 df8 [db\version_set.cc:4119] Creating manifest 1116
+2024/01/02-19:36:31.207852 df8 EVENT_LOG_v1 {"time_micros": 1704198991207711, "job": 1, "event": "recovery_started", "wal_files": [1113]}
+2024/01/02-19:36:31.208039 df8 [db\db_impl\db_impl_open.cc:856] Recovering log #1113 mode 2
+2024/01/02-19:36:31.208958 df8 [db\version_set.cc:4119] Creating manifest 1117
+2024/01/02-19:36:31.230215 df8 EVENT_LOG_v1 {"time_micros": 1704198991230158, "job": 1, "event": "recovery_finished"}
+2024/01/02-19:36:31.258722 df8 [file\delete_scheduler.cc:77] Deleted file data/001113.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2024/01/02-19:36:31.279106 df8 [db\db_impl\db_impl_open.cc:1757] SstFileManager instance 00000247FDD07970
+2024/01/02-19:36:31.287509 df8 DB pointer 00000247FDDA3480
+2024/01/02-19:36:31.289252 b10 [db\db_impl\db_impl.cc:932] ------- DUMPING STATS -------
+2024/01/02-19:36:31.289313 b10 [db\db_impl\db_impl.cc:933] 
+** DB Stats **
+Uptime(secs): 0.1 total, 0.1 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 MB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      3/0    1.92 MB   0.8      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+  L1      1/0    3.96 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      4/0    5.88 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB
+
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      3/0    1.92 MB   0.8      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+  L1      1/0    3.96 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      4/0    5.88 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB
+
+Uptime(secs): 0.1 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+2024/01/02-19:41:55.303749 9598 [db\db_impl\db_impl.cc:463] Shutdown: canceling all background work
+2024/01/02-19:41:55.313599 9598 [db\db_impl\db_impl.cc:642] Shutdown complete

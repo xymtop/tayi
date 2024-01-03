@@ -38,9 +38,9 @@ java:S1488["^Immediately return this expression instead of assigning it to the 
 t
 java:S1488s"^Immediately return this expression instead of assigning it to the temporary variable "result".(óûÏâ
 [
-java:S2583¡"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢
-[
 java:S2583ù"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢
+[
+java:S2583¡"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢
 X
 java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ
 X
@@ -115,6 +115,7 @@ java:S1075à"&Remove this hard-coded path-delimiter.(Ã¾õ‹ûÿÿÿÿ
 java:S1075á"&Remove this hard-coded path-delimiter.(ÍÆßĞ
 =
 java:S1075á"&Remove this hard-coded path-delimiter.(ÍÆßĞ
-A	java:S106¥"+Replace this use of System.out by a logger.(•Şœ™
+\
+java:S1128"?Remove this unused import 'com.xymtop.tayi.core.system.Runner'.(•ç°à8áÀÈøÌ1
 M
 java:S1144š"1Remove this unused private "writeRunData" method.(Ÿ° èşÿÿÿÿ

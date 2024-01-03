@@ -34,7 +34,7 @@ import java.lang.reflect.Method;
 
 //类似于一种虚拟机制
 @Component
-public class TaYiVM implements Runner {
+public class TaYiVM  {
 
     //当前环境的That
     @Autowired
@@ -544,9 +544,5 @@ public class TaYiVM implements Runner {
 
 
 
-    @Override
-    public void run() throws Exception {
-        System.out.println("TaYiVM is running...");
 
-    }
 }

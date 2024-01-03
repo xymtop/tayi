@@ -1,0 +1,42 @@
+db:
+  filePath: data2
+
+block:
+  genesisBlockPath: genesis.json
+  isSync: true
+  version: 1
+  target: 1
+
+neo4j:
+  path: neo4j2
+
+tayi:
+  vm:
+    path: vm2
+    ipfs:
+      host: /ip4/127.0.0.1/tcp/5001
+    contract:
+      path: contracts2
+  network:
+    init:
+      ip: 127.0.0.1
+      port: 9999
+    socket:
+      port: 9998
+
+spring:
+  rsocket:
+    server:
+      port: 7546
+      transport: tcp
+
+server:
+  port: 8083
+
+
+dubbo:
+  application:
+    name: dubbo-demo
+  registry:
+    address=N/A  # 指定不使用注册中心
+

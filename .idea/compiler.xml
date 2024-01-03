@@ -7,18 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-starter-tayi" />
+        <module name="core" />
         <module name="tayi" />
-        <module name="tayidemo" />
+        <module name="traceability" />
         <module name="contractDemo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-starter-tayi" target="17" />
+      <module name="tayidemo" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="core" options="-parameters" />
       <module name="spring-boot-starter-tayi" options="-parameters" />
       <module name="tayi" options="-parameters" />
       <module name="tayidemo" options="-parameters" />
+      <module name="traceability" options="-parameters" />
     </option>
   </component>
 </project>

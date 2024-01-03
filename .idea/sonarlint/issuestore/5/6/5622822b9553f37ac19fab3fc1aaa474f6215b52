@@ -7,15 +7,15 @@ X
 java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ
 H
 java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
-X	java:S125%"<This block of commented-out lines of code should be removed.(Îêñı8Ë÷ì‚Ì1
-X	java:S1251"<This block of commented-out lines of code should be removed.(Öûª„8 ¼ì‚Ì1
-X	java:S1257"<This block of commented-out lines of code should be removed.(ÿİ—Ç8¨×ì‚Ì1
-Q
-java:S1128"4Remove this unused import 'cn.hutool.json.JSONUtil'.( «ı¢8£¼ì‚Ì1
-_
-java:S1128"BRemove this unused import 'com.xymtop.tayi.browser.entity.Result'.(ƒ†±ò8Ì÷ì‚Ì1
-s
+Q	java:S125%"<This block of commented-out lines of code should be removed.(Îêñı
+Q	java:S1251"<This block of commented-out lines of code should be removed.(Öûª„
+Q	java:S1257"<This block of commented-out lines of code should be removed.(ÿİ—Ç
+J
+java:S1128"4Remove this unused import 'cn.hutool.json.JSONUtil'.( «ı¢
+X
+java:S1128"BRemove this unused import 'com.xymtop.tayi.browser.entity.Result'.(ƒ†±ò
+l
 java:S1128
-"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ8Ì÷ì‚Ì1
-r
-java:S1128"PRemove this unused import 'org.springframework.web.bind.annotation.RequestBody'.(â­½Àıÿÿÿÿ8£¼ì‚Ì1
+"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ
+k
+java:S1128"PRemove this unused import 'org.springframework.web.bind.annotation.RequestBody'.(â­½Àıÿÿÿÿ

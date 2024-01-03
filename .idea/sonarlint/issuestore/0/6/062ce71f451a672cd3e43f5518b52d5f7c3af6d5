@@ -1,0 +1,16 @@
+
+g	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8³ÈäşÌ1
+L
+java:S1066="/Merge this if statement with the enclosing one.(öó¿8µÈäşÌ1
+l
+java:S2095&"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(Ÿ…Š•ÿÿÿÿÿ8ÎÈäşÌ1
+D
+java:S2189(""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ÎÈäşÌ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8ÑÈäşÌ1
+X	java:S125'"<This block of commented-out lines of code should be removed.(®ö±¥8Ì¶ÿÌ1
+X	java:S125-"<This block of commented-out lines of code should be removed.(ÀşÏö8Î¶ÿÌ1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8ÙÈäşÌ1
+E
+java:S1068"(Remove this unused "PORT" private field.(²ÎıÖ8ÙÈäşÌ1

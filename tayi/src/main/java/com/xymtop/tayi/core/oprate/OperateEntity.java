@@ -13,6 +13,7 @@ import lombok.Data;
 @Data
 public class OperateEntity {
 
+
     //操作编号
     private String operateId;
 

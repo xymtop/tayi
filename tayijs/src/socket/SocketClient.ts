@@ -1,31 +1,14 @@
-import { DefaultEventsMap } from '@socket.io/component-emitter';
-import io, {Socket} from 'socket.io-client';
 
 
-//socket不能为空
-let socket: Socket<DefaultEventsMap, DefaultEventsMap>  = io("ws://127.0.0.1:8081/rpc")
+let socket:WebSocket = new WebSocket('ws://127.0.0.1:8081');
 
 const newSocket = (ip:string)=>{
-   socket  = io(ip);
-   return socket
+    socket  = new WebSocket('ws://127.0.0.1:8081');
+    return socket
 }
 
-const connect = () => {
-    socket.connect();
-};
+const sendMsg = (msg:string)=>{
+    socket.send(msg)
+}
 
-const disconnect = () => {
-    if (socket.connected) {
-        socket.disconnect();
-    }
-};
-
-const onEvent = (eventName: any, callback: any) => {
-    socket.on(eventName, callback);
-};
-
-const emitEvent = (eventName: any, data: any) => {
-    socket.emit(eventName, data);
-};
-
-export  { newSocket,connect, disconnect, onEvent, emitEvent };
+export  { newSocket,sendMsg};

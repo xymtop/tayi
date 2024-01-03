@@ -1,18 +1,0 @@
-
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄÞ
-H
-java:S1135"2Complete the task associated to this TODO comment.(ž›ËÓ
-S
-java:S1854)"=Remove this useless assignment to local variable "signature".(Ù«’‰
-D
-java:S1481)".Remove this unused "signature" local variable.(Ù«’‰
-X	java:S125@"<This block of commented-out lines of code should be removed.(ÕÏ–í8ÚÊÿ‚Ì1
-f
-java:S1128"DRemove this unused import 'com.xymtop.tayi.core.oprate.OperateType'.(þÃÈ—ùÿÿÿÿ8ÚÊÿ‚Ì1
-e
-java:S1128"CRemove this unused import 'com.xymtop.tayi.core.oprate.OprateMeta'.(ø«²¡ÿÿÿÿÿ8¯ìÃ‚Ì1

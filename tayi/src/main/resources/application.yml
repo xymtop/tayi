@@ -17,6 +17,12 @@ tayi:
       host: /ip4/127.0.0.1/tcp/5001
     contract:
       path: contracts
+  network:
+    init:
+      ip: 127.0.0.1
+      port: 9998
+    socket:
+      port: 9999
 
 spring:
   rsocket:
@@ -33,3 +39,4 @@ dubbo:
     name: dubbo-demo
   registry:
     address=N/A  # 指定不使用注册中心
+

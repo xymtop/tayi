@@ -4,6 +4,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import java.security.*;
 import java.security.spec.ECGenParameterSpec;
+import java.util.Base64;
 
 /**
  * @author 小野喵
@@ -51,6 +52,11 @@ public class SECP256K1Util {
             KeyPair keyPair = SECP256K1Util.generateKeyPair();
             PrivateKey privateKey = keyPair.getPrivate();
             PublicKey publicKey = keyPair.getPublic();
+            String publicKeyString = Base64.getEncoder().encodeToString(keyPair.getPublic().getEncoded());
+            String privateKeyString = Base64.getEncoder().encodeToString(keyPair.getPrivate().getEncoded());
+
+            System.out.println("Public Key: " + publicKeyString);
+            System.out.println("Private Key: " + privateKeyString);
 
             // 创建测试消息
             String message = "This is a test message";
