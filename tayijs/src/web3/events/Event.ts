@@ -28,7 +28,7 @@ export class Event{
 
    //接收到操作执行的哈希值
     public onResultHash = (hash:string)=>{
-      console.log(hash)
+      // console.log(hash)
     }
 
     //获取到哈希的结果

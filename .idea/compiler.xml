@@ -24,7 +24,7 @@
       <module name="spring-boot-starter-tayi" options="-parameters" />
       <module name="tayi" options="-parameters" />
       <module name="tayidemo" options="-parameters" />
-      <module name="traceability" options="-parameters" />
+      <module name="traceability" options="" />
     </option>
   </component>
 </project>

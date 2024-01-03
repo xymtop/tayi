@@ -2,6 +2,7 @@ package com.xymtop.tayi.core.oprate.execute;
 
 import com.xymtop.tayi.core.oprate.OperateEntity;
 import com.xymtop.tayi.core.oprate.OperateMessage;
+import com.xymtop.tayi.core.oprate.OperateReceipt;
 import com.xymtop.tayi.core.oprate.OperateType;
 import com.xymtop.tayi.core.oprate.builder.OperateEntityBuilder;
 import com.xymtop.tayi.core.oprate.builder.OperateMessageBuilder;
@@ -36,6 +37,9 @@ public class OperateEntrance {
 
     @Autowired
     private OpratePool opratePool;
+
+    @Autowired
+    private OperateExecuter operateExecuter;
 
 
     @Autowired
@@ -75,7 +79,9 @@ public class OperateEntrance {
     //执行查询的操作，比如查询结果
     public Object getResult(OperateEntity operate) throws Exception {
 
-        String operateId = operate.getOperateId();
+        OperateReceipt receipt = operateExecuter.execute(operate);
+
+        String operateId = operate.getOperateHash();
         if (operateId == null){
             return "操作id缺失";
         }

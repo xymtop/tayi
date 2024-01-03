@@ -25,7 +25,7 @@ export class Event {
         };
         //接收到操作执行的哈希值
         this.onResultHash = (hash) => {
-            console.log(hash);
+            // console.log(hash)
         };
         //获取到哈希的结果
         this.OnResult = (resultData) => {

@@ -1,26 +1,32 @@
 
 y
-java:S1488R"^Immediately return this expression instead of assigning it to the temporary variable "result".(Å‰×îüÿÿÿÿ
+java:S1488X"^Immediately return this expression instead of assigning it to the temporary variable "result".(Å‰×îüÿÿÿÿ
 X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
 X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ
 X
-java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ
 X
-java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ
 _
 java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ô›òĞÌ1
+_
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ8å¾Î€Í1
 H
-java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
 R
-java:S1854C"<Remove this useless assignment to local variable "poolItem".(ÁŒŞÿ
-]	java:S125?"<This block of commented-out lines of code should be removed.(©…€…ûÿÿÿÿ8“×†İÌ1
+java:S1854G"<Remove this useless assignment to local variable "poolItem".(ÁŒŞÿ
+]	java:S125C"<This block of commented-out lines of code should be removed.(©…€…ûÿÿÿÿ8“×†İÌ1
 C
-java:S1481C"-Remove this unused "poolItem" local variable.(ÁŒŞÿ
+java:S1481G"-Remove this unused "poolItem" local variable.(ÁŒŞÿ
+X
+java:S1854R";Remove this useless assignment to local variable "receipt".(×Î‹ˆ8¯’Ï€Í1
+I
+java:S1481R",Remove this unused "receipt" local variable.(×Î‹ˆ8ü»Ï€Í1
 `
-java:S1128">Remove this unused import 'java.security.InvalidKeyException'.(ì£ğ»ÿÿÿÿÿ8÷ÁòÓÌ1
+java:S1128">Remove this unused import 'java.security.InvalidKeyException'.(ì£ğ»ÿÿÿÿÿ8÷ÁòÓÌ1
 e
-java:S1128"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾şÿÿÿÿ8÷ÁòÓÌ1
+java:S1128"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾şÿÿÿÿ8÷ÁòÓÌ1
 Z
-java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃşŠ8øÁòÓÌ1
+java:S1128"=Remove this unused import 'java.security.SignatureException'.(¦ÃşŠ8øÁòÓÌ1

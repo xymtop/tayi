@@ -2,6 +2,7 @@ package com.xymtop.tayi.core.vm;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.json.JSONObject;
+import cn.hutool.json.JSONUtil;
 import com.xymtop.tayi.core.store.DBUtils;
 import com.xymtop.tayi.core.system.Runner;
 import com.xymtop.tayi.core.utils.encrypt.HashUtils;
@@ -335,7 +336,7 @@ public class TaYiVM  {
 
 
 //        再次获取方法
-        method = obj.getClass().getDeclaredMethod(funName);
+        method = obj.getClass().getDeclaredMethod(method.getName(),method.getParameterTypes());
         if (method == null){
             throw new RuntimeException("类方法获取失败");
         }
@@ -345,6 +346,13 @@ public class TaYiVM  {
 
             throw new Exception("不是实现类");
 
+        }
+
+
+        //判断方法的参数列表
+        Class<?>[] parameterTypes = method.getParameterTypes();
+        for (int i = 0; i < parameterTypes.length; i++){
+            args[i] = JSONUtil.toBean(JSONUtil.toJsonStr(args[i]),parameterTypes[i]);
         }
 
         Object result = method.invoke(obj,args);

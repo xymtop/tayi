@@ -37,6 +37,12 @@ export class TaYi {
         this.buildOperate = (operateType, operateCmd, payload) => {
             return buildOperateNormal(this.user, operateType, operateCmd, payload);
         };
+        //部署合约
+        this.deploy = (contract) => __awaiter(this, void 0, void 0, function* () {
+            let operate = buildOperateNormal(this.user, "EXEC", "deployContract", contract);
+            let data = yield this.toSendOperate(operate);
+            return data.execResult.result;
+        });
         //调用合约
         this.call = (contract, funName, args) => __awaiter(this, void 0, void 0, function* () {
             let operate = null;
@@ -49,6 +55,17 @@ export class TaYi {
                 operate = this.buildOperateContractExecArgs(contract, funName, args);
             }
             //发送请求
+            let data = yield this.toSendOperate(operate);
+            return data.execResult.result;
+        });
+        this.buildQueryOperate = (cmd, args) => {
+            return buildOperateNormal(this.user, "QUERY", cmd, {
+                args: args
+            });
+        };
+        //发送查询
+        this.sendQuery = (cmd, args) => __awaiter(this, void 0, void 0, function* () {
+            let operate = this.buildQueryOperate(cmd, args);
             let data = yield this.toSendOperate(operate);
             return data.execResult.result;
         });

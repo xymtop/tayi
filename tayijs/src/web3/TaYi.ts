@@ -76,7 +76,7 @@ export class TaYi{
        })
     }
 
-    buildOperateContractExecArgs = (contract:string,funName:string,args:string[])=>{
+    buildOperateContractExecArgs = (contract:string,funName:string,args:Object[])=>{
         return  buildOperateNormal(this.user,"EXEC","executeContract",{
             id:contract,
             method:funName,
@@ -89,8 +89,15 @@ export class TaYi{
        return  buildOperateNormal(this.user,operateType,operateCmd,payload)
     }
 
+    //部署合约
+    deploy = async (contract: string) => {
+      let operate =   buildOperateNormal(this.user,"EXEC","deployContract",contract)
+        let data:OperateResult = await this.toSendOperate(operate)
+
+        return  data.execResult.result
+   }
     //调用合约
-    call = async (contract: string, funName: string, args?: string[]) => {
+    call = async (contract: string, funName: string, args?: Object[]) => {
 
         let operate = null;
 
@@ -106,6 +113,20 @@ export class TaYi{
         let data:OperateResult = await this.toSendOperate(operate)
 
         return  data.execResult.result
+    }
+
+
+    buildQueryOperate = (cmd:string,args?:string[])=>{
+        return  buildOperateNormal(this.user,"QUERY",cmd,{
+            args:args
+        })
+    }
+
+    //发送查询
+    sendQuery = async ( cmd: string, args?: string[]) => {
+      let operate =  this.buildQueryOperate(cmd,args);
+      let data:OperateResult = await this.toSendOperate(operate);
+      return  data.execResult.result
     }
 
 

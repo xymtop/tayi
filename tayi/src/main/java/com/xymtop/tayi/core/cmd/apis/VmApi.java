@@ -1,6 +1,8 @@
 package com.xymtop.tayi.core.cmd.apis;
 
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSON;
+import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.xymtop.tayi.core.cmd.apis.ann.CmdApi;
@@ -44,12 +46,16 @@ public class VmApi {
 
     //执行合约方法
     @CmdApiFun(cmd = "executeContract")
-    public Object executeContract(String id,String method, Object... args) throws Exception {
+    public Object executeContract(String id,String method, String args) throws Exception {
 
-        if (args == null||args.length==0){
+        if (args == null){
             return taYiVM.call(id,method);
         }
         //判断是否为无参函数
+        if(JSONUtil.isTypeJSONArray(args)){
+            Object[] objects = getArgs(args);
+            return  taYiVM.call(id,method,objects);
+        }
         return  taYiVM.call(id,method,args);
     }
 
@@ -73,7 +79,19 @@ public class VmApi {
         if (argsStr.equals("null")){
             argsStr = null;
         }
+
+
         return new Object[]{id,method,argsStr};
+    }
+
+    private  Object[] getArgs(String argsStr){
+        JSONArray jsonArray = JSONUtil.parseArray(argsStr);
+        Object[] args = new Object[jsonArray.size()];
+        for(int i=0;i<jsonArray.size();i++){
+            Object jsonObj = jsonArray.get(i);
+            args[i] = jsonObj;
+        }
+        return args;
     }
 //
 //    //获取合约信息
