@@ -104,6 +104,7 @@ import { checkWallet } from '../../web3-utils/wallet-utils'
 import {getAllUsers, getUserInfo} from "@/web3-utils/contracts/contracts-api/UserManager";
 import {getUser} from "@/web3-utils/contracts/contracts-api/DataItem";
 import {getWeb3} from "@/web3-utils/web3-init";
+import {getTaYi} from "@/web3-utils/tayi/TaYiUtils";
 
 export default defineComponent({
   setup() {
@@ -123,22 +124,24 @@ export default defineComponent({
 
     const loginSubmit = async () => {
       if (account.value.length==0){
-        account.value =await checkWallet()
-        const userInfo = await getUserInfo(account.value)
-        if (userInfo.nickname.length!=0){
-          userStore.token = account.value
-          await userStore.loadMenus()
-          await userStore.loadPermissions()
-          layer.msg("登录成功！欢迎您: "+userInfo.nickname,{icon:1})
-          router.push("/web3/userManage/profile")
-        }else {
-          //需要去注册信息
-          layer.msg("请注册或者完成信息！")
-          userStore.token = account.value
-          await userStore.loadMenus()
-          await userStore.loadPermissions()
-          router.push("/web3/userManage/profile")
-        }
+        // account.value =await checkWallet()
+        // const userInfo = await getUserInfo(account.value)
+        // if (userInfo.nickname.length!=0){
+        //   userStore.token = account.value
+        //   await userStore.loadMenus()
+        //   await userStore.loadPermissions()
+        //   layer.msg("登录成功！欢迎您: "+userInfo.nickname,{icon:1})
+        //   router.push("/web3/userManage/profile")
+        // }else {
+        //   //需要去注册信息
+        //   layer.msg("请注册或者完成信息！")
+        //   userStore.token = account.value
+        //   await userStore.loadMenus()
+        //   await userStore.loadPermissions()
+        //   router.push("/web3/userManage/profile")
+        // }
+
+       // let tayi =    getTaYi()
 
       }
 

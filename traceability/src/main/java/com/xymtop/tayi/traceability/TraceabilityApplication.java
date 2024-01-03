@@ -23,5 +23,4 @@ public class TraceabilityApplication extends TaYiJavaContract implements Seriali
 	}
 
 
-
 }

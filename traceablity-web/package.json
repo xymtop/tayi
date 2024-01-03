@@ -33,6 +33,7 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.0",
+    "tayijs": "^2.0.0",
     "v-contextmenu": "^3.0.0",
     "vue": "^3.3.4",
     "vue-audio-player": "^0.0.2",
