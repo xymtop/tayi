@@ -1,3 +1,11 @@
 
-G
-java:S1948"*Make "userList" transient or serializable.(Íþ‘»8ß”²„Í1
+X
+java:S1128"6Remove this unused import 'cn.hutool.json.JSONObject'.(¨ôÛˆùÿÿÿÿ8¥ƒõ…Í1
+Q
+java:S1128"4Remove this unused import 'cn.hutool.json.JSONUtil'.( «ý¢8¦ƒõ…Í1
+]
+java:S1128"ARemove this unused import 'com.xymtop.tayi.core.user.SystemUser'.(“£»c8¦ƒõ…Í1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¦ƒõ…Í1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8§ƒõ…Í1

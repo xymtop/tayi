@@ -352,7 +352,9 @@ public class TaYiVM  {
         //判断方法的参数列表
         Class<?>[] parameterTypes = method.getParameterTypes();
         for (int i = 0; i < parameterTypes.length; i++){
-            args[i] = JSONUtil.toBean(JSONUtil.toJsonStr(args[i]),parameterTypes[i]);
+            if (parameterTypes[i].isAssignableFrom(JSONObject.class)){
+                args[i] = JSONUtil.toBean(JSONUtil.toJsonStr(args[i]),parameterTypes[i]);
+            }
         }
 
         Object result = method.invoke(obj,args);

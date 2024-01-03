@@ -2,7 +2,7 @@ import {Oprate} from "./Oprate";
 import {getOperateDataPoolItem} from "./OperateDataPool";
 import {OperateResult} from "./OperateResult";
 
-const sendOperate = (socket:any,operate:Oprate):Promise<OperateResult>=> {
+const sendOperate = (socket:WebSocket,operate:Oprate):Promise<OperateResult>=> {
     return new Promise((resolve, reject) => {
         socket.send(JSON.stringify(operate))
         let id:string | undefined = operate.signature?.toString()

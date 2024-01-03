@@ -20,8 +20,8 @@ const send = async ()=>{
 
   // let user = new User("0x57146332153008169404945773936")
   // console.log(JSON.stringify([1,3,"1",user]))
-  let id = await tayi.deploy("QmeoARi7QMKngG98MaZAgQWtcCcUN6vfZNzj9NqmsJU87b")
-  let data =await tayi.call(id,"addUser",[tayi.user])
+  let id = await tayi.deploy("QmdVYMYbp3HpVRHkFdjBo4QyGkTGm8hYxi6Lr4Da35h16X")
+  let data =await tayi.call(id,"getUserList")
   console.log(data)
 }
 
