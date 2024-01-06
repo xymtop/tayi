@@ -2,10 +2,6 @@ package com.xymtop.tayi;
 
 
 
-import com.xymtop.tayi.core.system.SystemStatus;
-import com.xymtop.tayi.core.utils.apputils.AppUtils;
-import com.xymtop.tayi.core.vm.TaYiVM;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;

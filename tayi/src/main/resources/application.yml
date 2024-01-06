@@ -24,6 +24,9 @@ tayi:
     socket:
       port: 9999
 
+ai:
+  processPath:  process
+
 spring:
   rsocket:
     server:

@@ -35,9 +35,9 @@ public class SystemRunner {
 
         //设置app
         AppUtils.setApplicationContext(applicationContext);
-        if (SystemStatus.debug) {
-             testStarter.startTest();
-        }
+//        if (SystemStatus.debug) {
+//             testStarter.startTest();
+//        }
         Collection<Runner> values = applicationContext.getBeansOfType(Runner.class).values();
         values.stream().sorted((o1, o2) -> o1.getOrder() - o2.getOrder());
         for (Runner runner : values){
@@ -48,5 +48,7 @@ public class SystemRunner {
             }
 
         }
+
+        System.out.println("系统启动完毕！");
     }
 }

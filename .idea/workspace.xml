@@ -5,15 +5,107 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00c83657-b704-4213-812a-4a356c938f4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a65f75530d459c559dde1f22b3d3d584f91b2c01" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a65f75530d459c559dde1f22b3d3d584f91b2c01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08503293eb999f6e1aaaa7d48c328c3c2197a4f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0ce9c7c76bcec6b579235d23a7614266dc7d649b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/1579088a1ec032f5f4ab763452c1ae3718aba9b2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/262dcbfc6242141e6e8835b55138fa7dabbf6f1b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/3073ca4305cc30751473c117c5d0d9204a0c46db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31dc3fa167ce182d35452789b1afae675f3c7882" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35c8b2ff939c977c7308b4f78e622428b213faf1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/500fd9335d495ff505ada3c4b4da72a821ad049f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b9d3ffdc11c22820ce79da8cb6359a79272dcbe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/627bb99c5218d0b88ecd4ede4926b64b6ee8e2ee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/64489bd6ceac040f1da1a1e5177bf7552d56a6c2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/780dea4d7dfdd263237264a33c34dacb8cdd86fb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b0b4d7a37b0e9112b25ae19798919d72e4819ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e4b2f7c408fa81e4ae974f62f35e98d409a0d58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/977b20d581c409df6820ee51cdd34434b996668f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5a1aa26532234e802e9c6c66b216c5c64265978" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1e864f16a2b38719849d4c6b9dee897045766fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d09e428d5048d7bfcb09d7d6765de7a25106311a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f83bced7af7fc22a6a201d3fc73370a12dd77220" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f982babbd3d5810388e8cef4cbf86ff4cb2c886c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/08503293eb999f6e1aaaa7d48c328c3c2197a4f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0ce9c7c76bcec6b579235d23a7614266dc7d649b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/5/1579088a1ec032f5f4ab763452c1ae3718aba9b2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/6/262dcbfc6242141e6e8835b55138fa7dabbf6f1b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/0/3073ca4305cc30751473c117c5d0d9204a0c46db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/1/31dc3fa167ce182d35452789b1afae675f3c7882" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/5/35c8b2ff939c977c7308b4f78e622428b213faf1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/0/500fd9335d495ff505ada3c4b4da72a821ad049f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/b/5b9d3ffdc11c22820ce79da8cb6359a79272dcbe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/2/627bb99c5218d0b88ecd4ede4926b64b6ee8e2ee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/4/64489bd6ceac040f1da1a1e5177bf7552d56a6c2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/8/780dea4d7dfdd263237264a33c34dacb8cdd86fb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/b/7b0b4d7a37b0e9112b25ae19798919d72e4819ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8e4b2f7c408fa81e4ae974f62f35e98d409a0d58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/7/977b20d581c409df6820ee51cdd34434b996668f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a5a1aa26532234e802e9c6c66b216c5c64265978" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/1/b1e864f16a2b38719849d4c6b9dee897045766fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d09e428d5048d7bfcb09d7d6765de7a25106311a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/8/f83bced7af7fc22a6a201d3fc73370a12dd77220" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/9/f982babbd3d5810388e8cef4cbf86ff4cb2c886c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/test/testprocess.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/AiMainNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/AiRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/RunnerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/entity/RunParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/entity/RunResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/train/AiTrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/config/AiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/config/runconfig/ArgsType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/config/runconfig/ModelInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/config/runconfig/RunConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/config/runconfig/RunPlatform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/config/runconfig/TrainConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/connect/socket/MainSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/consensus/TimeAndSpaceVoteProof.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/managers/ModelManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/ai/transaction/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/starter/AiSystemStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/.idea/UniappTool.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/app.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/testprocess.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testprocess/testprocess.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0da089ba7ee906f4b0271b1b5ce0bd01c8c8cc64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12cb3b9f485fdc54db53e76d9e0ce8f6d8e713b6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12cb3b9f485fdc54db53e76d9e0ce8f6d8e713b6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d9fa41bf74eb3d607fff564818c8e52bcffa6cf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d9fa41bf74eb3d607fff564818c8e52bcffa6cf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e12562bc6a5e52b8c38f9cacc9505cb4c5382b2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e12562bc6a5e52b8c38f9cacc9505cb4c5382b2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/53860c331043ca4c752635048ff505dba28a5aec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b0e19c79a2bcf910d9b9002c2af45a4d36af0fd5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5368ff678714631349b1f623dbf12eeac1ad2f2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5368ff678714631349b1f623dbf12eeac1ad2f2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c450273948b0e658525e90c463dd94d386d24623" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c450273948b0e658525e90c463dd94d386d24623" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c52462709fcac3c85c3ea99c4e5d2acb408ca4ad" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c52462709fcac3c85c3ea99c4e5d2acb408ca4ad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3d1806a6dd8ff0676ed771a491113532cb4c017" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efa0e0afb3bb6ad4862e35816552f5ab8ab98e1d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efa0e0afb3bb6ad4862e35816552f5ab8ab98e1d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc8aea01ac26a78924aea82aadecfa8621a42360" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/d/0da089ba7ee906f4b0271b1b5ce0bd01c8c8cc64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/3/53860c331043ca4c752635048ff505dba28a5aec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/0/b0e19c79a2bcf910d9b9002c2af45a4d36af0fd5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/3/d3d1806a6dd8ff0676ed771a491113532cb4c017" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/c/fc8aea01ac26a78924aea82aadecfa8621a42360" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tayi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tayi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/000103.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contractDemo/contractDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/contractDemo/contractDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/000106.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/000110.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/000112.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/data/CURRENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/data/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/MANIFEST-000102" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000099" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/MANIFEST-000111" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000105" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/OPTIONS-000114" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.counts.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.counts.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.indexstats.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.indexstats.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.labeltokenstore.db.id" afterDir="false" />
@@ -33,6 +125,7 @@
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.schemastore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/neostore.schemastore.db.id" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/1/index-1" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/1/index-1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/2/index-2" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/neo4j/schema/index/token-lookup-1.0/2/index-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/id-buffer.tmp.0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.counts.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.counts.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.indexstats.db" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.indexstats.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.id" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/neostore.labeltokenstore.db.id" afterDir="false" />
@@ -57,13 +150,14 @@
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/1/index-1" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/1/index-1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/2/index-2" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/databases/system/schema/index/token-lookup-1.0/2/index-2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/data/transactions/neo4j/checkpoint.0" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/transactions/neo4j/checkpoint.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo4j/data/transactions/system/checkpoint.0" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/data/transactions/system/checkpoint.0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neo4j/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceability/src/main/java/com/xymtop/tayi/traceability/TraceabilityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceability/src/main/java/com/xymtop/tayi/traceability/TraceabilityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceability/src/main/java/com/xymtop/tayi/traceability/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceability/src/main/java/com/xymtop/tayi/traceability/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceablity-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/traceablity-web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceablity-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/traceablity-web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceablity-web/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/traceablity-web/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceablity-web/src/web3-utils/tayi/TaYiUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/traceablity-web/src/web3-utils/tayi/TaYiUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/SystemRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/SystemRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/TayiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/TayiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/p2p/P2PStartNodeGeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/p2p/P2PStartNodeGeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tayi/src/main/resources/json/msg/PingMsg.json" beforeDir="false" afterPath="$PROJECT_DIR$/tayi/src/main/resources/json/msg/PingMsg.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,12 +167,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
+        <option value="Python Script" />
         <option value="Enum" />
         <option value="Class" />
-        <option value="TypeScript File" />
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -104,15 +211,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DPoSExample.executor": "Debug",
     "Application.Main.executor": "Run",
     "Application.PoSTExample.executor": "Run",
     "Application.SECP256K1Util.executor": "Run",
     "Application.SocketClientService.executor": "Run",
-    "JAR Application.tayi-0.0.3.jar.executor": "Debug",
+    "Go Build.go build testprocess.go.executor": "Run",
+    "JAR Application.tayi-0.0.3.jar.executor": "Run",
     "Maven.tayi [org.springframework.boot:spring-boot-maven-plugin:3.2.1:build-image].executor": "Run",
     "Maven.tayi [package].executor": "Run",
     "Maven.traceability [compile].executor": "Run",
     "Maven.traceability [package].executor": "Run",
+    "Python.app.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -121,7 +231,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AiMainNetwork.executor": "Run",
     "Spring Boot.StartApp.executor": "Run",
     "Spring Boot.TayiApplication-main.executor": "Debug",
     "Spring Boot.TayiApplication.executor": "Debug",
@@ -129,14 +241,19 @@
     "Spring Boot.TayidemoApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/小野喵/Desktop/tayi",
+    "last_opened_file_path": "C:/Users/小野喵/Desktop/tayi/process/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.statistic.project.settings",
     "ts.external.directory.path": "C:\\Users\\小野喵\\Desktop\\tayi\\tayi_web_test\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -146,12 +263,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\小野喵\Desktop\tayi\process\test" />
       <recent name="C:\Users\小野喵\Desktop\tayi" />
       <recent name="C:\Users\小野喵\Desktop\tayi\tayi\src\main\resources" />
       <recent name="C:\Users\小野喵\Desktop\tayi\core\src\main\java\com\xymtop\tayi\" />
       <recent name="C:\Users\小野喵\Desktop\tayi\core\src\main\java\com\xymtop\tayi\core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\小野喵\Desktop\tayi\process\test" />
       <recent name="C:\Users\小野喵\Desktop\tayi\tayi\src\main\resources" />
       <recent name="C:\Users\小野喵\Desktop\tayi\tayi\src\main\resources\json\msg" />
       <recent name="C:\Users\小野喵\Desktop\tayi\tayi\src\main\resources\json\PingMsg" />
@@ -167,10 +286,37 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TayiApplication-main">
-    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="core" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xymtop.tayi.core.CoreApplication" />
+  <component name="RunManager" selected="Spring Boot.AiMainNetwork">
+    <configuration name="DPoSExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xymtop.tayi.core.consensus.dpos.DPoSExample" />
+      <module name="tayi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xymtop.tayi.core.consensus.dpos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="go build testprocess.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="tayi" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/testprocess/testprocess.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AiMainNetwork" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tayi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xymtop.tayi.core.ai.AiMainNetwork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xymtop.tayi.core.ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,6 +335,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AiMainNetwork" />
+        <item itemvalue="Go Build.go build testprocess.go" />
+        <item itemvalue="Application.DPoSExample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -208,7 +361,11 @@
       <workItem from="1704106518510" duration="5852000" />
       <workItem from="1704182189208" duration="30479000" />
       <workItem from="1704269531234" duration="20230000" />
-      <workItem from="1704294742520" duration="16200000" />
+      <workItem from="1704294742520" duration="18315000" />
+      <workItem from="1704387491188" duration="5817000" />
+      <workItem from="1704479724027" duration="9431000" />
+      <workItem from="1704549940812" duration="1368000" />
+      <workItem from="1704551358422" duration="9468000" />
     </task>
     <servers />
   </component>
@@ -237,10 +394,32 @@
           <line>354</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/consensus/dpos/DPoSExample.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/consensus/dpos/DPoSExample.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tayi/src/main/java/com/xymtop/tayi/core/consensus/dpos/DPoSExample.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="DlvErrorBreakpoint" />
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tayi$app.coverage" NAME="app Coverage Results" MODIFIED="1704551220756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
   </component>
 </project>

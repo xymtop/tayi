@@ -3,6 +3,10 @@
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$" />
   </component>
+  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+    <option name="activeLocationsIds" />
+  </component>
+  <component name="Go" enabled="true" />
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="3e884fcf-fe2f-45b7-a5b7-28bbae053410" />
   </component>

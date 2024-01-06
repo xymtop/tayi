@@ -38,8 +38,14 @@ public class P2PStartNodeGeter {
             NetNode netNode = new NetNode(startNode.getIp(),startNode.getPort());
             NodePoll.setNode(netNode);
 
-            Socket socket = Sender.getSender(startNode.getIp(), startNode.getPort());
-            MsgSender.sendMsg(socket,new Msg(MsgType.GETNODES,""));
+            try {
+                Socket socket = Sender.getSender(startNode.getIp(), startNode.getPort());
+                MsgSender.sendMsg(socket,new Msg(MsgType.GETNODES,""));
+            }catch (Exception e){
+
+                return;
+            }
+
         }
     }
 

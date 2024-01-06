@@ -1,5 +1,7 @@
 
-d
-java:S2094	"BRemove this empty class, write its code or make it an "interface".(Ê• Şùÿÿÿÿ8ìäıöÌ1
+c
+java:S1192""FDefine a constant instead of duplicating this literal "Node1" 3 times.(ÊúÂÓ8‘ò°×Í1
 O
 java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8ğäıöÌ1
+G	java:S106-"+Replace this use of System.out by a logger.(‡œ£Ñ8˜ó°×Í1
+L	java:S1062"+Replace this use of System.out by a logger.(É¡»òøÿÿÿÿ8™ó°×Í1
