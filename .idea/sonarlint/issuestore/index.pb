@@ -299,8 +299,6 @@ q
 Atraceablity-web/src/web3-utils/contracts/contracts/CommentNFT.sol,f\2\f2653ea089c17604b21381828ad7e273e7cc800a
 K
 traceablity-web/src/main.ts,3\1\31dc3fa167ce182d35452789b1afae675f3c7882
-9
-	ai/app.py,1\5\1579088a1ec032f5f4ab763452c1ae3718aba9b2
 }
 Mtayi/src/main/java/com/xymtop/tayi/core/oprate/builder/OprateMetaBuilder.java,6\2\627bb99c5218d0b88ecd4ede4926b64b6ee8e2ee
 r
@@ -316,8 +314,6 @@ O
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-k
-;tayi/src/main/java/com/xymtop/tayi/core/ai/MainNetwork.java,d\0\d09e428d5048d7bfcb09d7d6765de7a25106311a
 r
 Btayi/src/main/java/com/xymtop/tayi/core/starter/AiSystemStart.java,3\0\3073ca4305cc30751473c117c5d0d9204a0c46db
 m
@@ -336,14 +332,10 @@ Ltayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/RunnerUtils.java,2
 Qtayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/entity/RunResult.java,3\5\35c8b2ff939c977c7308b4f78e622428b213faf1
 Ä
 Ptayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/entity/RunParam.java,b\1\b1e864f16a2b38719849d4c6b9dee897045766fd
-Å
-Qtayi/src/main/java/com/xymtop/tayi/core/ai/aioperate/runner/entity/RunConfig.java,8\e\8e4b2f7c408fa81e4ae974f62f35e98d409a0d58
 o
 ?tayi/src/main/java/com/xymtop/tayi/core/ai/config/AiConfig.java,6\4\64489bd6ceac040f1da1a1e5177bf7552d56a6c2
 J
 testprocess/testprocess.go,3\4\34fca33f458f286a22daa172aa98d251356d3bec
-p
-@tayi/src/main/java/com/xymtop/tayi/core/ai/config/RunConfig.java,7\6\764ce08d0e8c16efea407ad3d3987798f77e855f
 z
 Jtayi/src/main/java/com/xymtop/tayi/core/ai/config/runconfig/RunConfig.java,5\0\5038bde11de13c9c77101520c1e47b4a75072e42
 |
@@ -356,9 +348,15 @@ u
 Etayi/src/main/java/com/xymtop/tayi/core/ai/managers/ModelManager.java,d\e\dea3e807468035529da86838ee798e04993e0cd6
 |
 Ltayi/src/main/java/com/xymtop/tayi/core/ai/config/runconfig/TrainConfig.java,6\9\69929bc108ef45c1a44c4cf3471239d75fb46bba
-v
-Ftayi/src/main/java/com/xymtop/tayi/core/ai/consensus/TimeAndSpace.java,5\f\5f7b03e217de0902994a1c7ee932c39fb196dd3e
 
 Otayi/src/main/java/com/xymtop/tayi/core/ai/consensus/TimeAndSpaceVoteProof.java,1\1\1197df0ccb55a71c2a0189a0f7f294115c6696bf
 ~
 Ntayi/src/main/java/com/xymtop/tayi/core/graph/builder/NFTGraphNodeBuilder.java,e\4\e4891ca7f93e17ccffe0eb062235ea200b2f4fb9
+s
+Ctayi/src/main/java/com/xymtop/tayi/core/block/entity/BlockHead.java,6\1\6127ff49b1c10bd5597817a0464362475a261d08
+o
+?tayi/src/main/java/com/xymtop/tayi/core/block/GenesisBlock.java,0\c\0c3be7ad97840a53f6597adc0492f9c4fd15eb8d
+k
+;tayi/src/main/java/com/xymtop/tayi/core/ai/proof/Proof.java,6\2\626354b31602ba784c82945a06ac3b239ef6cf71
+
+Otayi/src/main/java/com/xymtop/tayi/core/ai/proof/ZeroKnowledgeProofExample.java,5\4\547e5a6ff2cb1c05b08c2f11892b6bd777ce987e
