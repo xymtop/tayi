@@ -19,6 +19,9 @@ export declare class TaYi {
     call: (contract: string, funName: string, args?: Object[]) => Promise<any>;
     buildQueryOperate: (cmd: string, args?: string[]) => Oprate;
     sendQuery: (cmd: string, args?: string[]) => Promise<any>;
+    deployAi: (aiHash: string) => Promise<any>;
+    callAi: (aiHash: string, aiInput: Object) => Promise<any>;
+    trainAi: (aiHash: string, trainDataAddress: string) => Promise<any>;
 }
 declare let tayi: any;
 declare const newTaYi: (user: string, ip: string) => TaYi;

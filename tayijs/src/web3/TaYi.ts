@@ -129,6 +129,34 @@ export class TaYi{
       return  data.execResult.result
     }
 
+    //部署ai
+    deployAi = async (aiHash: string) => {
+       let operate:Oprate =  buildOperateNormal(this.user,"EXEC","deployAI",{
+            aiHash:aiHash
+        })
+        let data:OperateResult = await this.toSendOperate(operate);
+        return  data.execResult.result
+    }
+
+    //调用ai
+    callAi = async  (aiHash:string,aiInput:Object) =>{
+        let operate:Oprate =  buildOperateNormal(this.user,"EXEC","callAI",{
+            aiHash:aiHash,
+            aiInput:aiInput
+        })
+        let data:OperateResult = await this.toSendOperate(operate);
+        return  data.execResult.result
+    }
+
+    //训练ai
+    trainAi = async  (aiHash:string,trainDataAddress:string) =>{
+        let operate:Oprate =  buildOperateNormal(this.user,"EXEC","trainAi",{
+            aiHash:aiHash,
+            trainDataAddress:trainDataAddress
+        })
+        let data:OperateResult = await this.toSendOperate(operate);
+        return  data.execResult.result
+    }
 
 }
 

@@ -1,0 +1,5 @@
+{
+  "platform": "WIN",
+  "version": "1.0",
+  "mainProcess": "testprocess.exe"
+}

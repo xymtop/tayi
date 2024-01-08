@@ -1,0 +1,8 @@
+{
+  "platform": "WIN",
+  "version": "1.0",
+  "mainProcess": "testprocess.exe",
+  "needArgs": true,
+  "argsCount": 1,
+  "argsType": "TEXT"
+}

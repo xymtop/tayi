@@ -1,5 +1,7 @@
 package com.xymtop.tayi.core.ai.transaction;
 
+import com.xymtop.tayi.core.cmd.ExecResult;
+import com.xymtop.tayi.core.oprate.OperateReceipt;
 import lombok.Data;
 
 /**
@@ -12,5 +14,27 @@ import lombok.Data;
 
 @Data
 public class Transaction {
+
+    //id
+    String id;
+
+    //签名
+    String sign;
+
+
+    String hash;
+
+    //时间
+    long timestamp;
+
+    //交易的元数据
+
+    TransactionMeta transactionMeta;
+
+    //收据
+    OperateReceipt operateReceipt;
+
+    //执行结果
+    ExecResult execResult;
 
 }

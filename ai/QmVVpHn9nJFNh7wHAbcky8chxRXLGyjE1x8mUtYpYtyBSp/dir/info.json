@@ -1,0 +1,8 @@
+{
+  "name": "ExampleModel",
+  "version": "1.0",
+  "hash": "abcd1234efgh5678",
+  "runConfigPath": "run.json",
+  "trainConfigPath": "train.json",
+  "canTrain": true
+}

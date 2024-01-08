@@ -11,13 +11,23 @@ import lombok.Data;
 
 @Data
 public class ModelInfo {
+
     //名称
     private String name;
+
+    //模型版本
+    private String version;
 
     //模型哈希
     private String hash;
 
-    //模型配置路径
-    private String configPath;
+    //模型运行配置路径
+    private String runConfigPath;
+
+    //模型训练配置路径
+    private String trainConfigPath;
+
+    //是否可以训练
+    private boolean canTrain;
 
 }

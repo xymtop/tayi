@@ -80,4 +80,7 @@ public class Application extends TaYiJavaContract implements Serializable {
         return nftMeta;
     }
 
+
+
+
 }

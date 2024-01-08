@@ -23,4 +23,7 @@ public class That {
 
     @Autowired
     BlockUtils blockUtils;
+
+    @Autowired
+    AiUtils aiUtils;
 }

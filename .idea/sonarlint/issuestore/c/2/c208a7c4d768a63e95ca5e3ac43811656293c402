@@ -1,0 +1,11 @@
+
+}
+java:S1488%"aImmediately return this expression instead of assigning it to the temporary variable "runResult".(‹½Æ38ŠÁÃÑÎ1
+ƒ
+java:S4165$"fRemove this useless assignment; "runParam" already holds the assigned value along all execution paths.(«®è·8ÁÃÑÎ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8ÁÃÑÎ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŸÁÃÑÎ1
+N
+java:S1128"1Remove this unused import 'java.math.BigInteger'.(»Çâ€8¨ÁÃÑÎ1

@@ -20,9 +20,19 @@ const send = async ()=>{
 
   // let user = new User("0x57146332153008169404945773936")
   // console.log(JSON.stringify([1,3,"1",user]))
-  let id = await tayi.deploy("QmdVYMYbp3HpVRHkFdjBo4QyGkTGm8hYxi6Lr4Da35h16X")
-  let data =await tayi.call(id,"getUserList")
+  // let id = await tayi.deploy("QmdVYMYbp3HpVRHkFdjBo4QyGkTGm8hYxi6Lr4Da35h16X")
+  // let data =await tayi.call(id,"getUserList")
+  // console.log(data)
+
+
+  // let id = await  tayi.deployAi("QmVVpHn9nJFNh7wHAbcky8chxRXLGyjE1x8mUtYpYtyBSp")
+
+  // console.log(id)
+
+   let data = await tayi.callAi("QmT3xwZos5QzLTutv4k1b61hcVidD9KcrWzdf36DHW56Tp","QmSSnm1wDbnHyQMEe96Z2AHYrrJA9f6W2y2EgkwgR5MnP6")
+
   console.log(data)
+
 }
 
 const tayi = newTaYi("MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEK7TOwzqbriKma1KgulnG1zjTZNIXaPMtcdZyR8aup8ySUNGfscgecCHxh","ws://127.0.0.1:8081")

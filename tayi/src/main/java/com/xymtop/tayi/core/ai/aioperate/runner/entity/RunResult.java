@@ -1,6 +1,8 @@
 package com.xymtop.tayi.core.ai.aioperate.runner.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -12,6 +14,8 @@ import java.util.List;
  */
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class RunResult {
 
     //是否运行成功

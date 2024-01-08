@@ -1,0 +1,19 @@
+
+~
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "decodedPath".(ûêİıÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(Ó™€¸ÿÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
+V	java:S125"<This block of commented-out lines of code should be removed.(Õı‚øÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+_
+java:S1128"DRemove this unused import 'cn.hutool.core.io.resource.ResourceUtil'.(¿üì˜şÿÿÿÿ
+X
+java:S1128"BRemove this unused import 'org.apache.lucene.util.ResourceLoader'.(çÁ€‘
+D
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ
+n
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ
+W
+java:S1128"ARemove this unused import 'org.springframework.core.io.Resource'.(¹ÒÁ

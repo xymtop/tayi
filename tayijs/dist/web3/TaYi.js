@@ -69,6 +69,32 @@ export class TaYi {
             let data = yield this.toSendOperate(operate);
             return data.execResult.result;
         });
+        //部署ai
+        this.deployAi = (aiHash) => __awaiter(this, void 0, void 0, function* () {
+            let operate = buildOperateNormal(this.user, "EXEC", "deployAI", {
+                aiHash: aiHash
+            });
+            let data = yield this.toSendOperate(operate);
+            return data.execResult.result;
+        });
+        //调用ai
+        this.callAi = (aiHash, aiInput) => __awaiter(this, void 0, void 0, function* () {
+            let operate = buildOperateNormal(this.user, "EXEC", "callAI", {
+                aiHash: aiHash,
+                aiInput: aiInput
+            });
+            let data = yield this.toSendOperate(operate);
+            return data.execResult.result;
+        });
+        //训练ai
+        this.trainAi = (aiHash, trainDataAddress) => __awaiter(this, void 0, void 0, function* () {
+            let operate = buildOperateNormal(this.user, "EXEC", "trainAi", {
+                aiHash: aiHash,
+                trainDataAddress: trainDataAddress
+            });
+            let data = yield this.toSendOperate(operate);
+            return data.execResult.result;
+        });
         //获取连接
         this.socket = newSocket(ip);
         //构建用户

@@ -1,7 +1,9 @@
 package com.xymtop.tayi.core.starter;
 
 import com.xymtop.tayi.core.ai.AiMainNetwork;
+import com.xymtop.tayi.core.ai.proof.ZeroKnowledgeProofDemo;
 import com.xymtop.tayi.core.system.Runner;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Component;
 
@@ -14,9 +16,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AiSystemStart implements Runner {
+
     @Override
     public void run() throws Exception {
 
+//        proofDemo.test();
         System.out.println("AI System Start");
     }
 
