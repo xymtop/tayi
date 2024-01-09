@@ -29,10 +29,29 @@ const send = async ()=>{
 
   // console.log(id)
 
-   let data = await tayi.callAi("QmT3xwZos5QzLTutv4k1b61hcVidD9KcrWzdf36DHW56Tp","QmSSnm1wDbnHyQMEe96Z2AHYrrJA9f6W2y2EgkwgR5MnP6")
+   // let data = await tayi.callAi("QmT3xwZos5QzLTutv4k1b61hcVidD9KcrWzdf36DHW56Tp","QmSSnm1wDbnHyQMEe96Z2AHYrrJA9f6W2y2EgkwgR5MnP6")
 
-  console.log(data)
+  // console.log(data)
 
+
+  let data = await  tayi.deploy("QmZrgFgw6WyqndkZimusPdP6A8jraFxCNkfHP5k7xdCfyX")
+  console.log(await tayi.call(data,"creatNft",
+      {
+        "address": "0x123456789abcdef",
+        "owner": "0xa1b2c3d4e5f67890",
+        "meta": {
+          "title": "Mystical Artwork",
+          "description": "A unique digital art piece representing the fusion of technology and nature.",
+          "image": "https://example.com/images/mystical-artwork.jpg",
+          "attributes": {
+            "name": "hi"
+          }
+        },
+        "resource": "https://example.com/nft/mystical-artwork",
+        "time": "2024-01-09T12:00:00Z"
+      }
+
+  ))
 }
 
 const tayi = newTaYi("MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEK7TOwzqbriKma1KgulnG1zjTZNIXaPMtcdZyR8aup8ySUNGfscgecCHxh","ws://127.0.0.1:8081")

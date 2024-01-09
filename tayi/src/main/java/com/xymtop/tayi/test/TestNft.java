@@ -75,7 +75,7 @@ public class TestNft {
         nftMeta.setDescription("美好的生活从现在开始!");
         nftMeta.setImage("https://upload.wikimedia.org/wikipedia/zh/4/4a/Xinjiang_University_logo.png");
 
-        nftMeta.setAttributes(Arrays.asList("hi","xju","xymtop"));
+//        nftMeta.setAttributes(Arrays.asList("hi","xju","xymtop"));
 
         oprateMeta.setPayload(JSONUtil.toJsonStr(nftMeta));
 

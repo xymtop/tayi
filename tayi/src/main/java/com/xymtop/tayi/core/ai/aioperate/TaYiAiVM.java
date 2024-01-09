@@ -19,6 +19,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.*;
 
 /**
@@ -131,7 +132,7 @@ public class TaYiAiVM {
         boolean verified = verifier.verify(proverResult);
 
         if (verified){
-            return  proverResult.result;
+            return  (RunResult) proverResult.result;
         }
 
         RunResult runResult = new RunResult(false,null, new Exception("验证失败"));

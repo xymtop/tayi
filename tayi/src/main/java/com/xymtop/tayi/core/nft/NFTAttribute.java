@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class NFTAttribute {
         //属性名
-    private String traitType;
+    private String key;
       //属性值
-    private String traitValue;
+    private String value;
 }

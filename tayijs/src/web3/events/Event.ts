@@ -18,8 +18,12 @@ export class Event{
                       let  operateResult = buildOperateResult(result.data);
                       this.OnResult(operateResult)
                    }else {
+
                        this.onResultHash(result.data)
                    }
+               }else {
+
+
                }
 
            }

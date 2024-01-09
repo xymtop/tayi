@@ -1,15 +1,17 @@
 
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813+"BRemove this field injection and use constructor injection instead.(êæÄŞ
-H
-java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
-C
-java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ
+_
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8åÑŒûÎ1
+_
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8çÑŒûÎ1
+_
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ8èÑŒûÎ1
+_
+java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8êÑŒûÎ1
+_
+java:S68132"BRemove this field injection and use constructor injection instead.(êæÄŞ8ëÑŒûÎ1
+_
+java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8íÑŒûÎ1
+_
+java:S68139"BRemove this field injection and use constructor injection instead.(êæÄŞ8îÑŒûÎ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8òÑŒûÎ1

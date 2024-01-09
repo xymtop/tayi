@@ -1,0 +1,33 @@
+
+‰
+java:S1488U"gImmediately return this expression instead of assigning it to the temporary variable "nftRelationship".(Äöµ¥ÿÿÿÿÿ8ÂÊîÿÎ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÎÊîÿÎ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÏÊîÿÎ1
+^
+java:S18542"<Remove this useless assignment to local variable "nftData2".(á¥»“ÿÿÿÿÿ8ÓÊîÿÎ1
+_
+java:S18540"=Remove this useless assignment to local variable "deleteNFT".( Œ€Àøÿÿÿÿ8ÓÊîÿÎ1
+b
+java:S1854-"ERemove this useless assignment to local variable "nodeRelationships".(˜×Ù¥8äØˆ€Ï1
+Y
+java:S1854+"<Remove this useless assignment to local variable "allNodes".(ÁÖÚ…8ÓÊîÿÎ1
+\
+java:S1854)"?Remove this useless assignment to local variable "nftRelation".(ƒŸ‚š8ÓÊîÿÎ1
+M
+java:S1481)"0Remove this unused "nftRelation" local variable.(ƒŸ‚š8ÖÊîÿÎ1
+J
+java:S1481+"-Remove this unused "allNodes" local variable.(ÁÖÚ…8ÖÊîÿÎ1
+S
+java:S1481-"6Remove this unused "nodeRelationships" local variable.(˜×Ù¥8èØˆ€Ï1
+P
+java:S14810".Remove this unused "deleteNFT" local variable.( Œ€Àøÿÿÿÿ8ÖÊîÿÎ1
+O
+java:S14812"-Remove this unused "nftData2" local variable.(á¥»“ÿÿÿÿÿ8×ÊîÿÎ1
+Q
+java:S2864@"4Iterate over the "entrySet" instead of the "keySet".(øÛ€8ÚÊîÿÎ1
+U
+java:S1854O"8Remove this useless assignment to local variable "node".(ÑÇ§8ÛÊîÿÎ1
+F
+java:S1481O")Remove this unused "node" local variable.(ÑÇ§8İÊîÿÎ1

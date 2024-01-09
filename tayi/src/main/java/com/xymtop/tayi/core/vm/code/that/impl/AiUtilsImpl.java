@@ -3,6 +3,7 @@ package com.xymtop.tayi.core.vm.code.that.impl;
 import com.xymtop.tayi.core.ai.aioperate.TaYiAiVM;
 import com.xymtop.tayi.core.vm.code.that.AiUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ import java.io.IOException;
  */
 
 @Component
+@Lazy
 public class AiUtilsImpl implements AiUtils {
 
     @Autowired

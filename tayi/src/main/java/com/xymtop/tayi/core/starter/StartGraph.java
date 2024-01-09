@@ -63,6 +63,7 @@ public class StartGraph implements Runner {
 ////        System.out.println(result.size());
 
         System.out.println("StartGraph");
+        nftUtils.test();
     }
 
     @Override

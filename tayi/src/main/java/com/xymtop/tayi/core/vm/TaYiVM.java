@@ -11,6 +11,7 @@ import com.xymtop.tayi.core.utils.jsonutils.XJsonUtils;
 import com.xymtop.tayi.core.vm.code.that.That;
 import com.xymtop.tayi.core.vm.contract.Contract;
 import com.xymtop.tayi.core.vm.contract.ContractInfo;
+import com.xymtop.tayi.core.vm.contract.Event;
 import com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract;
 import com.xymtop.tayi.core.vm.ipfs.IPFSUtils;
 import com.xymtop.tayi.core.vm.virtual.ContractStore;
@@ -25,6 +26,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.List;
 
 /**
  * @author 小野喵
@@ -300,7 +302,7 @@ public class TaYiVM  {
     }
 
     //调用合约
-    public Object call(String id,String funName,Object ...args) throws Exception {
+    public Object call(String id,String funName,Object args) throws Exception {
         //获取合约信息
         Contract contractInfo = getContractInfo(id);
 
@@ -350,12 +352,12 @@ public class TaYiVM  {
 
 
         //判断方法的参数列表
-        Class<?>[] parameterTypes = method.getParameterTypes();
-        for (int i = 0; i < parameterTypes.length; i++){
-            if (parameterTypes[i].isAssignableFrom(JSONObject.class)){
-                args[i] = JSONUtil.toBean(JSONUtil.toJsonStr(args[i]),parameterTypes[i]);
-            }
-        }
+//        Class<?>[] parameterTypes = method.getParameterTypes();
+//        for (int i = 0; i < parameterTypes.length; i++){
+//            if (parameterTypes[i].isAssignableFrom(JSONObject.class)){
+//                args[i] = JSONUtil.toBean(JSONUtil.toJsonStr(args[i]),parameterTypes[i]);
+//            }
+//        }
 
         Object result = method.invoke(obj,args);
 

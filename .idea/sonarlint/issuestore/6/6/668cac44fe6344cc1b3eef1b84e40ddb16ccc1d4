@@ -1,9 +1,21 @@
 
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8š®¬ÏÎ1
-H
-java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÌĞè÷Î1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÎĞè÷Î1
+_
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞĞè÷Î1
+_
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÉÇåúÎ1
+O
+java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8ÓĞè÷Î1
+d
+java:S1128"GRemove this unused import 'com.xymtop.tayi.core.block.BlockChainUtils'.(¥âå÷8ƒş”ûÎ1
+\
+java:S1128"?Remove this unused import 'com.xymtop.tayi.core.cmd.CmdSystem'.(¨ÑÀå8„ş”ûÎ1
+W
+java:S1128":Remove this unused import 'com.xymtop.tayi.core.cmd.apis'.(ÒÛÌè8†ş”ûÎ1
+p
+java:S1128"SRemove this unused import 'com.xymtop.tayi.core.oprate.execute.OperateEntityUtils'.(â æ‚8‡ş”ûÎ1
+]
+java:S1128"ARemove this unused import 'com.xymtop.tayi.core.user.SystemUser'.(“£»c8ˆş”ûÎ1

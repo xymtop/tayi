@@ -1,5 +1,6 @@
 package com.xymtop.tayi.core.nft;
 
+import com.xymtop.tayi.core.graph.entity.NftLabel;
 import lombok.Data;
 
 import java.util.Date;
@@ -24,6 +25,9 @@ public class NFTData {
 
     //    资源链接
     private String resource;
+
+    //标识
+    private NftLabel nftLabel;
 
     //    创建时间
     private Date time;

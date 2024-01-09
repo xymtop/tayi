@@ -76,7 +76,7 @@ export class TaYi{
        })
     }
 
-    buildOperateContractExecArgs = (contract:string,funName:string,args:Object[])=>{
+    buildOperateContractExecArgs = (contract:string,funName:string,args:Object)=>{
         return  buildOperateNormal(this.user,"EXEC","executeContract",{
             id:contract,
             method:funName,
@@ -97,7 +97,7 @@ export class TaYi{
         return  data.execResult.result
    }
     //调用合约
-    call = async (contract: string, funName: string, args?: Object[]) => {
+    call = async (contract: string, funName: string, args?: Object) => {
 
         let operate = null;
 

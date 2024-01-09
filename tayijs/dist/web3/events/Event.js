@@ -20,6 +20,8 @@ export class Event {
                             this.onResultHash(result.data);
                         }
                     }
+                    else {
+                    }
                 }
             }
         };

@@ -1,12 +1,12 @@
 
 f
 java:S1104"PMake that a static final constant or non-public and provide accessors if needed.(Ùôõ
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÈ¯èÿÿÿÿÿ
-–
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ú¡­,
-œ
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À–®»ÿÿÿÿÿ
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÈ¯èÿÿÿÿÿ8½¶áûÎ1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ú¡­,8½¶áûÎ1
+£
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À–®»ÿÿÿÿÿ8½¶áûÎ1
 <
 java:S1948"&Make "that" transient or serializable.(Ùôõ
 H

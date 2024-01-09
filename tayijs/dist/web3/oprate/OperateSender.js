@@ -8,7 +8,12 @@ const sendOperate = (socket, operate) => {
         let intervalId = setInterval(() => {
             let data = getOperateDataPoolItem(id);
             if (data != undefined && data != null) {
-                resolve(data);
+                if (data.execResult != null && !data.execResult["resultFlag"]) {
+                    console.error(data.execResult);
+                }
+                else {
+                    resolve(data);
+                }
                 //清除定时
                 clearInterval(intervalId);
             }

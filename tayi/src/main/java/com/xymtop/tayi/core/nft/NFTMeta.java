@@ -2,6 +2,7 @@ package com.xymtop.tayi.core.nft;
 
 import lombok.Data;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -42,6 +43,6 @@ public class NFTMeta {
 //        图片
         private String image;
 //        属性
-        private List<String> attributes;
+        private HashMap<String,String> attributes;
 
 }

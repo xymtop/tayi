@@ -1,18 +1,25 @@
 package com.xymtop.tayi.core.block.builder;
 
+import cn.hutool.json.JSONUtil;
+import com.xymtop.tayi.browser.entity.Result;
 import com.xymtop.tayi.core.block.BlockHashUtils;
 import com.xymtop.tayi.core.block.BlockUtils;
 import com.xymtop.tayi.core.block.entity.Block;
 import com.xymtop.tayi.core.block.entity.BlockConfig;
 import com.xymtop.tayi.core.block.entity.BlockHead;
+import com.xymtop.tayi.core.cmd.ExecResult;
 import com.xymtop.tayi.core.inter.Builder;
 import com.xymtop.tayi.core.merkle.MerkleBuilder;
 import com.xymtop.tayi.core.oprate.OperateEntity;
 import com.xymtop.tayi.core.oprate.execute.OperateExecuter;
+import com.xymtop.tayi.core.oprate.poll.OpratePool;
 import com.xymtop.tayi.core.pool.PoolItem;
+import com.xymtop.tayi.core.vm.code.that.That;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.socket.TextMessage;
+import org.springframework.web.socket.WebSocketSession;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +49,13 @@ public class BlockBuilder implements Builder<List<PoolItem>, Block> {
     private BlockHashUtils blockHashUtils;
     @Autowired
     private OperateExecuter operateExecuter;
+
+
+    @Autowired
+    private OpratePool opratePool;
+
+    @Autowired
+    That that;
 
     @Override
     public Block build(List<PoolItem> source) throws Exception {
@@ -75,7 +89,27 @@ public class BlockBuilder implements Builder<List<PoolItem>, Block> {
 
         //执行操作
         for (OperateEntity operateEntity : operateEntityList){
-            operateExecuter.execute(operateEntity);
+            try {
+
+                //设置当前的环境的发送者
+
+                that.setSender(operateEntity.getSender());
+
+                operateExecuter.execute(operateEntity);
+            }catch (Exception e){
+                //操作执行错误,发送错误信息
+                WebSocketSession session = opratePool.get(operateEntity.getOperateHash());
+                if (session!=null){
+                    ExecResult execResult = new ExecResult();
+                    execResult.setResult(e);
+                    execResult.setResultFlag(false);
+                    execResult.setCmd(operateEntity.getOperateCmd());
+                    operateEntity.setExecResult(execResult);
+                    session.sendMessage(new TextMessage(JSONUtil.toJsonStr(Result.okData(operateEntity))));
+                }
+
+            }
+
         }
 
 

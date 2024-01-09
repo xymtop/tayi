@@ -52,11 +52,11 @@ public class VmApi {
             return taYiVM.call(id,method);
         }
         //判断是否为无参函数
-        if(JSONUtil.isTypeJSONArray(args)){
-            Object[] objects = getArgs(args);
-            return  taYiVM.call(id,method,objects);
+        if(JSONUtil.isTypeJSON(args)){
+            Object object = JSONUtil.parseObj(args);
+            return  taYiVM.call(id,method,object);
         }
-        return  taYiVM.call(id,method,args);
+       throw  new RuntimeException("函数或参数错误");
     }
 
 

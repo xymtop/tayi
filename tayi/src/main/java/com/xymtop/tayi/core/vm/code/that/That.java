@@ -2,10 +2,12 @@ package com.xymtop.tayi.core.vm.code.that;
 
 import com.xymtop.tayi.core.block.BlockChainUtils;
 import com.xymtop.tayi.core.cmd.CmdSystem;
-import com.xymtop.tayi.core.graph.NFTUtils;
+import com.xymtop.tayi.core.cmd.apis.*;
 import com.xymtop.tayi.core.oprate.execute.OperateEntityUtils;
+import com.xymtop.tayi.core.user.SystemUser;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 /**
@@ -17,13 +19,20 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
+@Lazy
 public class That {
-    @Autowired
-    NFTUtils nftUtils;
 
-    @Autowired
+    String sender;
+
+   @Autowired
+    AiUtils aiUtils;
+   @Autowired
     BlockUtils blockUtils;
 
-    @Autowired
-    AiUtils aiUtils;
+   @Autowired
+    NFTUtils nftUtils;
+
+   @Autowired
+    UserUtils userUtils;
+
 }

@@ -1,11 +1,19 @@
 package com.xymtop.tayi.core.graph;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.map.MapUtil;
+import com.xymtop.tayi.core.graph.entity.NodeRelationship;
+import com.xymtop.tayi.core.nft.NFTData;
+import lombok.Data;
 import org.neo4j.dbms.api.DatabaseManagementService;
 import org.neo4j.dbms.api.DatabaseManagementServiceBuilder;
 import org.neo4j.graphdb.*;
+import org.neo4j.internal.batchimport.cache.NodeRelationshipCache;
+
 import java.nio.file.Path;
 import java.util.*;
 
+@Data
 public class Neo4jUtils {
 
     private final GraphDatabaseService graphDb;
@@ -35,6 +43,54 @@ public class Neo4jUtils {
             return nodeId;
         }
     }
+
+
+    //创建两个nft之间的关系
+    public Relationship createNftRelationship(String startNodeId, String endNodeId, String relation) {
+        try (Transaction tx = graphDb.beginTx()) {
+            Node startNode = tx.findNode(Label.label(NFTUtils.LABEL), "address", startNodeId);
+            Node endNode = tx.findNode(Label.label(NFTUtils.LABEL), "address", endNodeId);
+            RelationshipType type = RelationshipType.withName(relation);
+            Relationship relationship = startNode.createRelationshipTo(endNode, type);
+            tx.commit();
+            return relationship;
+        }
+    }
+
+    //删除nft
+    public boolean deleteNftNode(String nftAddress){
+        try (Transaction tx = graphDb.beginTx()) {
+            ResourceIterable<Relationship> allRelationships = tx.getAllRelationships();
+            for (Relationship relationship : allRelationships) {
+                //删除关系
+                relationship.delete();
+            }
+            Node node = tx.findNode(Label.label(NFTUtils.LABEL), "address", nftAddress);
+            node.delete();
+            tx.commit();
+        }
+        return true;
+    }
+
+
+    //获取到NFT数据
+    public NFTData getById(String address){
+        try (Transaction tx = graphDb.beginTx()) {
+            Node node = tx.findNode(Label.label(NFTUtils.LABEL), "address", address);
+
+            Map<String, Object> allProperties = node.getAllProperties();
+            NFTData nftData = new NFTData();
+
+            //转对象
+            nftData = BeanUtil.mapToBean(allProperties, NFTData.class, true);
+
+            node.delete();
+            tx.commit();
+            return nftData;
+        }
+    }
+
+
 
     public Relationship createRelationship(Node startNode, Node endNode, RelationshipType type, Map<String, Object> properties) {
         try (Transaction tx = graphDb.beginTx()) {
@@ -99,6 +155,60 @@ public class Neo4jUtils {
         }
     }
 
+    //获取nft的所有节点
+    public  List<NFTData> getAllNodes(String nftId) {
+
+        List<NFTData> nodes = new ArrayList<>();
+
+        try (Transaction tx = graphDb.beginTx()) {
+
+            ResourceIterable<Relationship> allRelationships = tx.getAllRelationships();
+            for (Relationship relationship : allRelationships){
+                Node endNode = relationship.getEndNode();
+                NFTData nftData = nodeToNFT(endNode);
+                nodes.add(nftData);
+            }
+            tx.commit();
+            return nodes;
+        }
+    }
+
+    public  List<NodeRelationship> queryAllRelation(String nftId){
+        try (Transaction tx = graphDb.beginTx()) {
+            List<NodeRelationship> resultList = new ArrayList<>();
+
+            ResourceIterable<Relationship> allRelationships = tx.getAllRelationships();
+            for (Relationship relationship : allRelationships){
+                RelationshipType type = relationship.getType();
+                Node startNode = relationship.getStartNode();
+                Node endNode = relationship.getEndNode();
+                NFTData nftDataStart = nodeToNFT(startNode);
+                NFTData nftDataEnd = nodeToNFT(endNode);
+
+                NodeRelationship nodeRelationship = new NodeRelationship();
+                nodeRelationship.setEndNode(nftDataEnd);
+                nodeRelationship.setEndNode(nftDataEnd);
+                nodeRelationship.setType(type.name());
+
+                resultList.add(nodeRelationship);
+            }
+            tx.commit();
+
+            return resultList;
+        }
+    }
+
+    //node转NFT
+    public NFTData nodeToNFT(Node node) {
+        Map<String, Object> allProperties = node.getAllProperties();
+        NFTData nftData = new NFTData();
+
+        //转对象
+        nftData = BeanUtil.mapToBean(allProperties, NFTData.class, true);
+
+        return nftData;
+    }
+
     private void registerShutdownHook(final DatabaseManagementService managementService) {
         Runtime.getRuntime().addShutdownHook(new Thread(managementService::shutdown));
     }
@@ -129,4 +239,47 @@ public class Neo4jUtils {
             }
         }
     }
+
+
+    /**
+     * 根据多个属性和值获取节点。
+     *
+     * @param label 节点的标签
+     * @param properties 要查询的属性及其值的映射
+     * @return 包含匹配节点信息的列表
+     */
+    public List<Map<String, Object>> findNodesByProperties(Label label, Map<String, Object> properties) {
+        List<Map<String, Object>> resultList = new ArrayList<>();
+        try (Transaction tx = graphDb.beginTx()) {
+            // 构建匹配条件
+            StringBuilder matchCondition = new StringBuilder();
+            for (String key : properties.keySet()) {
+                matchCondition.append(String.format("n.%s = $%s AND ", key, key));
+            }
+            // 移除最后的 "AND "
+            String conditions = matchCondition.substring(0, matchCondition.length() - 5);
+
+            // 构建查询
+            String query = String.format("MATCH (n:%s) WHERE %s RETURN n", label.name(), conditions);
+
+            // 执行查询
+            Result result = tx.execute(query, properties);
+            while (result.hasNext()) {
+                Node node = (Node) result.next().get("n");
+                Map<String, Object> nodeProperties = node.getAllProperties();
+                resultList.add(nodeProperties);
+            }
+            tx.commit();
+            return resultList;
+        }
+    }
+
+    //清空数据库
+    public  void clearDatabase() {
+        try (Transaction tx = graphDb.beginTx()) {
+            tx.execute("MATCH (n) DETACH DELETE n");
+            tx.commit();
+        }
+    }
+
 }
