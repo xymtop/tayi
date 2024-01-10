@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author 小野喵
@@ -43,6 +44,6 @@ public class NFTMeta {
 //        图片
         private String image;
 //        属性
-        private HashMap<String,String> attributes;
+        private Map<String,Object> attributes;
 
 }

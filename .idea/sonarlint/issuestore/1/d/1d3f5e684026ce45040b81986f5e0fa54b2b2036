@@ -1,0 +1,6 @@
+
+Ftypescript:S125"Remove this commented out code.(œÇ“ëøÿÿÿÿ8§ıÉ™Ï1
+Ftypescript:S1128"#Remove this unused import of 'abi'.(—¹Õã8§ıÉ™Ï1
+Stypescript:S1128"+Remove this unused import of 'getContract'.(åÙäúÿÿÿÿ8§ıÉ™Ï1
+Stypescript:S1128"0Remove this unused import of 'getWalletAccount'.(Æ²Ñ8¨ıÉ™Ï1
+ptypescript:S107%"NAsync function 'updateUser' has too many parameters (8). Maximum allowed is 7.(Æ¹Ó“8¨ıÉ™Ï1

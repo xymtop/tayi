@@ -5,3 +5,21 @@ H
 java:S1135"2Complete the task associated to this TODO comment.(›ËÓ
 G	java:S106A"+Replace this use of System.out by a logger.(öÓüç8§ŒÍøÌ1
 Q	java:S125""<This block of commented-out lines of code should be removed.(”ª±®
+_
+java:S1128"BRemove this unused import 'com.xymtop.tayi.core.nft.NFTAttribute'.(ñÇ²‰8À˜ÀÏ1
+Z
+java:S1128"=Remove this unused import 'com.xymtop.tayi.core.nft.NFTData'.(•É8À˜ÀÏ1
+_
+java:S1128"=Remove this unused import 'com.xymtop.tayi.core.nft.NFTMeta'.(»Ó‡øÿÿÿÿ8Á˜ÀÏ1
+P
+java:S1128"3Remove this unused import 'org.neo4j.graphdb.Node'.(Âú©ç8Á˜ÀÏ1
+R
+java:S1128	"5Remove this unused import 'org.neo4j.graphdb.Result'.(Áù™ö8Á˜ÀÏ1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Á˜ÀÏ1
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8Á˜ÀÏ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Á˜ÀÏ1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8Á˜ÀÏ1

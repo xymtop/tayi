@@ -8,6 +8,8 @@ import {addOperateDataPoolItem} from "../oprate/OperateDataPool";
 export class Event{
     //接收到消息的事件
    public onMessage = (msgData:string) =>{
+
+
        //判断是否为json字符串
        if (isJSONString(msgData)){
            let data = JSON.parse(msgData);

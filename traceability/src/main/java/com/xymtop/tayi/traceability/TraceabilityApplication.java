@@ -30,19 +30,4 @@ public class TraceabilityApplication extends TaYiJavaContract implements Seriali
 		return info;
 	}
 
-	public  Object getAllNft(JSONObject jsonObject) throws IOException {
-		String name = (String) jsonObject.get("name");
-		AiUtils aiUtils = that.getAiUtils();
-		Object object = aiUtils.callAI("QmT3xwZos5QzLTutv4k1b61hcVidD9KcrWzdf36DHW56Tp", name);
-		return  object;
-	}
-
-	public  Object creatNft(JSONObject jsonObject){
-		NFTData nftData = JSONUtil.toBean(jsonObject, NFTData.class);
-		NFTUtils nftUtils = that.getNftUtils();
-		Object mining = nftUtils.mining(nftData);
-		return mining;
-	}
-
-
 }

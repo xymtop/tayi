@@ -4,11 +4,11 @@
       <lay-col :md="24" :sm="24" :xs="24">
         <lay-card class="transaction-card">
           <div class="content-area">
-            <h3 class="title">最新交易</h3>
+            <h3 class="title">最新区块</h3>
             <p class="info"><strong>哈希:</strong> {{ latestTransaction.hash }}</p>
-            <p class="info"><strong>从:</strong> {{ latestTransaction.from }}</p>
-            <p class="info"><strong>至:</strong> {{ latestTransaction.to }}</p>
-            <p class="info"><strong>金额:</strong> {{ latestTransaction.value }} ETH</p>
+            <p class="info"><strong>区块高度:</strong> {{ latestTransaction.blockNumber }}</p>
+            <p class="info"><strong>区块大小:</strong> {{ latestTransaction.blockSize }}</p>
+            <p class="info"><strong>附言:</strong> {{ latestTransaction.extraData }} </p>
             <p class="info"><strong>最后更新时间:</strong> {{ lastUpdated }}</p>
           </div>
         </lay-card>
@@ -54,13 +54,13 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import { getWeb3 } from "@/web3-utils/web3-init";
+import {getTaYi} from "@/web3-utils/tayi/TaYiUtils";
 
 const latestTransaction = ref({
   hash: '',
-  from: '',
-  to: '',
-  value: 0
+  blockNumber: '',
+  blockSize: '',
+  extraData: ""
 });
 const lastUpdated = ref('');
 
@@ -72,18 +72,15 @@ const formatDate = (date) => {
 };
 
 const updateLatestTransaction = async () => {
-  const web3 = await getWeb3();
-  const latestBlockNumber = await web3.eth.getBlockNumber();
-  const latestBlock = await web3.eth.getBlock(latestBlockNumber);
-  if (latestBlock.transactions.length > 0) {
-    const txnHash = latestBlock.transactions[latestBlock.transactions.length - 1];
-    const txn = await web3.eth.getTransaction(txnHash);
-    latestTransaction.value = {
-      hash: txn.hash,
-      from: txn.from,
-      to: txn.to,
-      value: web3.utils.fromWei(txn.value, 'ether')
-    };
+
+
+  let tayi = getTaYi()
+
+   let res = await tayi.toSendOperate(tayi.buildOperate("QUERY","getBlockHeight"))
+   let data = await  tayi.toSendOperate(tayi.buildOperate("QUERY","getLastBlock"))
+  latestTransaction.value = data.execResult.result
+  // console.log(data.execResult.result)
+
     const formatDate = (date) => {
       const year = date.getFullYear();
       const month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -98,7 +95,7 @@ const updateLatestTransaction = async () => {
 
 // 使用方式
     lastUpdated.value = formatDate(new Date());
-  }
+
 };
 
 onMounted(() => {

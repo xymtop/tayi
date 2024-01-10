@@ -1,6 +1,7 @@
 import {Web3} from "web3/lib/types";
 import {getWeb3} from "./web3-init";
 import {layer} from "@layui/layui-vue";
+import {getTaYi} from "./tayi/TaYiUtils";
 
 
 let account: any = null
@@ -15,18 +16,21 @@ const  getWalletAccount = async function (){
 }
 
 const initWallet =async function (){
-  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-  account = accounts[0];
+  // const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  // account = accounts[0];
 }
 
 const  checkWallet = async function () {
-    if (typeof window.ethereum === "undefined") {
-        //没安装MetaMask钱包进行弹框提示
-       layer.msg("您还没有MetaMask钱包,请安装后重试")
-    } else {
-      // const  web3 = await getWeb3();
-      return   await getWalletAccount()
-    }
+    // if (typeof window.ethereum === "undefined") {
+    //     //没安装MetaMask钱包进行弹框提示
+    //    layer.msg("您还没有MetaMask钱包,请安装后重试")
+    // } else {
+    //   // const  web3 = await getWeb3();
+    //   return   await getWalletAccount()
+    // }
+
+  let  tayi =  getTaYi();
+  return tayi.user.address
 }
 
 

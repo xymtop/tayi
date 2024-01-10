@@ -1,5 +1,7 @@
 package com.xymtop.tayi.core.cmd.apis;
 
+import com.xymtop.tayi.core.block.BlockUtils;
+import com.xymtop.tayi.core.block.entity.Block;
 import com.xymtop.tayi.core.cmd.apis.ann.CmdApi;
 import com.xymtop.tayi.core.cmd.apis.ann.CmdApiFun;
 import com.xymtop.tayi.core.block.BlockChainHeightUtils;
@@ -20,6 +22,9 @@ public class BlockChainApi {
     @Autowired
     private BlockChainHeightUtils blockChainHeightUtils;
 
+    @Autowired
+    BlockUtils blockUtils;
+
     //获取区块高度
     @CmdApiFun(cmd = "getBlockHeight")
     public long getBlockHeight(){
@@ -37,5 +42,13 @@ public class BlockChainApi {
     public long getBlockId(){
         return blockChainHeightUtils.getBlockHeight()+1;
     }
+
+
+    //获取区块信息
+    @CmdApiFun(cmd = "getLastBlock")
+    public Block getLastBlock() throws Exception {
+        return blockUtils.getBlock(getBlockHeight());
+    }
+
 
 }

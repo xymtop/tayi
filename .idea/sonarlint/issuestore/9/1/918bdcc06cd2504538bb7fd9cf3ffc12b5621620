@@ -1,0 +1,10 @@
+
+HWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Ã¡ªD
+IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ëö‚ü
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(¬‡ëÙûÿÿÿÿ
+IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ìçé
+Ktypescript:S1128D"/Remove this unused import of 'getAllContracts'.(á¦² 
+Mtypescript:S1854i"1Remove this useless assignment to variable "url".(Ñìõé
+Vtypescript:S1854˜"4Remove this useless assignment to variable "result".(–æ€€øÿÿÿÿ
+Qtypescript:S1854™"5Remove this useless assignment to variable "resData".(Ñ ¶L
+2	css:S4667´"Unexpected empty source(µáÎüÿÿÿÿ

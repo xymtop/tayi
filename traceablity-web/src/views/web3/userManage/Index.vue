@@ -46,8 +46,8 @@
     <lay-layer v-model="showUserOpt.isShow" :title="showUserOpt.title" :area="['500px', '550px']">
       <div style="padding: 20px">
         <lay-form :model="showUserOpt.selectRow" ref="layFormRef11" >
-          <lay-form-item label="地址" prop="address">
-            <lay-input v-model="showUserOpt.selectRow.address" type="text" :disabled="showUserOpt.isDisabled"></lay-input>
+          <lay-form-item label="地址" prop="account">
+            <lay-input v-model="showUserOpt.selectRow.account" type="text" :disabled="showUserOpt.isDisabled"></lay-input>
           </lay-form-item>
           <lay-form-item label="昵称" prop="nickname">
             <lay-input v-model="showUserOpt.selectRow.nickname" type="text" :disabled="showUserOpt.isDisabled"></lay-input>
@@ -103,7 +103,7 @@ import {searchArrByKey} from "@/web3-utils/searchUtils";
     const page = reactive({ current: 1, limit: 10, total: 100 });
 
     const columns = ref([
-      { title: '链上地址', width: '60px',key:'address', fixed: 'left' },
+      { title: '链上地址', width: '60px',key:'account', fixed: 'left' },
       { title: '昵称', width: '80px', key: 'nickname', fixed: 'left', sort: 'desc' },
       { title: '性别', width: '50px', key: 'gender' ,customSlot:'gender'},
       { title: '邮箱', width: '80px', key: 'email', sort: 'desc' },
@@ -116,7 +116,12 @@ import {searchArrByKey} from "@/web3-utils/searchUtils";
 
 
     const changeisBanned = async (e, row) => {
-      const res = await banUser(row.address)
+      const res = await banUser(row.account)
+      if (res){
+        layer.msg("成功")
+      }else {
+        layer.msg("失败")
+      }
     }
 
     const changeStatus = (isChecked, row) => {
@@ -158,12 +163,14 @@ const getAllUser = async () => {
   const usersAdd = await getAllUsers()
 
   for (let user of usersAdd){
-    let userInfo =    await getUserInfo(user)
-    userInfo.address = user
-    usersInfo.value.push(userInfo)
-
+    usersInfo.value.push(user)
   }
-  console.log(usersInfo.value)
+  // for (let user of usersAdd){
+  //   let userInfo =    await getUserInfo(user)
+  //   userInfo.address = user
+  //   usersInfo.value.push(userInfo)
+  //
+  // }
 }
 getAllUser()
 
@@ -203,6 +210,7 @@ const  updateAlert = (row)=>{
 
 const  addAlert = ()=>{
   showUserOpt.isShow = true
+  showUserOpt.selectRow = {}
   showUserOpt.title = "新增"
   showUserOpt.isDisabled = false
 }
@@ -220,6 +228,11 @@ const toReset = ()=>{
   searchTitle.value = ''
 }
 const save = async () => {
-  const res = await updateUser(showUserOpt.selectRow.address, showUserOpt.selectRow.nickname, Boolean(showUserOpt.selectRow.gender), showUserOpt.selectRow.email, showUserOpt.selectRow.bio, showUserOpt.selectRow.phone, showUserOpt.selectRow.role, Boolean(showUserOpt.selectRow.isBanned))
-}
+  const res = await updateUser(showUserOpt.selectRow.account, showUserOpt.selectRow.nickname, Boolean(showUserOpt.selectRow.gender), showUserOpt.selectRow.email, showUserOpt.selectRow.bio, showUserOpt.selectRow.phone, showUserOpt.selectRow.role, Boolean(showUserOpt.selectRow.isBanned))
+  if (res){
+    layer.msg("成功")
+  }else {
+    layer.msg("失败")
+  }
+    }
 </script>

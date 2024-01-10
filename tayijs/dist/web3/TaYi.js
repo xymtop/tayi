@@ -56,6 +56,7 @@ export class TaYi {
             }
             //发送请求
             let data = yield this.toSendOperate(operate);
+            console.log(data.execResult);
             return data.execResult.result;
         });
         this.buildQueryOperate = (cmd, args) => {
@@ -112,14 +113,19 @@ export class TaYi {
                 (_a = this.event) === null || _a === void 0 ? void 0 : _a.onMessage(event.data);
             });
             this.socket.addEventListener('error', (event) => {
-                console.error('WebSocket 错误:', event);
+                console.log('WebSocket 错误:', event);
+            });
+            this.socket.addEventListener('close', (event) => {
+                console.log('WebSocket 连接已关闭:', event);
             });
         }
     }
 }
 let tayi = null;
 const newTaYi = (user, ip) => {
-    tayi = new TaYi(user, ip);
+    if (tayi == null) {
+        tayi = new TaYi(user, ip);
+    }
     return tayi;
 };
 export { newTaYi, tayi };

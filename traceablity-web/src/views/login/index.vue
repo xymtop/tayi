@@ -94,17 +94,15 @@
 </template>
 
 <script lang="ts">
-import { login } from '../../api/module/user'
 import { verificationImg, loginQrcode } from '../../api/module/commone'
 import { defineComponent, onMounted, reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useUserStore } from '../../store/user'
 import { layer } from '@layui/layer-vue'
-import { checkWallet } from '../../web3-utils/wallet-utils'
-import {getAllUsers, getUserInfo} from "@/web3-utils/contracts/contracts-api/UserManager";
-import {getUser} from "@/web3-utils/contracts/contracts-api/DataItem";
-import {getWeb3} from "@/web3-utils/web3-init";
+import {getUser, login} from "@/web3-utils/tayi/UserUtils";
 import {getTaYi} from "@/web3-utils/tayi/TaYiUtils";
+import { getUserInfo } from '../../web3-utils/contracts/contracts-api/UserManager'
+
 
 export default defineComponent({
   setup() {
@@ -124,24 +122,29 @@ export default defineComponent({
 
     const loginSubmit = async () => {
       if (account.value.length==0){
-        // account.value =await checkWallet()
-        // const userInfo = await getUserInfo(account.value)
-        // if (userInfo.nickname.length!=0){
-        //   userStore.token = account.value
-        //   await userStore.loadMenus()
-        //   await userStore.loadPermissions()
-        //   layer.msg("登录成功！欢迎您: "+userInfo.nickname,{icon:1})
-        //   router.push("/web3/userManage/profile")
-        // }else {
-        //   //需要去注册信息
-        //   layer.msg("请注册或者完成信息！")
-        //   userStore.token = account.value
-        //   await userStore.loadMenus()
-        //   await userStore.loadPermissions()
-        //   router.push("/web3/userManage/profile")
-        // }
+        let tayi =    getTaYi()
 
-       // let tayi =    getTaYi()
+        account.value = tayi.user.address
+        const userInfo = await getUserInfo(account.value)
+        // console.log(userInfo)
+        if (userInfo == undefined ||!userInfo.hasOwnProperty("nickname")){
+          //需要去注册信息
+          layer.msg("请注册或者完成信息！")
+          userStore.token = account.value
+          await userStore.loadMenus()
+          await userStore.loadPermissions()
+          router.push("/web3/userManage/profile")
+
+
+        }else {
+          userStore.token = account.value
+          await userStore.loadMenus()
+          await userStore.loadPermissions()
+          layer.msg("登录成功！欢迎您: "+userInfo.nickname,{icon:1})
+          router.push("/web3/userManage/profile")
+        }
+
+
 
       }
 

@@ -9,7 +9,7 @@ const sendOperate = (socket, operate) => {
             let data = getOperateDataPoolItem(id);
             if (data != undefined && data != null) {
                 if (data.execResult != null && !data.execResult["resultFlag"]) {
-                    console.error(data.execResult);
+                    console.error(data);
                 }
                 else {
                     resolve(data);

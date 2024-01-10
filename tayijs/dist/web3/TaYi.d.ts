@@ -23,6 +23,6 @@ export declare class TaYi {
     callAi: (aiHash: string, aiInput: Object) => Promise<any>;
     trainAi: (aiHash: string, trainDataAddress: string) => Promise<any>;
 }
-declare let tayi: any;
+declare let tayi: TaYi | null;
 declare const newTaYi: (user: string, ip: string) => TaYi;
 export { newTaYi, tayi };

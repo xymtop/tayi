@@ -101,6 +101,7 @@ import { layer } from '@layui/layer-vue'
 import {getUserInfo, registerUser, updateUser} from "@/web3-utils/contracts/contracts-api/UserManager";
 import {checkWallet} from "@/web3-utils/wallet-utils";
 import {useUserStore} from "../../../store/user";
+import {User} from "@/web3-utils/tayi/types/User";
 
 
 
@@ -123,14 +124,19 @@ import {useUserStore} from "../../../store/user";
       email:'',
       bio:'',
       phone:'',
-      role:''
+      role:'',
+      isBanned:false
     })
 
     const layFormRef4 = ref()
 
 
 const  getData = async function (){
-     userModel.value = await getUserInfo(await  checkWallet())
+     let data =  await getUserInfo(await  checkWallet())
+      if (data!=undefined){
+        userModel.value = data
+      }
+
 }
 
 getData()
@@ -139,13 +145,38 @@ getData()
 
     const registUser = async function () {
       const account = await  checkWallet();
-      if ((await getUserInfo(await checkWallet())).nickname.length==0){
+      let info =  await getUserInfo(await checkWallet())
+      if (info == undefined){
         userModel.value.isBanned = false
         userModel.value.role = '2'
-        const res =   await registerUser(userModel.value.nickname,Boolean(userModel.value.gender),userModel.value.email,userModel.value.bio,userModel.value.phone,userModel.value.role,userModel.value.isBanned)
+        const res:User =   await registerUser(userModel.value.nickname,Boolean(userModel.value.gender),userModel.value.email,userModel.value.bio,userModel.value.phone,userModel.value.role,userModel.value.isBanned)
+        if (res.account.length>0){
+          userModel.value = res
+          layer.msg("成功")
+
+        }else {
+          layer.msg("失败")
+        }
+
       }else {
-        const res =   await updateUser(account,userModel.value.nickname,Boolean(userModel.value.gender),userModel.value.email,userModel.value.bio,userModel.value.phone,userModel.value.role,userModel.value.isBanned)
+        const res:boolean =   await updateUser(account,userModel.value.nickname,Boolean(userModel.value.gender),userModel.value.email,userModel.value.bio,userModel.value.phone,userModel.value.role,userModel.value.isBanned)
+        if (res){
+          layer.msg("成功")
+        }else {
+          layer.msg("失败")
+        }
       }
+      // let user = "";
+      // if (!user.hasOwnProperty("nickname")){
+      //   userModel.value.isBanned = false
+      //   userModel.value.role = '2'
+      //   const res =   await registerUser(userModel.value.nickname,Boolean(userModel.value.gender),userModel.value.email,userModel.value.bio,userModel.value.phone,userModel.value.role,userModel.value.isBanned)
+      //   console.log(res)
+      // }else {
+      //   const res =   await updateUser(account,userModel.value.nickname,Boolean(userModel.value.gender),userModel.value.email,userModel.value.bio,userModel.value.phone,userModel.value.role,userModel.value.isBanned)
+      //   console.log(res)
+      // }
+
 
     }
 

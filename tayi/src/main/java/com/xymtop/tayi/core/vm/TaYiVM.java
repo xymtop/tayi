@@ -63,14 +63,7 @@ public class TaYiVM  {
     DBUtils dbUtils;
 
 
-    //设置当前环境的That
-    public void setThat(That that) {
-        this.that = that;
-    }
 
-    public That getThat() {
-        return that;
-    }
 
 
 
@@ -165,7 +158,8 @@ public class TaYiVM  {
             throw new RuntimeException("合约构建失败");
         }
 
-
+//
+        setThat(contractObj);
 
         contractInfo = contractObj.info();
 
@@ -521,6 +515,7 @@ public class TaYiVM  {
         contract.setClassName(contractObj.getClass().getName());
         contract.setContract(contractObj);
 
+        setThat(contractObj);
         contractInfo = ((TaYiJavaContract) contractObj).info();
 
         for (Method method : allMethods) {

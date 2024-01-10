@@ -1,5 +1,8 @@
 package com.xymtop.tayi.core.graph;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.lang.UUID;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.xymtop.tayi.core.graph.entity.NodeRelationship;
@@ -27,42 +30,82 @@ public class NFTUtils {
         this.neo4jUtils = neo4jUtils;
     }
 
+    public NFTData getBaseNft(){
+        NFTData nftData = new NFTData();
+
+        nftData.setTime(new Date());
+        nftData.setResource(null);
+        nftData.setAddress(hashUtils.hashHex(UUID.fastUUID().toString()));
+
+        return nftData;
+    }
+
     public void test(){
         neo4jUtils.clearDatabase();
-        NFTData nftData = new NFTData();
-        nftData.setAddress("1");
+//        NFTData nftData = new NFTData();
+//        nftData.setAddress("1");
+//
+//        NFTData nftData1 = new NFTData();
+//        nftData1.setAddress("2");
+//
+//        String nft = createNFT(nftData);
+//        String nft1 = createNFT(nftData1);
+//
+//        Relationship nftRelation = createNFTRelation(nft, nft1,"朋友");
+//
+//        List<NFTData> allNodes = neo4jUtils.getAllNodes(nft);
+//
+//        List<NodeRelationship> nodeRelationships = queryAllRelation(nft);
+//
+//
+//        boolean deleteNFT = deleteNFT(nft);
+//
+//        NFTData nftData2 = queryNFT(nft1);
+//
+//        nftData2.setResource("666");
+//
+//        boolean b = updateNFT(nft1, nftData2);
+//
+//        boolean deleteNFTRelation = deleteNFTRelation(nft, nft1, "朋友");
+//
+//        List<NFTData> nftDataList = neo4jUtils.queryNFTByObject(nftData);
 
-        NFTData nftData1 = new NFTData();
-        nftData1.setAddress("2");
-
-        String nft = createNFT(nftData);
-        String nft1 = createNFT(nftData1);
-
-        Relationship nftRelation = createNFTRelation(nft, nft1,"朋友");
-
-        List<NFTData> allNodes = neo4jUtils.getAllNodes(nft);
-
-        List<NodeRelationship> nodeRelationships = queryAllRelation(nft);
+//        System.out.println(nftDataList);
 
 
-        boolean deleteNFT = deleteNFT(nft);
-
-        NFTData nftData2 = queryNFT(nft1);
-
-
-
-  }
+    }
 
     //计算NFT地址
     public String calculateNFTAddress(NFTData nftData) {
         return hashUtils.hashHex(JSONUtil.toJsonStr(nftData));
     }
 
-    public Map<String,Object>  createNFTMap(NFTData nftData) {
+    public static Map<String,Object>  createNFTMap(NFTData nftData) {
         HashMap<String,Object>  map = new HashMap<>();
         JSONObject jsonObject = JSONUtil.parseObj(nftData);
         for (String key : jsonObject.keySet()){
-            map.put(key,jsonObject.get(key));
+
+            if ("meta".equals(key)){
+                Object meta = jsonObject.get("meta");
+                if (meta != null){
+                        Object attributes =((JSONObject) meta).get("attributes");
+                        Map<String, Object> objectMap = BeanUtil.beanToMap(attributes);
+                        for (String subKey : objectMap.keySet()){
+                            map.put("nft-"+subKey,objectMap.get(subKey));
+                        }
+
+
+                }
+
+            }else if ("time".equals(key)){
+                Object object = jsonObject.get(key);
+                String format = DateUtil.format((Date) object, "yyyy-MM-dd HH:mm:ss");
+                map.put(key,format);
+            }
+            else {
+                map.put(key,jsonObject.get(key));
+            }
+
         }
         return map;
     }
@@ -75,7 +118,7 @@ public class NFTUtils {
         }
 
         //创建便于储存的map格式
-        Map<String, Object> nftMap = createNFTMap(nftData);
+        Map<String, Object> nftMap =NFTUtils.createNFTMap(nftData);
         String node = neo4jUtils.createNode(Label.label(LABEL),nftMap);
         return nftData.getAddress();
     }
@@ -92,8 +135,15 @@ public class NFTUtils {
         return neo4jUtils.deleteNftNode(nftId);
     }
 
-    //修改NFT
+    //删除一个关系
+    public boolean deleteNFTRelation(String nftId1, String nftId2,String relation) {
+        return neo4jUtils.deleteNftRelationship(nftId1, nftId2, relation);
+    }
 
+    //修改NFT
+    public boolean updateNFT(String nftId, NFTData nftData) {
+      return   neo4jUtils.updateNftNodeProperties(nftId,nftData);
+    }
 
     //查询NFT
     public NFTData queryNFT(String nftId) {
@@ -103,6 +153,28 @@ public class NFTUtils {
     //查询所有的关系
     public List<NodeRelationship> queryAllRelation(String nftId) {
         return neo4jUtils.queryAllRelation(nftId);
+    }
+    public List<NodeRelationship> queryAllRelationInNfts(String nftId1,String nftId2) {
+        List<NodeRelationship> newShips = new ArrayList<>();
+
+        List<NodeRelationship> nodeRelationships = neo4jUtils.queryAllRelation(nftId1);
+        for (NodeRelationship nodeRelationship : nodeRelationships){
+            NFTData startNode = nodeRelationship.getStartNode();
+            NFTData endNode = nodeRelationship.getEndNode();
+            if (nftId2.equals(startNode.getAddress())|| nftId2.equals(endNode.getAddress())){
+                newShips.add(nodeRelationship);
+            }
+        }
+
+        return newShips;
+    }
+
+    public List<NFTData> getAllNftNodes(String nftId){
+        return neo4jUtils.getAllNodes(nftId);
+    }
+
+    public List<NFTData> queryNft(NFTData nftData){
+        return neo4jUtils.queryNFTByObject(nftData);
     }
 
 }

@@ -1,0 +1,19 @@
+
+|
+java:S14885"_Immediately return this expression instead of assigning it to the temporary variable "fromNft".(€¹„¾8ëï›Ï1
+
+java:S1488E"_Immediately return this expression instead of assigning it to the temporary variable "fromNft".(†Êªíüÿÿÿÿ8ŒÅí›Ï1
+
+java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÛÛ¯ø8ü¦í›Ï1
+\
+java:S1854D":Remove this useless assignment to local variable "mining".(ïĞÀÆûÿÿÿÿ8ƒ§í›Ï1
+M
+java:S1481D"+Remove this unused "mining" local variable.(ïĞÀÆûÿÿÿÿ8†§í›Ï1
+V
+java:S1128"9Remove this unused import 'cn.hutool.core.bean.BeanUtil'.(ÓÃÍá8„ï›Ï1
+V
+java:S1128"9Remove this unused import 'cn.hutool.core.util.HashUtil'.(åî²ı8§í›Ï1
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8§í›Ï1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8§í›Ï1

@@ -55,7 +55,10 @@ export class TaYi{
             });
 
             this.socket.addEventListener('error', (event) => {
-                console.error('WebSocket 错误:', event);
+                console.log('WebSocket 错误:', event);
+            });
+            this.socket.addEventListener('close', (event) => {
+                console.log('WebSocket 连接已关闭:', event);
             });
         }
 
@@ -112,6 +115,8 @@ export class TaYi{
         //发送请求
         let data:OperateResult = await this.toSendOperate(operate)
 
+        console.log(data.execResult)
+
         return  data.execResult.result
     }
 
@@ -161,10 +166,13 @@ export class TaYi{
 }
 
 
-let tayi =  null;
+let tayi: TaYi | null =  null;
 
 const newTaYi = (user:string,ip:string) => {
-    tayi =  new TaYi(user,ip)
+    if (tayi == null){
+        tayi =  new TaYi(user,ip)
+    }
+
     return tayi
 }
 

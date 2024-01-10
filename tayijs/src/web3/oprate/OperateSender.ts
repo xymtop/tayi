@@ -1,9 +1,11 @@
 import {Oprate} from "./Oprate";
 import {getOperateDataPoolItem} from "./OperateDataPool";
 import {OperateResult} from "./OperateResult";
+import {tayi} from "../TaYi";
 
 const sendOperate = (socket:WebSocket,operate:Oprate):Promise<OperateResult>=> {
     return new Promise((resolve, reject) => {
+
         socket.send(JSON.stringify(operate))
         let id:string | undefined = operate.signature?.toString()
         // 开启轮询
@@ -11,7 +13,7 @@ const sendOperate = (socket:WebSocket,operate:Oprate):Promise<OperateResult>=> {
            let data:OperateResult =   getOperateDataPoolItem(id)
             if (data!=undefined && data != null){
                 if (data.execResult!=null&&!data.execResult["resultFlag"]){
-                    console.error(data.execResult)
+                    console.error(data)
                 }else {
                     resolve(data)
                 }

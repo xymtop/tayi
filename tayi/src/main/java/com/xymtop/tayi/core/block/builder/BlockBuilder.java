@@ -108,6 +108,8 @@ public class BlockBuilder implements Builder<List<PoolItem>, Block> {
                     session.sendMessage(new TextMessage(JSONUtil.toJsonStr(Result.okData(operateEntity))));
                 }
 
+                throw  e;
+
             }
 
         }

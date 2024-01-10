@@ -70,8 +70,8 @@ import { layer } from '@layui/layui-vue'
 import {getAllProposals} from "@/web3-utils/contracts/contracts-api/CenterDao";
 import router from "@/router";
 import {useUserStore} from "@/store/user";
-import levenshtein from 'fast-levenshtein';
 import {searchArrByKey} from "@/web3-utils/searchUtils";
+import {CenterDaoType} from "@/web3-utils/tayi/types/CenterDaoType";
 
 const store = useUserStore()
 

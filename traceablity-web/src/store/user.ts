@@ -14,7 +14,7 @@ export const useUserStore = defineStore({
   actions: {
     async loadMenus(){
       const { data, code } = await menu();
-    console.log(data,code);
+    // console.log(data,code);
     
       if(code == 200) {
         this.menus = data;

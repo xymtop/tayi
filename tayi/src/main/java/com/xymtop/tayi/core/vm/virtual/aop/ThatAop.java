@@ -28,10 +28,6 @@ public class ThatAop{
     @Pointcut("execution(com.xymtop.tayi.core.vm.contract.inter.TaYiJavaContract *.getThat(..))")
     public void that() {}
 
-    // 在接口方法执行前执行
-    @Around("that()")
-    public Object thatAround(ProceedingJoinPoint joinPoint) throws Throwable {
-        return taYiVM.getThat();
-    }
+
 }
 
