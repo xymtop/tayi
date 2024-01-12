@@ -7,3 +7,5 @@ F	java:S106"+Replace this use of System.out by a logger.(´Šò8¸¯ğÿÌ1
 ‰
 java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(§Âèô8º¯ğÿÌ1
 L	java:S106"+Replace this use of System.out by a logger.(ê†Üûûÿÿÿÿ8»¯ğÿÌ1
+o
+java:S1128"MRemove this unused import 'com.xymtop.tayi.core.oprate.listener.PackageType'.(ä™éıÿÿÿÿ8Á¡¶ÆÏ1

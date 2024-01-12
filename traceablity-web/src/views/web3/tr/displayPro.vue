@@ -73,7 +73,8 @@ import {edgeToGEdge, nodeToGNode, traceAblilityInfoToGNode} from "@/web3-utils/g
 import {mockTraceAblilityInfos} from "@/web3-utils/mock";
 import {getProjectData} from "@/web3-utils/displayProUtils";
 import {getNFTMetadata} from "@/web3-utils/contracts/contracts-api/trNFT";
-import {NFTMetadataToTraceAblilityInfo} from "@/web3-utils/NFTUtils";
+import {getNFTMetadataToTraceAblilityInfo} from "@/web3-utils/NFTUtils";
+import {layer}   from "@layui/layui-vue";
 
 const graphContainer = ref(null);
 let showNodeInfoLayer = ref(false);
@@ -92,9 +93,14 @@ let tracData = ref({})
 
 const getTraceAblilityInfo = async ()=>{
   const id = localStorage.getItem("proId")
-  let proNftData = await getNFTMetadata(id);
-  tracData = await NFTMetadataToTraceAblilityInfo(id,proNftData);
-  console.log(tracData)
+  if (id != undefined){
+    tracData = await getNFTMetadataToTraceAblilityInfo(id);
+    console.log(tracData)
+  }else {
+    layer.msg("获取标识符错误")
+    window.history.back()
+  }
+
 }
 getTraceAblilityInfo()
 

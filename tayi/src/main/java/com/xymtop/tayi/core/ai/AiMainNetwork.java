@@ -23,14 +23,14 @@ import java.util.Arrays;
 @SpringBootApplication
 public class AiMainNetwork {
 
-    public static void main(String[] args) throws IOException {
-//        ConfigurableApplicationContext run = SpringApplication.run(AiMainNetwork.class, args);
-
-//        RunResult runResult = RunnerUtils.run(new RunParam("ai/test/testprocess.exe", "ai/test",
-//                Arrays.asList("肖叶茂")));
-//        System.out.println(runResult);
-//        ConfigLoader configLoader = new ConfigLoader("ai/test/info.json");
+//    public static void main(String[] args) throws IOException {
+////        ConfigurableApplicationContext run = SpringApplication.run(AiMainNetwork.class, args);
 //
-//        System.out.println(configLoader);
-    }
+////        RunResult runResult = RunnerUtils.run(new RunParam("ai/test/testprocess.exe", "ai/test",
+////                Arrays.asList("肖叶茂")));
+////        System.out.println(runResult);
+////        ConfigLoader configLoader = new ConfigLoader("ai/test/info.json");
+////
+////        System.out.println(configLoader);
+//    }
 }

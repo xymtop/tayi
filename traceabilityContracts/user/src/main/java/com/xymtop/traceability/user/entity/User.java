@@ -17,4 +17,5 @@ public class User {
    String bio;
    String phone;
    String role;
+   boolean isBanned = false;
 }

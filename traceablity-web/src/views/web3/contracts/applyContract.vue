@@ -224,7 +224,11 @@ const applyContract = async ()=>{
   filesData.push(...files.value)
 
   let res =   await registerContract( address, name, description, filesData)
-  console.log(res)
+  if (res){
+    layer.msg("成功")
+  }else {
+    layer.msg("失败")
+  }
 }
 </script>
 

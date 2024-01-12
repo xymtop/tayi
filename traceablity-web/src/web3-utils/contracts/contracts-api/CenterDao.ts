@@ -4,46 +4,65 @@
 import {abi} from "./json/CenterDao.json";
 import {getContract} from "../../oprate-utils";
 import {getWalletAccount} from "../../wallet-utils";
+import {getTaYi} from "../../tayi/TaYiUtils";
 
 
+let tayi = getTaYi()
 
-const centerDao = await getContract(abi,"0x9A676e781A523b5d0C0e43731313A708CB607508");
 
+let  centerDao = "ab78291adf108cd58829e9eee78b3e8655565b9fa107403ce511a7958bf3cc4a"
+
+// centerDao  = await tayi.deploy("QmUu5ycnHiy4RBG71pkfPo6a4HX9vEXUTbfZ4W6xeD1kuD")
+// console.log(centerDao)
 
 //getAllProposals
 async function getAllProposals() {
-    return centerDao.methods.getAllProposals().call();
+   return tayi.call(centerDao,"getAllProposals")
 }
 
 // getProposalCount
 async function getProposalCount() {
-    return centerDao.methods.getProposalCount().call();
+    return tayi.call(centerDao,"getProposalCount")
 }
 
 // getProposal(uint256 _proposalIndex)
 async function getProposal(proposalIndex:any) {
-    return centerDao.methods.getProposal(proposalIndex).call();
+    return tayi.call(centerDao,"getProposal",{
+        id:proposalIndex
+    })
 }
 
 // createProposal(string memory _title, string memory _descriptionCID, uint256 _deadline)
 async function createProposal(title:any,descriptionCID:any,deadline:any) {
-    return centerDao.methods.createProposal(title,descriptionCID,deadline).send({from:await getWalletAccount()})
+    return tayi.call(centerDao,"createProposal",{
+        id:Date.now(),
+        title,
+        descriptionCID,
+        deadline
+    })
 }
 
 // vote(uint256 _proposalIndex, bool _vote)
 async function vote(proposalIndex:any,vote:any) {
-    return centerDao.methods.vote(proposalIndex,vote).send({from:await getWalletAccount()})
+    return tayi.call(centerDao,"vote",{
+        id:proposalIndex,
+        vote
+    })
 }
 
 // executeProposal(uint256 _proposalIndex)
 async function executeProposal(proposalIndex:any) {
-    return centerDao.methods.executeProposal(proposalIndex).send({from:await getWalletAccount()})
+    return tayi.call(centerDao,"executeProposal",{
+        id:proposalIndex
+    })
 }
 
 
 // getProposalVotes(uint256 _proposalIndex)
 async function getProposalVotes(proposalIndex:any) {
-    return centerDao.methods.getProposalVotes(proposalIndex).call();
+    return tayi.call(centerDao,"getProposalVotes",{
+        proposalIndex
+    })
 }
 
 

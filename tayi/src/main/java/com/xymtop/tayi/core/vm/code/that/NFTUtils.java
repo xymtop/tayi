@@ -43,6 +43,8 @@ public interface NFTUtils {
     public NFTData getNewBaseNFT();
 
 
+    public boolean updateNFT(String id,NFTData nftData);
+
     //写入一个对象到NFT
     public  NFTData writeToNft(Object obj);
 

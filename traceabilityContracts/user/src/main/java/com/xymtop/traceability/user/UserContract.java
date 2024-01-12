@@ -73,20 +73,17 @@ public class UserContract extends TaYiJavaContract implements Serializable {
     public boolean updateUser(JSONObject jsonObject){
         User user = JSONUtil.toBean(jsonObject, User.class);
         NFTUtils nftUtils = that.getNftUtils();
-        //删除
-        nftUtils.burning(user.getAccount());
         NFTData nftData = nftUtils.writeToNft(user);
-        nftUtils.mining(nftData);
-        return true;
+        return nftUtils.updateNFT(user.getAccount(),nftData);
     }
 
 
     public boolean banUser(JSONObject jsonObject){
         User user = JSONUtil.toBean(jsonObject, User.class);
         NFTUtils nftUtils = that.getNftUtils();
-        //删除
-        nftUtils.burning(user.getAccount());
-        return  true;
+        user.setBanned(true);
+        NFTData nftData = nftUtils.writeToNft(user);
+        return  nftUtils.updateNFT(user.getAccount(),nftData);
     }
 
     public List<Object> getAllUsers(){

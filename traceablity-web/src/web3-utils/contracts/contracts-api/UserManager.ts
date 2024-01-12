@@ -42,7 +42,8 @@ async  function updateUser(account:any,nickname:any,gender:any,email:any,bio:any
             email,
             bio,
             phone,
-            role
+            role,
+        isBanned
         })
 }
 

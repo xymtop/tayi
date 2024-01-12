@@ -2,6 +2,8 @@ package com.xymtop.tayi.core.graph;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.map.MapUtil;
+import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
 import com.xymtop.tayi.core.graph.entity.NodeRelationship;
 import com.xymtop.tayi.core.nft.NFTData;
 import com.xymtop.tayi.core.nft.NFTMeta;
@@ -36,7 +38,16 @@ public class Neo4jUtils {
             Node node = tx.createNode(label);
             for (Map.Entry proper : properties.entrySet()){
                 if (proper.getKey()!=null && proper.getValue() !=null){
-                    node.setProperty(String.valueOf(proper.getKey()),proper.getValue());
+                    if (proper.getValue() instanceof JSONArray){
+                       String values = "";
+                        for (Object object :(JSONArray) proper.getValue()){
+                            values += ","+ object.toString();
+                        }
+                        node.setProperty(String.valueOf(proper.getKey()),values);
+                    }else {
+                        node.setProperty(String.valueOf(proper.getKey()),proper.getValue());
+                    }
+
                 }
             }
 
@@ -45,6 +56,8 @@ public class Neo4jUtils {
             return nodeId;
         }
     }
+
+
 
 
     //创建两个nft之间的关系
@@ -107,11 +120,14 @@ public class Neo4jUtils {
     //获取到NFT数据
     public NFTData getById(String address){
         try (Transaction tx = graphDb.beginTx()) {
-            Node node = tx.findNode(Label.label(NFTUtils.LABEL), "address", address);
+            ResourceIterator<Node> nodes = tx.findNodes(Label.label(NFTUtils.LABEL), "address", address);
+            Node node = null;
+            if (nodes.hasNext()){
+                 node = nodes.next();
+            }
             if (node == null){
                 return null;
             }
-
             Map<String, Object> allProperties = node.getAllProperties();
             NFTData nftData = new NFTData();
 

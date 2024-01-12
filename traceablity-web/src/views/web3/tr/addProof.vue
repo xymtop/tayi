@@ -116,7 +116,6 @@ const updateData = ()=>{
   }
 }
 const sendData = async () => {
-
   //构建溯源信息
   let tracData : TraceNode= {
       proofCenterAddress: tracCenterAddress.value,

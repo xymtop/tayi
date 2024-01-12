@@ -1,21 +1,33 @@
 
 L
-java:S3740%"/Provide the parametrized type for this generic.(Çğàã8¥ÎöÏ1
+java:S3740'"/Provide the parametrized type for this generic.(Çğàã8Ÿ¼àÄÏ1
 j
-java:S11925"HDefine a constant instead of duplicating this literal "address" 6 times.(Ô±„Üüÿÿÿÿ8°ÎöÏ1
+java:S1192B"HDefine a constant instead of duplicating this literal "address" 6 times.(Ô±„Üüÿÿÿÿ8¡¼àÄÏ1
 c
-java:S1192“"FDefine a constant instead of duplicating this literal "nftId" 3 times.(¿ğU8·ÎöÏ1
+java:S1192£"FDefine a constant instead of duplicating this literal "nftId" 3 times.(¿ğU8¡¼àÄÏ1
+8
+java:S1643,"Use a StringBuilder instead.(¹ŸÒ\8¢¼àÄÏ1
+n
+java:S6201)"LReplace this instanceof check and cast with 'instanceof JSONArray jsonarray'(‚ñ…¹ÿÿÿÿÿ8Ã½àÄÏ1
 X
-java:S1854d";Remove this useless assignment to local variable "nftData".(öÖ£ƒ8ıÎöÏ1
+java:S1854q";Remove this useless assignment to local variable "nftData".(öÖ£ƒ8É½àÄÏ1
 V
-java:S2864Z"4Iterate over the "entrySet" instead of the "keySet".(½Ö²’ûÿÿÿÿ8şÎöÏ1
+java:S2864g"4Iterate over the "entrySet" instead of the "keySet".(½Ö²’ûÿÿÿÿ8Ë½àÄÏ1
 N
-java:S1874e"1Remove this use of "mapToBean"; it is deprecated.(ÒàÉò8ÏöÏ1
+java:S1874r"1Remove this use of "mapToBean"; it is deprecated.(ÒàÉò8Ï½àÄÏ1
 I
-java:S1168ö"+Return an empty collection instead of null.(¥¹ï8ŒÏöÏ1
+java:S1168†"+Return an empty collection instead of null.(¥¹ï8İ½àÄÏ1
 I
-java:S1168"+Return an empty collection instead of null.(¥¹ï8ÏöÏ1
+java:S1168 "+Return an empty collection instead of null.(¥¹ï8ß½àÄÏ1
 Y
-java:S1854«";Remove this useless assignment to local variable "nftData".(öÖ£ƒ8ÏöÏ1
+java:S1854»";Remove this useless assignment to local variable "nftData".(öÖ£ƒ8á½àÄÏ1
 I
-java:S1168›"+Return an empty collection instead of null.(¥¹ï8ÏöÏ1
+java:S1168«"+Return an empty collection instead of null.(¥¹ï8í½àÄÏ1
+Y
+java:S1128"7Remove this unused import 'cn.hutool.core.map.MapUtil'.(¨»×Îúÿÿÿÿ8š¸áÄÏ1
+X
+java:S1128"6Remove this unused import 'cn.hutool.json.JSONObject'.(¨ôÛˆùÿÿÿÿ8š¸áÄÏ1
+k
+java:S1128"NRemove this unused import 'org.neo4j.cypher.internal.expressions.functions.E'.(ªÁØ¼8š¸áÄÏ1
+y
+java:S1128"WRemove this unused import 'org.neo4j.internal.batchimport.cache.NodeRelationshipCache'.(±íãåşÿÿÿÿ8›¸áÄÏ1

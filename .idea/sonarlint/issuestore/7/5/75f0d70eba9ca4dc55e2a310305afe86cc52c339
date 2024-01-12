@@ -1,2 +1,18 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ
+o
+java:S1192)"MDefine a constant instead of duplicating this literal "CenterDaoApp" 3 times.(Öæ‡µûÿÿÿÿ8Å•ŠÆÏ1
+
+java:S1488?"_Immediately return this expression instead of assigning it to the temporary variable "fromNft".(†Êªíüÿÿÿÿ8Æ•ŠÆÏ1
+
+java:S1488N"_Immediately return this expression instead of assigning it to the temporary variable "fromNft".(†Êªíüÿÿÿÿ8Æ•ŠÆÏ1
+L	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ8Õ•ŠÆÏ1
+\
+java:S1854M":Remove this useless assignment to local variable "mining".(ïĞÀÆûÿÿÿÿ8Ú•ŠÆÏ1
+M
+java:S1481M"+Remove this unused "mining" local variable.(ïĞÀÆûÿÿÿÿ8Û•ŠÆÏ1
+N
+java:S1874Z"1Remove this use of "mapToBean"; it is deprecated.(Á•Óƒ8İ•ŠÆÏ1
+N
+java:S1172z"1Remove this unused method parameter "jsonObject".(¬£ŒÁ8á•ŠÆÏ1
+H
+java:S1168|"+Return an empty collection instead of null.(¥¹ï8á•ŠÆÏ1

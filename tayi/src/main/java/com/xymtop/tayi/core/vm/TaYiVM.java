@@ -197,6 +197,9 @@ public class TaYiVM  {
 
        writeContractData(contract);
 
+        //删除文件夹
+        deleteDir(filePath);
+
        return id;
     }
 
@@ -271,9 +274,16 @@ public class TaYiVM  {
         //运行完毕，写入状态数据和合约数据
         writeContractData(contractInfo);
 
+        //删除文件夹
+        deleteDir(filePath);
+
         return result;
     }
 
+
+    public  void deleteDir(String path) throws IOException {
+//        FileUtil.del(FileUtils.getResourcesFilePath(path));
+    }
 
     //写入合约运行后的数据
     private void writeRunData(Contract contract, Object obj) throws Exception {
@@ -360,6 +370,9 @@ public class TaYiVM  {
 
         contractInfo.setContract(obj);
         writeContractData(contractInfo);
+        //删除文件夹
+        String filePath = contractPath+"/"+id+"/";
+        deleteDir(filePath);
 
         return result;
     }

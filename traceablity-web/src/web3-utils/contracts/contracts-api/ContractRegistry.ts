@@ -6,35 +6,23 @@ import {getContract} from "../../oprate-utils";
 import {getWalletAccount} from "../../wallet-utils";
 import {getNFTMetadataURL} from "../../NFTUtils";
 import {ContractInfo} from "../../infoTypes";
+import {getTaYi} from "../../tayi/TaYiUtils";
 
 
 
-const contractRegistry = await getContract(abi,"0xa6e99A4ED7498b3cdDCBB61a6A607a4925Faa1B7");
+const contractRegistry = "1dc3dab1cbd5a0b73cc4a53bb45cd46518b44c8f9d3c79d4a60bcaa93e75c33c"
 
-// registerContract(
-//     address _contractAddress, // 合约地址
-//     string memory _name, // 合约名字
-//     string memory _description, // 合约描述
-//     string[] memory _whitepaperIPFSHashes // 白皮书IPFS哈希数组
-// )
-
-
-//   struct ContractInfo {
-//         address contractAddress; // 合约的地址
-//         string name; // 合约的名字
-//         string description; // 合约的描述
-//         address owner; // 提交合约的用户地址
-//         uint256 applicationTime; // 提交合约的时间
-//         string[] whitepaperIPFSHashes; // 白皮书的IPFS哈希数组
-//         Status status; // 合约的状态
-//     }
-
-
-
+let tayi = getTaYi()
+// console.log(await tayi.deploy("QmVQEMffQPNZVM15s8kWzdogtyEiMyoect1oYUcXTEEvsX"))
 
 //注册合约
 export  async function registerContract(contractAddress:any,name:any,description:any,whitepaperIPFSHashes:string[]) {
-    return contractRegistry.methods.registerContract(contractAddress,name,description,whitepaperIPFSHashes).send({from:await getWalletAccount()})
+   return tayi.call(contractRegistry,"registerContract",{
+       contractAddress,
+       name,
+       description,
+       whitepaperIPFSHashes
+   })
 }
 
 // function updateStatus(
@@ -42,44 +30,53 @@ export  async function registerContract(contractAddress:any,name:any,description
 //     Status _status // 新状态
 // 一个公共函数，用于更新合约的状态
 export  async function updateStatus(contractAddress:any,status:any) {
-    return contractRegistry.methods.updateStatus(contractAddress,status).send({from:await getWalletAccount()})
+    return tayi.call(contractRegistry,"updateStatus",{
+        contractAddress,
+        status
+    })
 }
 
 // getAllContracts返回所有合约
 export  async function getAllContracts() {
-    return contractRegistry.methods.getAllContracts().call();
+    return tayi.call(contractRegistry,"getAllContracts")
 }
 
 // getApprovedContracts
 // 返回已批准的合约
 export  async function getApprovedContracts() {
-    return contractRegistry.methods.getApprovedContracts().call();
+    return tayi.call(contractRegistry,"getApprovedContracts")
 }
 //function isContractApprovedAndNotOfflineStruct(address _contractAddress)
 //返回合约是否批准且不脱机
 export  async function isContractApprovedAndNotOfflineStruct(contractAddress:any) {
-    return contractRegistry.methods.isContractApprovedAndNotOfflineStruct(contractAddress).call();
+    return tayi.call(contractRegistry,"isContractApprovedAndNotOfflineStruct")
 }
 
 
 //function isContractApprovedAndNotOffline(address _contractAddress)
 //判断是否批准的合约
 export  async function isContractApprovedAndNotOffline(contractAddress:any) {
-    return contractRegistry.methods.isContractApprovedAndNotOffline(contractAddress).call();
+    return tayi.call(contractRegistry,"isContractApprovedAndNotOffline",{
+        contractAddress
+    })
 }
 
 
 // isContractRegistered (address _contractAddress)
 // 返回合约是否注册
 export  async function isContractRegistered(contractAddress:any) {
-    return contractRegistry.methods.isContractRegistered(contractAddress).call();
+    return tayi.call(contractRegistry,"isContractRegistered",{
+        contractAddress
+    })
 }
 
 
 
 //getContractInfo(address _contractAddress)
 export  async function getContractInfo(contractAddress:any) {
-    const info:ContractInfo = await contractRegistry.methods.getContractInfo(contractAddress).call();
+    const info:ContractInfo =   await  tayi.call(contractRegistry,"getContractInfo",{
+        contractAddress
+    })
        for (let i = 0; i < info.whitepaperIPFSHashes.length; i++) {
            info.whitepaperIPFSHashes[i] = getNFTMetadataURL(info.whitepaperIPFSHashes[i]);
        }
@@ -91,12 +88,14 @@ export  async function getAllContractDetails() {
     let contractDetails:ContractInfo[] = [];
      const allContracts = await getAllContracts();
      for (let i = 0; i < allContracts.length; i++) {
-         contractDetails[i] = await getContractInfo(allContracts[i]);
+         contractDetails[i] = allContracts[i]
          // //构建所有的IPFS链接
-         //    let whitepaperIPFSHashes = contractDetails[i].whitepaperIPFSHashes;
-         //    for (let j = 0; j < whitepaperIPFSHashes.length; j++) {
-         //        whitepaperIPFSHashes[j] = getNFTMetadataURL(whitepaperIPFSHashes[j]);
-         //    }
+            let whitepaperIPFSHashes:string = contractDetails[i]["whitepaperIPFSHashes"].toString();
+            let hashs  = whitepaperIPFSHashes.slice(1,whitepaperIPFSHashes.length-1).split(",")
+            for (let j = 0; j < hashs.length; j++) {
+                hashs[j] = getNFTMetadataURL(hashs[j]);
+            }
+         contractDetails[i].whitepaperIPFSHashes = hashs;
      }
         return contractDetails;
 }

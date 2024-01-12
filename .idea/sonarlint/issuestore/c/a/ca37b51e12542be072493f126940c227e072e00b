@@ -1,2 +1,29 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ
+
+java:S14882"_Immediately return this expression instead of assigning it to the temporary variable "fromNft".(†Êªíüÿÿÿÿ8‹á…ÆÏ1
+t	java:S116"SRename this field "APP_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÁ¾şÿÿÿÿ8Áá…ÆÏ1
+C
+java:S1170"!Make this final field static too.(úÁ¾şÿÿÿÿ8Âá…ÆÏ1
+H
+java:S2160"+Override the "equals" method in this class.(Û¡ÈÜ8Âá…ÆÏ1
+L	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ8Çá…ÆÏ1
+\
+java:S18541":Remove this useless assignment to local variable "mining".(ïĞÀÆûÿÿÿÿ8Èá…ÆÏ1
+M
+java:S14811"+Remove this unused "mining" local variable.(ïĞÀÆûÿÿÿÿ8Êá…ÆÏ1
+S
+java:S1874;"1Remove this use of "mapToBean"; it is deprecated.(®Ÿµªûÿÿÿÿ8Ëá…ÆÏ1
+N
+java:S1172a"1Remove this unused method parameter "jsonObject".(ÿ”ˆ8Ñá…ÆÏ1
+S
+java:S1172e"1Remove this unused method parameter "jsonObject".(åüœÒøÿÿÿÿ8Ñá…ÆÏ1
+S
+java:S1172i"1Remove this unused method parameter "jsonObject".(É™ÿÆùÿÿÿÿ8Òá…ÆÏ1
+S
+java:S1874s"1Remove this use of "mapToBean"; it is deprecated.(®Ÿµªûÿÿÿÿ8Óá…ÆÏ1
+N
+java:S1172}"1Remove this unused method parameter "jsonObject".(…Ğ¨½8Ôá…ÆÏ1
+I
+java:S1168‡"+Return an empty collection instead of null.(¥¹ï8Õá…ÆÏ1
+M
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8Õá…ÆÏ1

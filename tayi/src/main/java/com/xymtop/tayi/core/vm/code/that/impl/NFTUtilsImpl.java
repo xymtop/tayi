@@ -117,6 +117,11 @@ public class NFTUtilsImpl implements NFTUtils {
     }
 
     @Override
+    public boolean updateNFT(String id, NFTData nftData) {
+        return nftUtils.updateNFT(id, nftData);
+    }
+
+    @Override
     public NFTData writeToNft(Object obj) {
         Map<String, Object> objectMap = BeanUtil.beanToMap(obj);
         NFTData newBaseNFT = getNewBaseNFT();

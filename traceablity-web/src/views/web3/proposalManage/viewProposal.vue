@@ -62,6 +62,7 @@
  import {downloadBlob, getFileFromIPFS, readBlobAsText} from "@/web3-utils/ipfsFileUtils";
  import {executeProposal, getProposal, vote} from "@/web3-utils/contracts/contracts-api/CenterDao";
  import {useUserStore} from "@/store/user";
+ import {layer} from "@layui/layui-vue";
 const store =useUserStore()
 
 
@@ -72,16 +73,24 @@ const store =useUserStore()
    //获取到前一个页面使用router传递过来的id值
    let id = sessionStorage.getItem('proposalId');
 
-//获取详细提案信息
-   proposal.value = await getProposal(id)
-   if (proposal.value.descriptionCID==null||proposal.value.descriptionCID.length == 0) {
-      text.value = "暂无描述"
-   } else {
-     //获取描述文件
-     const blob = await getFileFromIPFS(proposal.value.descriptionCID)
-     const res = await readBlobAsText(blob)
-     text.value = res
+   if (id != undefined){
+     //获取详细提案信息
+     let data  = await getProposal(id)
+
+     if (data!= null ){
+       proposal.value =data
+     }
+
+     if (proposal.value.descriptionCID==null||proposal.value.descriptionCID.length == 0) {
+       text.value = "暂无描述"
+     } else {
+       //获取描述文件
+       const blob = await getFileFromIPFS(proposal.value.descriptionCID)
+       const res = await readBlobAsText(blob)
+       text.value = res
+     }
    }
+
  }
 
  getData()
@@ -91,17 +100,32 @@ const store =useUserStore()
  const agree = async () => {
    //投票同意
    const res = await vote(proposal.value.id, true)
+   if (res){
+     layer.msg("成功")
+   }else {
+     layer.msg("失败")
+   }
  }
  //拒绝投票
   const refuse = async () => {
     //投票拒绝
     const res = await vote(proposal.value.id, false)
+    if (res){
+      layer.msg("成功")
+    }else {
+      layer.msg("失败")
+    }
   }
 
   //执行提案
   const execute = async () => {
     //执行提案
     const res = await executeProposal(proposal.value.id)
+    if (res){
+      layer.msg("成功")
+    }else {
+      layer.msg("失败")
+    }
   }
 
  let isShow = ref(false)

@@ -45,6 +45,11 @@ let showUserOpt = reactive({
 const save = async ()=>{
    //新增提案
  const res = await createProposal(showUserOpt.selectRow.title,showUserOpt.selectRow.descriptionCID,showUserOpt.selectRow.deadline)
+ if (res){
+   layer.msg("成功")
+ }else {
+   layer.msg("失败")
+ }
 }
 
 //打开弹窗

@@ -1,2 +1,11 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ
+t	java:S116"SRename this field "APP_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±­Κϋÿÿÿÿ8μ³π¦Ο1
+C
+java:S1170"!Make this final field static too.(±­Κϋÿÿÿÿ8ο³π¦Ο1
+H
+java:S2160"+Override the "equals" method in this class.(®8ο³π¦Ο1
+L	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ8σ³π¦Ο1
+S
+java:S1874="1Remove this use of "mapToBean"; it is deprecated.(ύ…πόÿÿÿÿ8φ³π¦Ο1
+S
+java:S1874E"1Remove this use of "mapToBean"; it is deprecated.(ύ…πόÿÿÿÿ8›ός¦Ο1

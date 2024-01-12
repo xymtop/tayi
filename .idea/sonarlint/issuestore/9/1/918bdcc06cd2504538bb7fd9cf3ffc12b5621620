@@ -3,8 +3,8 @@ HWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Ã¡ªD
 IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ëö‚ü
 NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(¬‡ëÙûÿÿÿÿ
 IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ìçé
-Ktypescript:S1128D"/Remove this unused import of 'getAllContracts'.(á¦² 
-Mtypescript:S1854i"1Remove this useless assignment to variable "url".(Ñìõé
-Vtypescript:S1854˜"4Remove this useless assignment to variable "result".(–æ€€øÿÿÿÿ
-Qtypescript:S1854™"5Remove this useless assignment to variable "resData".(Ñ ¶L
-2	css:S4667´"Unexpected empty source(µáÎüÿÿÿÿ
+Rtypescript:S1128D"/Remove this unused import of 'getAllContracts'.(á¦² 8ö”ÅÏ1
+Ttypescript:S1854i"1Remove this useless assignment to variable "url".(Ñìõé8ö”ÅÏ1
+]typescript:S1854—"4Remove this useless assignment to variable "result".(–æ€€øÿÿÿÿ8ö”ÅÏ1
+Xtypescript:S1854˜"5Remove this useless assignment to variable "resData".(Ñ ¶L8ö”ÅÏ1
+9	css:S4667³"Unexpected empty source(µáÎüÿÿÿÿ8•ÅÏ1

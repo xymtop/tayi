@@ -8,6 +8,7 @@
         <version>3.2.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.xymtop.tayi</groupId>
     <artifactId>tayi</artifactId>
     <version>0.0.3</version>
@@ -17,6 +18,13 @@
         <java.version>17</java.version>
             <maven.test.skip>true</maven.test.skip>
     </properties>
+    <developers>
+        <developer>
+            <name>xymtop</name>
+            <url>https://gitee.com/xymtop/tayi</url>
+            <email>xym@xymtop.com</email>
+        </developer>
+    </developers>
     <repositories>
         <repository>
             <id>libp2p-jvm-libp2p</id>
@@ -179,6 +187,43 @@
 
 <!--                </configuration>-->
 <!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.8</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <skipNexusStagingDeployMojo>false</skipNexusStagingDeployMojo>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>

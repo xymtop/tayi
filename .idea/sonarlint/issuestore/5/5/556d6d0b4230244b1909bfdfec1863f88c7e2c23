@@ -1,16 +1,9 @@
 
 M
-java:S1066…"/Merge this if statement with the enclosing one.(·é¹8è×Ÿ›Ï1
+java:S1066Š"/Merge this if statement with the enclosing one.(·é¹8è×Ÿ›Ï1
 _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Öü›Ï1
 O
 java:S1135"2Complete the task associated to this TODO comment.(›ËÓ8Ùü›Ï1
 O
-java:S1874†"1Remove this use of "mapToBean"; it is deprecated.(êò8’ØŸ›Ï1
-X
-java:S1128"6Remove this unused import 'cn.hutool.json.JSONObject'.(¨ôÛˆùÿÿÿÿ8íü›Ï1
-P
-java:S1128
-"3Remove this unused import 'org.neo4j.graphdb.Node'.(Âú©ç8íü›Ï1
-e
-java:S1128"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8íü›Ï1
+java:S1874‹"1Remove this use of "mapToBean"; it is deprecated.(êò8’ØŸ›Ï1

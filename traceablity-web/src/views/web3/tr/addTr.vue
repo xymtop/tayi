@@ -218,9 +218,9 @@ const downloadQRCode = () => {
   document.body.removeChild(link);
 };
 
-const getQrCodeData = () => {
+const getQrCodeData = (id:string) => {
   // 转base64
-  qrCodeData.value = btoa(JSON.stringify(formValue))
+  qrCodeData.value = btoa(id)
 
 }
 
@@ -263,18 +263,24 @@ const formattedJson =async () =>{
 }
 
 const addNft = async function () {
-  // //根据formValue的值，调用合约创建nft
-  // formValue.external_url = "https://www.xymtop.com"
-  // //分别把formvalue的所有值单独传入函数uploadNFTMetadataToIPFS
-  // const uri = await uploadNFTMetadataToIPFS(formValue.name,formValue.description,formValue.image,formValue.external_url,formValue.attributes)
-  //
-  // // mintNFT
-  // let account = await checkWallet()
-  // const res = await mintNFT(account,uri)
+  //根据formValue的值，调用合约创建nft
+  formValue.external_url = "https://www.xymtop.com"
+  //分别把formvalue的所有值单独传入函数uploadNFTMetadataToIPFS
+  const uri = await uploadNFTMetadataToIPFS(formValue.name,formValue.description,formValue.image,formValue.external_url,formValue.attributes)
 
-  //打开二维码页面
-  getQrCodeData()
-  isShowQrCode.value = true
+  // mintNFT
+  let account = await checkWallet()
+
+  const res = await mintNFT(account,uri)
+
+
+  if (res != null){
+
+    //打开二维码页面
+    getQrCodeData(res.id)
+    isShowQrCode.value = true
+  }
+
 }
 const  addInput = ()=>{
    let key = prompt("请输入数据键")

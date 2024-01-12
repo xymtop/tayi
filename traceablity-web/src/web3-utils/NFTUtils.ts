@@ -1,13 +1,14 @@
 import {uploadBlogToIPFS} from "./ipfsFileUtils";
 import {getJsonFromIPFSByLink} from "./jsonUtils";
 import {NFTMetadata, TraceAblilityProduct, TraceNodeNft} from "./infoTypes";
-import {getAddress} from "./contracts/contracts-api/trNFT";
+import {getAddress, getNFTMetadata} from "./contracts/contracts-api/trNFT";
 import {getContract} from "./oprate-utils";
 import {getWalletAccount} from "./wallet-utils";
 
 import {abi} from "./contracts/contracts-api/json/ERC721NFT.json";
 import {addTrac, getAllContractByUser} from "./contracts/contracts-api/ContractRegistry";
 import {isContractAddress} from "./solidityUtils";
+import {string} from "hardhat/internal/core/params/argumentTypes";
 
 
 //通过一个字符串创建nft元数据格式的json字符串
@@ -56,6 +57,12 @@ export async function getNFTMetadataFromURL(url: string) {
   return  getNFTMetadataFromJson(data);
 }
 
+
+export const getNFTMetadataToTraceAblilityInfo =async (id:string)=>{
+   let data = await getNFTMetadata(id)
+
+    return data
+}
 
 //将NFT的元数据生成溯源产品对象
 export async function NFTMetadataToTraceAblilityInfo(id: any, metadata: NFTMetadata) {
