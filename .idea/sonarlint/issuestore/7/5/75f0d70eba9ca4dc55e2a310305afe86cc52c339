@@ -5,6 +5,8 @@ java:S1192)"MDefine a constant instead of duplicating this literal "CenterDaoAp
 java:S1488?"_Immediately return this expression instead of assigning it to the temporary variable "fromNft".(†Êªíüÿÿÿÿ8Æ•ŠÆÏ1
 
 java:S1488N"_Immediately return this expression instead of assigning it to the temporary variable "fromNft".(†Êªíüÿÿÿÿ8Æ•ŠÆÏ1
+c
+java:S2259h"FA "NullPointerException" could be thrown; "proposal" is nullable here.(Õöª‘8•§¶˜Ğ1
 L	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ8Õ•ŠÆÏ1
 \
 java:S1854M":Remove this useless assignment to local variable "mining".(ïĞÀÆûÿÿÿÿ8Ú•ŠÆÏ1
