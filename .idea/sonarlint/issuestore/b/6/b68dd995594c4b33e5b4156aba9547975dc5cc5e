@@ -1,0 +1,12 @@
+
+Ggo:S1135Ù"2Complete the task associated to this TODO comment.(ùæÁğ
+ego:S1192Å"KDefine a constant instead of duplicating this literal "build/deb/" 6 times.(Åó‰ôşÿÿÿÿ
+cgo:S1192"JDefine a constant instead of duplicating this literal "golang-go" 7 times.(½¹”ôüÿÿÿÿ
+bgo:S1192Ø"HDefine a constant instead of duplicating this literal ".tar.gz" 3 times.(åªçÎÿÿÿÿÿ
+ngo:S1192É"TDefine a constant instead of duplicating this literal "build/checksums.txt" 6 times.(ë­”ºÿÿÿÿÿ
+cgo:S1192¢"NDefine a constant instead of duplicating this literal "./build/cache" 3 times.(´á¡ß
+ago:S1192¥"LDefine a constant instead of duplicating this literal "--build-arg" 6 times.(Ø 
+lgo:S3776È"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(»çıîúÿÿÿÿ
+fgo:S3776ı"RRefactor this method to reduce its Cognitive Complexity from 99 to the 15 allowed.(è”öa
+ggo:S3776£"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Í²¿ó
+[go:S107ñ"GThis function has 8 parameters, which is greater than the 7 authorized.(£Ğğ
