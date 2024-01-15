@@ -38,9 +38,9 @@ java:S1488W"^Immediately return this expression instead of assigning it to the 
 {
 java:S1488o"^Immediately return this expression instead of assigning it to the temporary variable "result".(óûÏâ8¶‰£Ï1
 b
-java:S2583"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢8¶Š£Ï1
-b
 java:S2583Œ"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢8¶Š£Ï1
+b
+java:S2583"DChange this condition so that it does not always evaluate to "false"(ûâÉ¢8¶Š£Ï1
 _
 java:S6813+"BRemove this field injection and use constructor injection instead.(êæÄŞ8¹Š£Ï1
 _

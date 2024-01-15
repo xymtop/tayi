@@ -1,0 +1,24 @@
+import {addInterval, stopExecQuery} from "../common/Timers";
+import {sendMsg} from "../../socket/SocketClient";
+
+const num = 1000
+
+let idMap:Map<any,any> = new Map()
+
+
+const onResultHashExec = (hash:string)=>{
+    //设置定时器，获取到结果
+   let id =  addInterval(getResult(hash),num)
+
+    idMap.set(hash,id)
+}
+
+
+const getResult = (hash:string) =>{
+    //发送请求获取结果
+
+    stopExecQuery(hash)
+
+}
+
+export {idMap,onResultHashExec,getResult}

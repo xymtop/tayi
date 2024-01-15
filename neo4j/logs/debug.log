@@ -15500,3 +15500,789 @@
 2024-01-12 16:25:37.534+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [system/00000000] Checkpoint triggered by "Database shutdown" @ txId: 37 checkpoint completed in 41ms. Checkpoint flushed 27 pages (0% of total available pages), in 26 IOs. Checkpoint performed with IO limit: unlimited, paused in total 0 times( 0 millis).
 2024-01-12 16:25:37.534+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [system/00000000] No log version pruned. The strategy used was '2 days'. 
 2024-01-12 16:25:37.581+0000 INFO  [o.n.d.d.DatabaseLifecycles] Stopped 'DatabaseId{00000000[system]}' successfully.
+2024-01-14 12:11:00.633+0000 INFO  [o.n.g.f.m.GlobalModule] Logging config in use: Embedded default config 'default-server-logs.xml'
+2024-01-14 12:11:00.907+0000 WARN  [o.n.k.i.JvmChecker] You are using an unsupported version of the Java runtime. Please use Java(TM) 17 or Java(TM) 21 to run Neo4j.
+2024-01-14 12:11:00.907+0000 WARN  [o.n.k.i.JvmChecker] The max heap memory has not been configured. It is recommended that it is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 4118806528 bytes is used instead. If you are running neo4j server, you need to configure server.memory.heap.max_size in neo4j.conf. If you are running neo4j embedded, you have to launch the JVM with -Xmx set to a value. You can run neo4j-admin server memory-recommendation for memory configuration suggestions.
+2024-01-14 12:11:00.908+0000 WARN  [o.n.k.i.JvmChecker] The initial heap memory has not been configured. It is recommended that it is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 257949696 bytes is used instead. If you are running neo4j server, you need to configure server.memory.heap.initial_size in neo4j.conf. If you are running neo4j embedded, you have to launch the JVM with -Xms set to a value. You can run neo4j-admin server memory-recommendation for memory configuration suggestions.
+2024-01-14 12:11:00.956+0000 WARN  [o.n.i.p.PageCache] The server.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 6175356928 bytes will be used instead. Run `neo4j-admin memory-recommendation` for memory configuration suggestions.
+2024-01-14 12:11:00.956+0000 WARN  [o.n.i.p.PageCache] Reflection access to java.nio.DirectByteBuffer is not available, using fallback mode. This could have negative impact on performance and memory usage. Consider adding --add-opens=java.base/java.nio=ALL-UNNAMED to VM options.
+2024-01-14 12:11:01.197+0000 INFO  [o.n.i.d.DiagnosticsManager] 
+                                                                ********************************************************************************
+                                                                                             [ System diagnostics ]                             
+                                                                ********************************************************************************
+                                                                --------------------------------------------------------------------------------
+                                                                                         [ System memory information ]                          
+                                                                --------------------------------------------------------------------------------
+                                                                Total Physical memory: 15.34GiB
+                                                                Free Physical memory: 605.1MiB
+                                                                Committed virtual memory: 326.0MiB
+                                                                Total swap space: 37.37GiB
+                                                                Free swap space: 3.990GiB
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                           [ JVM memory information ]                           
+                                                                --------------------------------------------------------------------------------
+                                                                Free  memory: 58.10MiB
+                                                                Total memory: 118.0MiB
+                                                                Max   memory: 3.836GiB
+                                                                Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+                                                                Garbage Collector: G1 Concurrent GC: [G1 Old Gen]
+                                                                Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+                                                                Memory Pool: Metaspace (Non-heap memory): committed=45.81MiB, used=45.16MiB, max=-1B, threshold=0B
+                                                                Memory Pool: G1 Survivor Space (Heap memory): committed=6.000MiB, used=6.000MiB, max=-1B, threshold=?
+                                                                Memory Pool: Compressed Class Space (Non-heap memory): committed=5.875MiB, used=5.600MiB, max=1.000GiB, threshold=0B
+                                                                Memory Pool: G1 Eden Space (Heap memory): committed=50.00MiB, used=8.000MiB, max=-1B, threshold=?
+                                                                Memory Pool: G1 Old Gen (Heap memory): committed=62.00MiB, used=44.32MiB, max=3.836GiB, threshold=0B
+                                                                Memory Pool: CodeCache (Non-heap memory): committed=12.94MiB, used=12.89MiB, max=48.00MiB, threshold=0B
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                        [ Operating system information ]                        
+                                                                --------------------------------------------------------------------------------
+                                                                Operating System: Windows 11; version: 10.0; arch: amd64; cpus: 16
+                                                                Process id: 32468
+                                                                Byte order: LITTLE_ENDIAN
+                                                                Local timezone: Asia/Novosibirsk
+                                                                Memory page size: 4096
+                                                                Unaligned memory access allowed: true
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                              [ JVM information ]                               
+                                                                --------------------------------------------------------------------------------
+                                                                VM Name: OpenJDK 64-Bit Server VM
+                                                                VM Vendor: Oracle Corporation
+                                                                VM Version: 20+36-2344
+                                                                JIT compiler: HotSpot 64-Bit Tiered Compilers
+                                                                VM Arguments: [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:14921,suspend=y,server=n, -XX:TieredStopAtLevel=1, -Dspring.profiles.active=application.yml, -Dspring.output.ansi.enabled=always, -Dcom.sun.management.jmxremote, -Dspring.jmx.enabled=true, -Dspring.liveBeansView.mbeanDomain, -Dspring.application.admin.enabled=true, -Dmanagement.endpoints.jmx.exposure.include=*, -javaagent:C:\Users\小野喵\AppData\Local\JetBrains\IntelliJIdea2023.3\captureAgent\debugger-agent.jar=file:/C:/Users/%E5%B0%8F%E9%87%8E%E5%96%B5/AppData/Local/Temp/capture.props, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8]
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                               [ Java classpath ]                               
+                                                                --------------------------------------------------------------------------------
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-websocket\6.1.2\spring-websocket-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\jaxrs\jackson-jaxrs-json-provider\2.15.3\jackson-jaxrs-json-provider-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\apache\dubbo\dubbo-spring-boot-starter\3.0.0\dubbo-spring-boot-starter-3.0.0.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\collections\eclipse-collections\11.1.0\eclipse-collections-11.1.0.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-servlet\10.0.17\jetty-servlet-10.0.17.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\app\neo4j-server\5.15.0\neo4j-server-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-handler\4.1.104.Final\netty-handler-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\io\protostuff\protostuff-core\1.6.0\protostuff-core-1.6.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-resolver-dns-classes-macos\4.1.104.Final\netty-resolver-dns-classes-macos-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-web\6.1.2\spring-web-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-token-api\5.15.0\neo4j-token-api-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\codehaus\jettison\jettison\1.5.4\jettison-1.5.4.jar
+                                                                 [classpath] C:\Software\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot\3.2.1\spring-boot-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-buffer\4.1.104.Final\netty-buffer-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar
+                                                                 [classpath] C:\Software\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j\5.15.0\neo4j-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-unsafe\5.15.0\neo4j-unsafe-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-all\4.1.63.Final\netty-all-4.1.63.Final.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-consistency-check\5.15.0\neo4j-consistency-check-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\javassist\javassist\3.23.1-GA\javassist-3.23.1-GA.jar
+                                                                 [classpath] C:\Software\repository\com\github\ben-manes\caffeine\caffeine\3.1.8\caffeine-3.1.8.jar
+                                                                 [classpath] C:\Software\repository\io\projectreactor\netty\reactor-netty-http\1.1.14\reactor-netty-http-1.1.14.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-reactor-netty\3.2.1\spring-boot-starter-reactor-netty-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-resource\5.15.0\neo4j-resource-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jersey\core\jersey-common\3.1.5\jersey-common-3.1.5.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-rewriting\5.15.0\neo4j-rewriting-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-slf4j-provider\5.15.0\neo4j-slf4j-provider-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\bouncycastle\bcprov-jdk15on\1.69\bcprov-jdk15on-1.69.jar
+                                                                 [classpath] C:\Software\repository\org\jprocesses\jProcesses\1.6.5\jProcesses-1.6.5.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-expression-evaluator\5.15.0\neo4j-cypher-expression-evaluator-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-ssl\5.15.0\neo4j-ssl-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport-classes-kqueue\4.1.104.Final\netty-transport-classes-kqueue-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-beans\6.1.2\spring-beans-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\io\protostuff\protostuff-collectionschema\1.6.0\protostuff-collectionschema-1.6.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\curator\curator-framework\2.12.0\curator-framework-2.12.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.1\spring-boot-autoconfigure-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-crypto-cipher\1.13.0\shiro-crypto-cipher-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-common\5.15.0\neo4j-common-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-aop\6.1.2\spring-aop-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\com\github\luben\zstd-jni\1.5.5-10\zstd-jni-1.5.5-10.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\collections\eclipse-collections-api\11.1.0\eclipse-collections-api-11.1.0.jar
+                                                                 [classpath] C:\Software\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport\4.1.104.Final\netty-transport-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-jcl\6.1.2\spring-jcl-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-server\12.0.5\jetty-server-12.0.5.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-codec-http\4.1.104.Final\netty-codec-http-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\com\github\multiformats\java-multihash\v1.3.4\java-multihash-v1.3.4.jar
+                                                                 [classpath] C:\Software\repository\org\checkerframework\checker-qual\2.0.0\checker-qual-2.0.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\zookeeper\zookeeper\3.4.8\zookeeper-3.4.8.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\hk2\hk2-utils\3.0.5\hk2-utils-3.0.5.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-crypto-hash\1.13.0\shiro-crypto-hash-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-kernel\5.15.0\neo4j-kernel-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-expression\6.1.2\spring-expression-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-front-end\5.15.0\neo4j-front-end-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-logging\5.15.0\neo4j-logging-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-planner-spi\5.15.0\neo4j-cypher-planner-spi-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-procedure\5.15.0\neo4j-procedure-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-cache\5.15.0\neo4j-cypher-cache-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\ow2\asm\asm-analysis\9.6\asm-analysis-9.6.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-config-core\1.13.0\shiro-config-core-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-logical-plans\5.15.0\neo4j-cypher-logical-plans-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport-native-kqueue\4.1.104.Final\netty-transport-native-kqueue-4.1.104.Final-osx-x86_64.jar
+                                                                 [classpath] C:\Software\repository\org\ow2\asm\asm-tree\9.6\asm-tree-9.6.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jersey\core\jersey-client\3.1.5\jersey-client-3.1.5.jar
+                                                                 [classpath] C:\Software\repository\com\profesorfalken\jPowerShell\3.0\jPowerShell-3.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-monitoring\5.15.0\neo4j-monitoring-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-import-tool\5.15.0\neo4j-import-tool-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\alibaba\spring\spring-context-support\1.0.8\spring-context-support-1.0.8.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jersey\inject\jersey-hk2\3.1.5\jersey-hk2-3.1.5.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-cache\1.13.0\shiro-cache-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-ir\5.15.0\neo4j-cypher-ir-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-native\5.15.0\neo4j-native-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\scala-lang\scala-reflect\2.13.11\scala-reflect-2.13.11.jar
+                                                                 [classpath] C:\Software\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar
+                                                                 [classpath] C:\Software\repository\org\apache\logging\log4j\log4j-core\2.21.1\log4j-core-2.21.1.jar
+                                                                 [classpath] C:\Software\repository\com\github\multiformats\java-multibase\v1.1.1\java-multibase-v1.1.1.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-lucene-index\5.15.0\neo4j-lucene-index-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-codec-socks\4.1.104.Final\netty-codec-socks-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-physical-planning\5.15.0\neo4j-cypher-physical-planning-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar
+                                                                 [classpath] C:\Software\repository\com\typesafe\config\1.3.3\config-1.3.3.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-query-router\5.15.0\neo4j-query-router-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-bolt\5.15.0\neo4j-bolt-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\ow2\asm\asm\9.3\asm-9.3.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-event\1.13.0\shiro-event-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-data-collector\5.15.0\neo4j-data-collector-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.1\spring-boot-starter-tomcat-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-planner\5.15.0\neo4j-cypher-planner-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-kernel-api\5.15.0\neo4j-kernel-api-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\turbo-rpc\turbo-spring-boot-starter\0.0.9\turbo-spring-boot-starter-0.0.9.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-io\12.0.5\jetty-io-12.0.5.jar
+                                                                 [classpath] C:\Users\小野喵\AppData\Local\Programs\IntelliJ IDEA Ultimate\lib\idea_rt.jar
+                                                                 [classpath] C:\Software\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-collections\5.15.0\neo4j-collections-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\micrometer\micrometer-observation\1.12.1\micrometer-observation-1.12.1.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-codec-http2\4.1.104.Final\netty-codec-http2-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar
+                                                                 [classpath] C:\Software\repository\org\scala-lang\modules\scala-collection-contrib_2.13\0.3.0\scala-collection-contrib_2.13-0.3.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\lucene\lucene-backward-codecs\9.8.0\lucene-backward-codecs-9.8.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-interpreted-runtime\5.15.0\neo4j-cypher-interpreted-runtime-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-values\5.15.0\neo4j-values-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-dbms\5.15.0\neo4j-dbms-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-io\5.15.0\neo4j-io-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jersey\containers\jersey-container-servlet\3.1.5\jersey-container-servlet-3.1.5.jar
+                                                                 [classpath] C:\Software\repository\com\turbo-rpc\turbo-jcl\0.0.9\turbo-jcl-0.0.9.jar
+                                                                 [classpath] C:\Software\repository\com\github\multiformats\java-multiaddr\v1.4.12\java-multiaddr-v1.4.12.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-crypto-core\1.13.0\shiro-crypto-core-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\com\google\guava\guava\25.1-jre\guava-25.1-jre.jar
+                                                                 [classpath] C:\Software\repository\com\turbo-rpc\turbo-protostuff\0.0.9\turbo-protostuff-0.0.9.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-resolver\4.1.104.Final\netty-resolver-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\com\github\seancfoley\ipaddress\5.4.0\ipaddress-5.4.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\lucene\lucene-analysis-common\9.8.0\lucene-analysis-common-9.8.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport-native-unix-common\4.1.104.Final\netty-transport-native-unix-common-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\com\esotericsoftware\kryo\4.0.2\kryo-4.0.2.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport-classes-epoll\4.1.104.Final\netty-transport-classes-epoll-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\io\micrometer\micrometer-commons\1.12.1\micrometer-commons-1.12.1.jar
+                                                                 [classpath] C:\Software\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-csv\5.15.0\neo4j-csv-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\module\jackson-module-afterburner\2.15.3\jackson-module-afterburner-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-webmvc\6.1.2\spring-webmvc-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\com\esotericsoftware\reflectasm\1.11.3\reflectasm-1.11.3.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-handler-proxy\4.1.104.Final\netty-handler-proxy-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\licensing-proxy\zstd-proxy\5.15.0\zstd-proxy-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport-native-epoll\4.1.104.Final\netty-transport-native-epoll-4.1.104.Final-linux-x86_64.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-rsocket\3.2.1\spring-boot-starter-rsocket-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\apache\dubbo\dubbo-spring-boot-autoconfigure\3.0.0\dubbo-spring-boot-autoconfigure-3.0.0.jar
+                                                                 [classpath] C:\Software\repository\com\propensive\magnolia_2.13\0.17.0\magnolia_2.13-0.17.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-web\3.2.1\spring-boot-starter-web-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\bitbucket\inkytonik\kiama\kiama_2.13\2.5.1\kiama_2.13-2.5.1.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-json\3.2.1\spring-boot-starter-json-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-core\6.1.2\spring-core-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar
+                                                                 [classpath] C:\Software\repository\org\apache\dubbo\dubbo-spring-boot-autoconfigure-compatible\3.0.0\dubbo-spring-boot-autoconfigure-compatible-3.0.0.jar
+                                                                 [classpath] C:\Software\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\cypher-ast-factory\5.15.0\cypher-ast-factory-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-common\4.1.104.Final\netty-common-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-webapp\10.0.17\jetty-webapp-10.0.17.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.15.3\jackson-module-jaxb-annotations-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-record-storage-engine\5.15.0\neo4j-record-storage-engine-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-context\6.1.2\spring-context-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-id-generator\5.15.0\neo4j-id-generator-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\hk2\hk2-api\3.0.5\hk2-api-3.0.5.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport-native-kqueue\4.1.104.Final\netty-transport-native-kqueue-4.1.104.Final-osx-aarch_64.jar
+                                                                 [classpath] C:\Software\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\spring-messaging\6.1.2\spring-messaging-6.1.2.jar
+                                                                 [classpath] C:\Software\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar
+                                                                 [classpath] C:\Software\repository\org\apache\lucene\lucene-core\9.8.0\lucene-core-9.8.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-slotted-runtime\5.15.0\neo4j-cypher-slotted-runtime-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-javacc-parser\5.15.0\neo4j-cypher-javacc-parser-5.15.0.jar
+                                                                 [classpath] C:\Users\小野喵\Desktop\tayi\tayi\target\classes
+                                                                 [classpath] C:\Software\repository\io\protostuff\protostuff-api\1.6.0\protostuff-api-1.6.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\annotations\5.15.0\annotations-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\jctools\jctools-core\4.0.1\jctools-core-4.0.1.jar
+                                                                 [classpath] C:\Software\repository\io\rsocket\rsocket-core\1.1.3\rsocket-core-1.1.3.jar
+                                                                 [classpath] C:\Software\repository\org\rocksdb\rocksdbjni\6.20.3\rocksdbjni-6.20.3.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-fabric\5.15.0\neo4j-fabric-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-core\1.13.0\shiro-core-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-transport-native-epoll\4.1.104.Final\netty-transport-native-epoll-4.1.104.Final-linux-aarch_64.jar
+                                                                 [classpath] C:\Software\repository\io\protostuff\protostuff-runtime\1.6.0\protostuff-runtime-1.6.0.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-xml\12.0.5\jetty-xml-12.0.5.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-layout\5.15.0\neo4j-layout-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-codec\4.1.104.Final\netty-codec-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\com\turbo-rpc\turbo-rpc\0.0.9\turbo-rpc-0.0.9.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-codegen\5.15.0\neo4j-codegen-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter\3.2.1\spring-boot-starter-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-import-util\5.15.0\neo4j-import-util-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-http\12.0.5\jetty-http-12.0.5.jar
+                                                                 [classpath] C:\Software\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar
+                                                                 [classpath] C:\Software\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-util\12.0.5\jetty-util-12.0.5.jar
+                                                                 [classpath] C:\Software\repository\com\turbo-rpc\turbo-utils\0.0.9\turbo-utils-0.0.9.jar
+                                                                 [classpath] C:\Software\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-spatial-index\5.15.0\neo4j-spatial-index-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-index\5.15.0\neo4j-index-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-fulltext-index\5.15.0\neo4j-fulltext-index-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-procedure-api\5.15.0\neo4j-procedure-api-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\cn\hutool\hutool-all\5.8.24\hutool-all-5.8.24.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-logging\3.2.1\spring-boot-starter-logging-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\io\rsocket\rsocket-transport-netty\1.1.3\rsocket-transport-netty-1.1.3.jar
+                                                                 [classpath] C:\Software\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar
+                                                                 [classpath] C:\Software\repository\org\apache\dubbo\dubbo\3.0.0\dubbo-3.0.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-capabilities\5.15.0\neo4j-capabilities-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-codec-dns\4.1.104.Final\netty-codec-dns-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\org\roaringbitmap\RoaringBitmap\0.9.0\RoaringBitmap-0.9.0.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\hk2\hk2-locator\3.0.5\hk2-locator-3.0.5.jar
+                                                                 [classpath] C:\Software\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\turbo-rpc\turbo-kryo\0.0.9\turbo-kryo-0.0.9.jar
+                                                                 [classpath] C:\Software\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar
+                                                                 [classpath] C:\Software\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-expressions\5.15.0\neo4j-expressions-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-storage-engine-util\5.15.0\neo4j-storage-engine-util-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-resolver-dns-native-macos\4.1.104.Final\netty-resolver-dns-native-macos-4.1.104.Final-osx-x86_64.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-diagnostics\5.15.0\neo4j-diagnostics-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\profesorfalken\WMI4Java\1.6.3\WMI4Java-1.6.3.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\jaxrs\jackson-jaxrs-base\2.15.3\jackson-jaxrs-base-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jersey\containers\jersey-container-servlet-core\3.1.5\jersey-container-servlet-core-3.1.5.jar
+                                                                 [classpath] C:\Software\repository\org\roaringbitmap\shims\0.9.0\shims-0.9.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-configuration\5.15.0\neo4j-configuration-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-runtime-util\5.15.0\neo4j-cypher-runtime-util-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-websocket\3.2.1\spring-boot-starter-websocket-3.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-concurrent\5.15.0\neo4j-concurrent-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\springframework\boot\spring-boot-starter-aop\2.6.3\spring-boot-starter-aop-2.6.3.jar
+                                                                 [classpath] C:\Software\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar
+                                                                 [classpath] C:\Software\repository\io\projectreactor\netty\reactor-netty-core\1.1.14\reactor-netty-core-1.1.14.jar
+                                                                 [classpath] C:\Software\repository\org\scala-lang\scala-library\2.13.11\scala-library-2.13.11.jar
+                                                                 [classpath] C:\Software\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar
+                                                                 [classpath] C:\Software\repository\org\antlr\antlr4-runtime\4.9.2\antlr4-runtime-4.9.2.jar
+                                                                 [classpath] C:\Software\repository\com\github\ipfs\java-ipfs-http-client\v1.4.4\java-ipfs-http-client-v1.4.4.jar
+                                                                 [classpath] C:\Software\repository\org\apache\curator\curator-recipes\2.12.0\curator-recipes-2.12.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\shiro\shiro-lang\1.13.0\shiro-lang-1.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\logging\log4j\log4j-layout-template-json\2.21.1\log4j-layout-template-json-2.21.1.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-lock\5.15.0\neo4j-lock-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\io\netty\netty-resolver-dns\4.1.104.Final\netty-resolver-dns-4.1.104.Final.jar
+                                                                 [classpath] C:\Software\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar
+                                                                 [classpath] C:\Software\repository\com\turbo-rpc\turbo-register-zk\0.0.9\turbo-register-zk-0.0.9.jar
+                                                                 [classpath] C:\Software\repository\com\propensive\mercator_2.13\0.2.1\mercator_2.13-0.2.1.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-graph-algo\5.15.0\neo4j-graph-algo-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-ast-factory\5.15.0\neo4j-cypher-ast-factory-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\jline\jline\0.9.94\jline-0.9.94.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-security\5.15.0\neo4j-security-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-wal\5.15.0\neo4j-wal-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-macros\5.15.0\neo4j-cypher-macros-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-command-line\5.15.0\neo4j-command-line-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar
+                                                                 [classpath] C:\Software\repository\org\ow2\asm\asm-util\9.6\asm-util-9.6.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-util\5.15.0\neo4j-util-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar
+                                                                 [classpath] C:\Software\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jersey\core\jersey-server\3.1.5\jersey-server-3.1.5.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher\5.15.0\neo4j-cypher-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar
+                                                                 [classpath] C:\Software\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar
+                                                                 [classpath] C:\Software\repository\org\apache\commons\commons-configuration2\2.9.0\commons-configuration2-2.9.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar
+                                                                 [classpath] C:\Software\repository\io\projectreactor\reactor-core\3.6.1\reactor-core-3.6.1.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-exceptions\5.15.0\neo4j-exceptions-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\alibaba\fastjson\1.2.70\fastjson-1.2.70.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\server-api\5.15.0\server-api-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-cbor\2.15.3\jackson-dataformat-cbor-2.15.3.jar
+                                                                 [classpath] C:\Software\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-cypher-config\5.15.0\neo4j-cypher-config-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\curator\curator-client\2.12.0\curator-client-2.12.0.jar
+                                                                 [classpath] C:\Software\repository\org\apache\lucene\lucene-queryparser\9.8.0\lucene-queryparser-9.8.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-ast\5.15.0\neo4j-ast-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-graphdb-api\5.15.0\neo4j-graphdb-api-5.15.0.jar
+                                                                 [classpath] C:\Software\repository\org\eclipse\jetty\jetty-security\12.0.5\jetty-security-12.0.5.jar
+                                                                 [classpath] C:\Software\repository\com\github\ipld\java-cid\v1.3.7\java-cid-v1.3.7.jar
+                                                                 [classpath] C:\Software\repository\org\neo4j\neo4j-schema\5.15.0\neo4j-schema-5.15.0.jar
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                [ Library path ]                                
+                                                                --------------------------------------------------------------------------------
+                                                                C:\Users\小野喵\.jdks\openjdk-20\bin
+                                                                C:\Windows\Sun\Java\bin
+                                                                C:\Windows\System32
+                                                                C:\Windows
+                                                                C:\Program Files\Common Files\Oracle\Java\javapath_target_42821203
+                                                                C:\Windows\System32
+                                                                C:\Windows
+                                                                C:\Windows\System32\wbem
+                                                                C:\Windows\System32\WindowsPowerShell\v1.0
+                                                                C:\Windows\System32\OpenSSH
+                                                                C:\Program Files\python
+                                                                C:\Program Files\python\Scripts
+                                                                C:\BtSoft\panel\script
+                                                                C:\Program Files\Bandizip
+                                                                C:\Program Files\Git\cmd
+                                                                C:\Program Files\Redis
+                                                                C:\ProgramData\chocolatey\bin
+                                                                C:\Program Files (x86)\NetSarang\Xshell 7
+                                                                C:\Program Files (x86)\NetSarang\Xftp 7
+                                                                C:\Users\小野喵\.jdks\openjdk-20\bin
+                                                                C:\Program Files\Docker\Docker\resources\bin
+                                                                C:\Users\小野喵\AppData\Roaming\nvm
+                                                                C:\Program Files\nodejs
+                                                                C:\Program Files\nodejs
+                                                                C:\Program Files (x86)\Tencent\微信web开发者工具\dll
+                                                                C:\Program Files\Go\bin
+                                                                C:\Program Files\Geth
+                                                                C:\Users\小野喵\AppData\Local\Programs\Python\Python312\Scripts
+                                                                C:\Users\小野喵\AppData\Local\Programs\Python\Python312
+                                                                C:\Program Files\MySQL\MySQL Shell 8.0\bin
+                                                                C:\Users\小野喵\AppData\Local\Microsoft\WindowsApps
+                                                                C:\Program Files\JetBrains\PyCharm 2022.3.3\bin
+                                                                C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.3\bin
+                                                                C:\Users\小野喵\AppData\Local\Programs\Microsoft VS Code\bin
+                                                                C:\Program Files\JetBrains\GoLand 2022.3.4\bin
+                                                                C:\Users\小野喵\go\bin
+                                                                C:\Program Files\JetBrains\DataGrip 2023.1.1\bin
+                                                                C:\Program Files\JetBrains\WebStorm 2023.1.1\bin
+                                                                C:\Users\小野喵\AppData\Local\JetBrains\Toolbox\scripts
+                                                                C:\Program Files\cpolar
+                                                                C:\Users\小野喵\AppData\Roaming\npm
+                                                                C:\Users\小野喵\go\bin
+                                                                C:\Users\小野喵\Desktop\tayi
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                             [ System properties ]                              
+                                                                --------------------------------------------------------------------------------
+                                                                sun.cpu.isalist = amd64
+                                                                sun.jnu.encoding = GBK
+                                                                sun.arch.data.model = 64
+                                                                user.variant = 
+                                                                catalina.useNaming = false
+                                                                user.timezone = Asia/Novosibirsk
+                                                                sun.java.launcher = SUN_STANDARD
+                                                                user.country = CN
+                                                                sun.boot.library.path = C:\Users\小野喵\.jdks\openjdk-20\bin
+                                                                spring.application.admin.enabled = true
+                                                                sun.java.command = com.xymtop.tayi.TayiApplication
+                                                                com.sun.management.jmxremote = 
+                                                                jdk.debug = release
+                                                                spring.liveBeansView.mbeanDomain = 
+                                                                sun.cpu.endian = little
+                                                                user.home = C:\Users\小野喵
+                                                                user.language = zh
+                                                                sun.stderr.encoding = UTF-8
+                                                                spring.profiles.active = application.yml
+                                                                spring.output.ansi.enabled = always
+                                                                file.separator = \
+                                                                sun.stdout.encoding = UTF-8
+                                                                intellij.debug.agent = true
+                                                                FILE_LOG_CHARSET = UTF-8
+                                                                user.script = 
+                                                                sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+                                                                user.name = 小野喵
+                                                                spring.jmx.enabled = true
+                                                                stdout.encoding = UTF-8
+                                                                path.separator = ;
+                                                                management.endpoints.jmx.exposure.include = *
+                                                                file.encoding = UTF-8
+                                                                jnidispatch.path = C:\Users\小野喵\AppData\Local\Temp\jna-23826934\jna3621278700204360967.dll
+                                                                jna.loaded = true
+                                                                catalina.home = C:\Users\小野喵\AppData\Local\Temp\tomcat.8081.11675058784066626594
+                                                                jboss.modules.system.pkgs = com.intellij.rt
+                                                                user.dir = C:\Users\小野喵\Desktop\tayi
+                                                                PID = 32468
+                                                                sun.os.patch.level = 
+                                                                CONSOLE_LOG_CHARSET = UTF-8
+                                                                catalina.base = C:\Users\小野喵\AppData\Local\Temp\tomcat.8081.11675058784066626594
+                                                                native.encoding = GBK
+                                                                stderr.encoding = UTF-8
+                                                                sun.io.unicode.encoding = UnicodeLittle
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                      [ (IANA) TimeZone database version ]                      
+                                                                --------------------------------------------------------------------------------
+                                                                  TimeZone version: 2022g (available for 603 zone identifiers)
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                            [ Network information ]                             
+                                                                --------------------------------------------------------------------------------
+                                                                Interface Software Loopback Interface 1:
+                                                                    address: 127.0.0.1
+                                                                    address: 0:0:0:0:0:0:0:1
+                                                                Interface Microsoft Kernel Debug Network Adapter:
+                                                                Interface Microsoft 6to4 Adapter:
+                                                                Interface TAP-Windows Adapter V9:
+                                                                    address: fe80:0:0:0:b3fd:b069:d20a:bd4f%eth1
+                                                                Interface Microsoft IP-HTTPS Platform Adapter:
+                                                                Interface WAN Miniport (PPTP):
+                                                                Interface WAN Miniport (IPv6):
+                                                                Interface WAN Miniport (IP):
+                                                                Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter:
+                                                                    address: 192.168.0.88
+                                                                    address: fe80:0:0:0:bab4:2510:9654:864%wlan0
+                                                                Interface WAN Miniport (PPPOE):
+                                                                Interface Bluetooth Device (Personal Area Network):
+                                                                Interface WAN Miniport (SSTP):
+                                                                Interface Microsoft Teredo Tunneling Adapter:
+                                                                Interface WAN Miniport (L2TP):
+                                                                Interface WAN Miniport (IKEv2):
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter #2:
+                                                                    address: fe80:0:0:0:3d67:81ed:19ce:74b5%wlan1
+                                                                Interface ASIX AX88772B USB2.0 to Fast Ethernet Adapter:
+                                                                Interface WAN Miniport (Network Monitor):
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter:
+                                                                    address: fe80:0:0:0:a1a7:b0a:1c3:4db6%wlan2
+                                                                Interface TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface TAP-Windows Adapter V9-QoS Packet Scheduler-0000:
+                                                                Interface TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000:
+                                                                Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter-Virtual WiFi Filter Driver-0000:
+                                                                Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter-Native WiFi Filter Driver-0000:
+                                                                Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter-QoS Packet Scheduler-0000:
+                                                                Interface Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000:
+                                                                Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+                                                                Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+                                                                Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+                                                                Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+                                                                Interface Hyper-V Virtual Switch Extension Adapter:
+                                                                Interface Hyper-V Virtual Switch Extension Adapter-Hyper-V Virtual Switch Extension Filter-0000:
+                                                                Interface Hyper-V Virtual Switch Extension Adapter-Virtual Filtering Platform VMSwitch Extension-0000:
+                                                                Interface Hyper-V Virtual Ethernet Adapter:
+                                                                    address: 172.24.48.1
+                                                                    address: fe80:0:0:0:573e:1e94:13a1:807%eth19
+                                                                Interface Hyper-V Virtual Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+                                                                Interface Hyper-V Virtual Ethernet Adapter-QoS Packet Scheduler-0000:
+                                                                Interface Hyper-V Virtual Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                         [ Native access information ]                          
+                                                                --------------------------------------------------------------------------------
+                                                                Native access details: Native access is not available for current platform.
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                [ DBMS config ]                                 
+                                                                --------------------------------------------------------------------------------
+                                                                DBMS provided settings:
+                                                                server.directories.neo4j_home=C:\Users\小野喵\Desktop\tayi\neo4j
+                                                                Directories in use:
+                                                                server.directories.data=C:\Users\小野喵\Desktop\tayi\neo4j\data
+                                                                server.directories.dumps.root=C:\Users\小野喵\Desktop\tayi\neo4j\data\dumps
+                                                                server.directories.import=C:\Users\小野喵\Desktop\tayi\neo4j
+                                                                server.directories.lib=C:\Users\小野喵\Desktop\tayi\neo4j\lib
+                                                                server.directories.licenses=C:\Users\小野喵\Desktop\tayi\neo4j\licenses
+                                                                server.directories.logs=C:\Users\小野喵\Desktop\tayi\neo4j\logs
+                                                                server.directories.neo4j_home=C:\Users\小野喵\Desktop\tayi\neo4j
+                                                                server.directories.plugins=C:\Users\小野喵\Desktop\tayi\neo4j\plugins
+                                                                server.directories.run=C:\Users\小野喵\Desktop\tayi\neo4j\run
+                                                                server.directories.script.root=C:\Users\小野喵\Desktop\tayi\neo4j\data\scripts
+                                                                server.directories.transaction.logs.root=C:\Users\小野喵\Desktop\tayi\neo4j\data\transactions
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                 [ Packaging ]                                  
+                                                                --------------------------------------------------------------------------------
+                                                                Could not read packaging info: java.nio.file.NoSuchFileException: C:\Users\小野喵\Desktop\tayi\neo4j\packaging_info
+                                                                
+2024-01-14 12:11:01.266+0000 INFO  [o.n.d.i.DefaultIdentityModule] Found ServerId on disk: ServerId{bbb33256} (bbb33256-0597-410e-a80d-7b877f5955f3)
+2024-01-14 12:11:01.268+0000 INFO  [o.n.d.i.DefaultIdentityModule] This instance is ServerId{bbb33256} (bbb33256-0597-410e-a80d-7b877f5955f3)
+2024-01-14 12:11:02.910+0000 INFO  [o.n.d.d.DatabaseLifecycles] Creating 'DatabaseId{00000000[system]}'.
+2024-01-14 12:11:03.053+0000 INFO  [o.n.d.d.DatabaseLifecycles] Starting 'DatabaseId{00000000[system]}'.
+2024-01-14 12:11:03.463+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [system/00000000] Scanning log file with version 0 for checkpoint entries
+2024-01-14 12:11:03.538+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [system/00000000] Selected RecordFormat:PageAlignedV5_0[aligned-1.1] record format from store C:\Users\小野喵\Desktop\tayi\neo4j\data\databases\system
+2024-01-14 12:11:03.538+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [system/00000000] Selected format from the store files: RecordFormat:PageAlignedV5_0[aligned-1.1]
+2024-01-14 12:11:04.210+0000 INFO  [o.n.i.d.DiagnosticsManager] [system/00000000] 
+                                                                [system/00000000] ********************************************************************************
+                                                                [system/00000000]                               [ Database: system ]                              
+                                                                [system/00000000] ********************************************************************************
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Version ]                                   
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] DBMS: community record-aligned-1.1
+                                                                [system/00000000] Kernel version: 5.15.0
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                 [ Store files ]                                 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] Disk space on partition (Total / Free / Free %): 510627147776 / 62008680448 / 12
+                                                                [system/00000000] Storage files stored on file store: NTFS
+                                                                [system/00000000] Storage files: (filename : modification date - size)
+                                                                [system/00000000]   database_lock: 2024-01-10 13:02:00.113+0000 - 0B
+                                                                [system/00000000]   neostore: 2024-01-10 13:01:59.781+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.counts.db: 2024-01-14 12:11:03.930+0000 - 48.00KiB
+                                                                [system/00000000]   neostore.indexstats.db: 2024-01-14 12:11:03.970+0000 - 48.00KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db: 2024-01-10 13:15:19.141+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db.id: 2024-01-14 12:11:03.870+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db.names: 2024-01-10 13:15:19.147+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db.names.id: 2024-01-14 12:11:03.864+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.nodestore.db: 2024-01-10 13:15:19.142+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.nodestore.db.id: 2024-01-14 12:11:03.807+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.nodestore.db.labels: 2024-01-10 13:01:59.697+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.nodestore.db.labels.id: 2024-01-14 12:11:03.789+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db: 2024-01-10 13:15:19.120+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.arrays: 2024-01-10 13:01:59.725+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.arrays.id: 2024-01-14 12:11:03.833+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.id: 2024-01-14 12:11:03.840+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.index: 2024-01-10 13:15:19.144+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.index.id: 2024-01-14 12:11:03.821+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.index.keys: 2024-01-10 13:15:19.126+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.index.keys.id: 2024-01-14 12:11:03.813+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.strings: 2024-01-10 13:15:19.122+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.strings.id: 2024-01-14 12:11:03.827+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.relationshipgroupstore.db: 2024-01-10 13:01:59.767+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshipgroupstore.db.id: 2024-01-14 12:11:03.885+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.relationshipgroupstore.degrees.db: 2024-01-14 12:11:03.955+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.relationshipstore.db: 2024-01-10 13:15:19.135+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshipstore.db.id: 2024-01-14 12:11:03.846+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db: 2024-01-10 13:15:19.140+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db.id: 2024-01-14 12:11:03.858+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db.names: 2024-01-10 13:15:19.130+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db.names.id: 2024-01-14 12:11:03.853+0000 - 40.00KiB
+                                                                [system/00000000]   neostore.schemastore.db: 2024-01-10 13:15:19.139+0000 - 8.000KiB
+                                                                [system/00000000]   neostore.schemastore.db.id: 2024-01-14 12:11:03.877+0000 - 40.00KiB
+                                                                [system/00000000]   schema:
+                                                                [system/00000000]     index:
+                                                                [system/00000000]       range-1.0:
+                                                                [system/00000000]         3:
+                                                                [system/00000000]           index-3: 2024-01-12 16:25:37.541+0000 - 40.00KiB
+                                                                [system/00000000]         - Total: 2024-01-10 13:15:19.839+0000 - 40.00KiB
+                                                                [system/00000000]         4:
+                                                                [system/00000000]           index-4: 2024-01-12 16:25:37.542+0000 - 40.00KiB
+                                                                [system/00000000]         - Total: 2024-01-10 13:15:19.861+0000 - 40.00KiB
+                                                                [system/00000000]         7:
+                                                                [system/00000000]           index-7: 2024-01-12 16:25:37.543+0000 - 40.00KiB
+                                                                [system/00000000]         - Total: 2024-01-10 13:15:19.883+0000 - 40.00KiB
+                                                                [system/00000000]         8:
+                                                                [system/00000000]           index-8: 2024-01-12 16:25:37.545+0000 - 40.00KiB
+                                                                [system/00000000]         - Total: 2024-01-10 13:15:19.903+0000 - 40.00KiB
+                                                                [system/00000000]       - Total: 2024-01-10 13:15:19.736+0000 - 160.0KiB
+                                                                [system/00000000]       token-lookup-1.0:
+                                                                [system/00000000]         1:
+                                                                [system/00000000]           index-1: 2024-01-12 16:25:37.539+0000 - 48.00KiB
+                                                                [system/00000000]         - Total: 2024-01-10 13:02:00.829+0000 - 48.00KiB
+                                                                [system/00000000]         2:
+                                                                [system/00000000]           index-2: 2024-01-12 16:25:37.540+0000 - 48.00KiB
+                                                                [system/00000000]         - Total: 2024-01-10 13:02:00.925+0000 - 48.00KiB
+                                                                [system/00000000]       - Total: 2024-01-10 13:02:00.924+0000 - 96.00KiB
+                                                                [system/00000000]     - Total: 2024-01-10 13:02:01.202+0000 - 256.0KiB
+                                                                [system/00000000]   - Total: 2024-01-10 13:02:00.824+0000 - 256.0KiB
+                                                                [system/00000000] Storage summary: 
+                                                                [system/00000000]   Total size of store: 1.047MiB
+                                                                [system/00000000]   Total size of mapped files: 376.0KiB
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                               [ Transaction log ]                               
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] Transaction log files stored on file store: NTFS
+                                                                [system/00000000] Transaction log metadata:
+                                                                [system/00000000]  - current kernel version used in transactions: V5_15
+                                                                [system/00000000]  - last committed transaction id: 37
+                                                                [system/00000000] Transaction log files:
+                                                                [system/00000000]  - existing transaction log versions: 0-0
+                                                                [system/00000000]  - oldest transaction 2 found in log with version 0
+                                                                [system/00000000]  - files: (filename : creation date - size)
+                                                                [system/00000000]      neostore.transaction.db.0: 2024-01-10 13:02:00.152+0000 - 19.26KiB
+                                                                [system/00000000]  - total size of files: 19.26KiB
+                                                                [system/00000000] Checkpoint log files:
+                                                                [system/00000000]  - existing checkpoint log versions: 0-0
+                                                                [system/00000000]  - last checkpoint: CheckpointInfo[transactionLogPosition=LogPosition{logVersion=0, byteOffset=19725}, storeId=StoreId{creationTime=1704891719777, random=-5536894831973534077, storageEngineName='record', formatName='aligned', majorVersion=1, minorVersion=1}, checkpointEntryPosition=LogPosition{logVersion=0, byteOffset=2448}, channelPositionAfterCheckpoint=LogPosition{logVersion=0, byteOffset=2680}, checkpointFilePostReadPosition=LogPosition{logVersion=0, byteOffset=2680}, kernelVersion=KernelVersion{V5_15,version=14}, kernelVersionByte=14, transactionId=TransactionId[transactionId=37, checksum=438690402, commitTimestamp=1704891721668, consensusIndex=-1], reason=Checkpoint triggered by "Database shutdown" @ txId: 37]
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Id usage ]                                  
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+                                                                [system/00000000] NodeStore[neostore.nodestore.db]: used=6 high=5
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.index.keys]: used=44 high=43
+                                                                [system/00000000] PropertyIndexStore[neostore.propertystore.db.index]: used=31 high=30
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.strings]: used=3 high=2
+                                                                [system/00000000] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+                                                                [system/00000000] PropertyStore[neostore.propertystore.db]: used=59 high=58
+                                                                [system/00000000] RelationshipStore[neostore.relationshipstore.db]: used=2 high=1
+                                                                [system/00000000] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=2 high=1
+                                                                [system/00000000] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=1 high=0
+                                                                [system/00000000] StringPropertyStore[neostore.labeltokenstore.db.names]: used=5 high=4
+                                                                [system/00000000] LabelTokenStore[neostore.labeltokenstore.db]: used=4 high=3
+                                                                [system/00000000] SchemaStore[neostore.schemastore.db]: used=11 high=10
+                                                                [system/00000000] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+                                                                [system/00000000] NeoStore[neostore]: used=-1 high=-1
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Metadata ]                                  
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] EXTERNAL_STORE_UUID (Database identifier exposed as external store identity. Generated on creation and never updated): 659f93e9-0ceb-4dc7-93c6-16e5a43a5e0b
+                                                                [system/00000000] DATABASE_ID (The last used DatabaseId for this database): null
+                                                                [system/00000000] LEGACY_STORE_VERSION (Legacy store format version. This field is used from 5.0 onwards only to distinguish non-migrated pre 5.0 metadata stores.): -3523014627327384477
+                                                                [system/00000000] STORE_ID (Store ID): StoreId{creationTime=1704891719777, random=-5536894831973534077, storageEngineName='record', formatName='aligned', majorVersion=1, minorVersion=1}
+                                                                [system/00000000] 
+2024-01-14 12:11:04.605+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] IndexingService.init: indexes not specifically mentioned above are ONLINE. Total 6 indexes. Processed in 97ms
+2024-01-14 12:11:04.612+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] Requirement `Database unavailable` makes database system unavailable.
+2024-01-14 12:11:04.614+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] DatabaseId{00000000[system]} is unavailable.
+2024-01-14 12:11:04.720+0000 INFO  [o.n.k.d.Database] [system/00000000] Starting transaction log [C:\Users\小野喵\Desktop\tayi\neo4j\data\transactions\system\neostore.transaction.db.0] at version=0
+2024-01-14 12:11:04.725+0000 INFO  [o.n.k.d.Database] [system/00000000] Starting transaction log [C:\Users\小野喵\Desktop\tayi\neo4j\data\transactions\system\checkpoint.0] at version=0
+2024-01-14 12:11:04.726+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [system/00000000] Scanning log file with version 0 for checkpoint entries
+2024-01-14 12:11:04.730+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] IndexingService.start: indexes not specifically mentioned above are ONLINE. Total 6 indexes. Processed in 0ms
+2024-01-14 12:11:04.748+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] Fulfilling of requirement 'Database unavailable' makes database system available.
+2024-01-14 12:11:04.748+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] DatabaseId{00000000[system]} is ready.
+2024-01-14 12:11:04.978+0000 INFO  [o.n.s.s.s.UserSecurityGraphComponent] Performing postInitialization step for component 'security-users' with version 4 and status CURRENT
+2024-01-14 12:11:04.978+0000 INFO  [o.n.s.s.s.UserSecurityGraphComponent] Updating the initial password in component 'security-users'
+2024-01-14 12:11:05.002+0000 INFO  [o.n.d.d.DatabaseLifecycles] Creating 'DatabaseId{dde3faef[neo4j]}'.
+2024-01-14 12:11:05.008+0000 INFO  [o.n.d.d.DatabaseLifecycles] Starting 'DatabaseId{dde3faef[neo4j]}'.
+2024-01-14 12:11:05.024+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [neo4j/dde3faef] Scanning log file with version 0 for checkpoint entries
+2024-01-14 12:11:05.038+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [neo4j/dde3faef] Selected RecordFormat:PageAlignedV5_0[aligned-1.1] record format from store C:\Users\小野喵\Desktop\tayi\neo4j\data\databases\neo4j
+2024-01-14 12:11:05.039+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [neo4j/dde3faef] Selected format from the store files: RecordFormat:PageAlignedV5_0[aligned-1.1]
+2024-01-14 12:11:05.139+0000 INFO  [o.n.i.d.DiagnosticsManager] [neo4j/dde3faef] 
+                                                                [neo4j/dde3faef] ********************************************************************************
+                                                                [neo4j/dde3faef]                               [ Database: neo4j ]                               
+                                                                [neo4j/dde3faef] ********************************************************************************
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef]                                   [ Version ]                                   
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef] DBMS: community record-aligned-1.1
+                                                                [neo4j/dde3faef] Kernel version: 5.15.0
+                                                                [neo4j/dde3faef] 
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef]                                 [ Store files ]                                 
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef] Disk space on partition (Total / Free / Free %): 510627147776 / 62008659968 / 12
+                                                                [neo4j/dde3faef] Storage files stored on file store: NTFS
+                                                                [neo4j/dde3faef] Storage files: (filename : modification date - size)
+                                                                [neo4j/dde3faef]   database_lock: 2024-01-10 13:02:01.771+0000 - 0B
+                                                                [neo4j/dde3faef]   neostore: 2024-01-10 13:02:01.748+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.counts.db: 2024-01-14 12:11:05.111+0000 - 48.00KiB
+                                                                [neo4j/dde3faef]   neostore.indexstats.db: 2024-01-14 12:11:05.120+0000 - 48.00KiB
+                                                                [neo4j/dde3faef]   neostore.labeltokenstore.db: 2024-01-10 13:15:20.309+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.labeltokenstore.db.id: 2024-01-14 12:11:05.096+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.labeltokenstore.db.names: 2024-01-10 13:15:20.303+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.labeltokenstore.db.names.id: 2024-01-14 12:11:05.092+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.nodestore.db: 2024-01-11 16:25:26.559+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.nodestore.db.id: 2024-01-14 12:11:05.048+0000 - 48.00KiB
+                                                                [neo4j/dde3faef]   neostore.nodestore.db.labels: 2024-01-10 13:02:01.699+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.nodestore.db.labels.id: 2024-01-14 12:11:05.044+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db: 2024-01-11 16:25:26.560+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.arrays: 2024-01-10 13:02:01.718+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.arrays.id: 2024-01-14 12:11:05.071+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.id: 2024-01-14 12:11:05.076+0000 - 48.00KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.index: 2024-01-10 19:41:23.647+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.index.id: 2024-01-14 12:11:05.057+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.index.keys: 2024-01-10 19:41:23.651+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.index.keys.id: 2024-01-14 12:11:05.053+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.strings: 2024-01-11 16:25:26.555+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.propertystore.db.strings.id: 2024-01-14 12:11:05.067+0000 - 48.00KiB
+                                                                [neo4j/dde3faef]   neostore.relationshipgroupstore.db: 2024-01-10 13:02:01.745+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.relationshipgroupstore.db.id: 2024-01-14 12:11:05.105+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.relationshipgroupstore.degrees.db: 2024-01-14 12:11:05.115+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.relationshipstore.db: 2024-01-10 13:02:01.723+0000 - 0B
+                                                                [neo4j/dde3faef]   neostore.relationshipstore.db.id: 2024-01-14 12:11:05.079+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.relationshiptypestore.db: 2024-01-10 13:02:01.732+0000 - 0B
+                                                                [neo4j/dde3faef]   neostore.relationshiptypestore.db.id: 2024-01-14 12:11:05.087+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.relationshiptypestore.db.names: 2024-01-10 13:02:01.727+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.relationshiptypestore.db.names.id: 2024-01-14 12:11:05.083+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   neostore.schemastore.db: 2024-01-10 13:02:01.895+0000 - 8.000KiB
+                                                                [neo4j/dde3faef]   neostore.schemastore.db.id: 2024-01-14 12:11:05.101+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]   schema:
+                                                                [neo4j/dde3faef]     index:
+                                                                [neo4j/dde3faef]       token-lookup-1.0:
+                                                                [neo4j/dde3faef]         1:
+                                                                [neo4j/dde3faef]           index-1: 2024-01-12 16:25:37.444+0000 - 48.00KiB
+                                                                [neo4j/dde3faef]         - Total: 2024-01-10 13:02:01.794+0000 - 48.00KiB
+                                                                [neo4j/dde3faef]         2:
+                                                                [neo4j/dde3faef]           index-2: 2024-01-12 16:25:37.445+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]         - Total: 2024-01-10 13:02:01.815+0000 - 40.00KiB
+                                                                [neo4j/dde3faef]       - Total: 2024-01-10 13:02:01.815+0000 - 88.00KiB
+                                                                [neo4j/dde3faef]     - Total: 2024-01-10 13:02:01.792+0000 - 88.00KiB
+                                                                [neo4j/dde3faef]   - Total: 2024-01-10 13:02:01.792+0000 - 88.00KiB
+                                                                [neo4j/dde3faef] Storage summary: 
+                                                                [neo4j/dde3faef]   Total size of store: 912.0KiB
+                                                                [neo4j/dde3faef]   Total size of mapped files: 192.0KiB
+                                                                [neo4j/dde3faef] 
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef]                               [ Transaction log ]                               
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef] Transaction log files stored on file store: NTFS
+                                                                [neo4j/dde3faef] Transaction log metadata:
+                                                                [neo4j/dde3faef]  - current kernel version used in transactions: V5_15
+                                                                [neo4j/dde3faef]  - last committed transaction id: 123
+                                                                [neo4j/dde3faef] Transaction log files:
+                                                                [neo4j/dde3faef]  - existing transaction log versions: 0-0
+                                                                [neo4j/dde3faef]  - oldest transaction 2 found in log with version 0
+                                                                [neo4j/dde3faef]  - files: (filename : creation date - size)
+                                                                [neo4j/dde3faef]      neostore.transaction.db.0: 2024-01-10 13:02:01.775+0000 - 76.96KiB
+                                                                [neo4j/dde3faef]  - total size of files: 76.96KiB
+                                                                [neo4j/dde3faef] Checkpoint log files:
+                                                                [neo4j/dde3faef]  - existing checkpoint log versions: 0-0
+                                                                [neo4j/dde3faef]  - last checkpoint: CheckpointInfo[transactionLogPosition=LogPosition{logVersion=0, byteOffset=78804}, storeId=StoreId{creationTime=1704891721747, random=6213541976307344766, storageEngineName='record', formatName='aligned', majorVersion=1, minorVersion=1}, checkpointEntryPosition=LogPosition{logVersion=0, byteOffset=7784}, channelPositionAfterCheckpoint=LogPosition{logVersion=0, byteOffset=8016}, checkpointFilePostReadPosition=LogPosition{logVersion=0, byteOffset=8016}, kernelVersion=KernelVersion{V5_15,version=14}, kernelVersionByte=14, transactionId=TransactionId[transactionId=123, checksum=1068910035, commitTimestamp=1704990318745, consensusIndex=-1], reason=Checkpoint triggered by "Database shutdown" @ txId: 123]
+                                                                [neo4j/dde3faef] 
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef]                                   [ Id usage ]                                  
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+                                                                [neo4j/dde3faef] NodeStore[neostore.nodestore.db]: used=14 high=13
+                                                                [neo4j/dde3faef] StringPropertyStore[neostore.propertystore.db.index.keys]: used=44 high=43
+                                                                [neo4j/dde3faef] PropertyIndexStore[neostore.propertystore.db.index]: used=34 high=33
+                                                                [neo4j/dde3faef] StringPropertyStore[neostore.propertystore.db.strings]: used=23 high=22
+                                                                [neo4j/dde3faef] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+                                                                [neo4j/dde3faef] PropertyStore[neostore.propertystore.db]: used=58 high=57
+                                                                [neo4j/dde3faef] RelationshipStore[neostore.relationshipstore.db]: used=0 high=-1
+                                                                [neo4j/dde3faef] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=1 high=0
+                                                                [neo4j/dde3faef] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=0 high=-1
+                                                                [neo4j/dde3faef] StringPropertyStore[neostore.labeltokenstore.db.names]: used=2 high=1
+                                                                [neo4j/dde3faef] LabelTokenStore[neostore.labeltokenstore.db]: used=1 high=0
+                                                                [neo4j/dde3faef] SchemaStore[neostore.schemastore.db]: used=3 high=2
+                                                                [neo4j/dde3faef] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+                                                                [neo4j/dde3faef] NeoStore[neostore]: used=-1 high=-1
+                                                                [neo4j/dde3faef] 
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef]                                   [ Metadata ]                                  
+                                                                [neo4j/dde3faef] --------------------------------------------------------------------------------
+                                                                [neo4j/dde3faef] EXTERNAL_STORE_UUID (Database identifier exposed as external store identity. Generated on creation and never updated): 8f29e344-a8ce-4d27-bbd5-bd04b773da4a
+                                                                [neo4j/dde3faef] DATABASE_ID (The last used DatabaseId for this database): null
+                                                                [neo4j/dde3faef] LEGACY_STORE_VERSION (Legacy store format version. This field is used from 5.0 onwards only to distinguish non-migrated pre 5.0 metadata stores.): -3523014627327384477
+                                                                [neo4j/dde3faef] STORE_ID (Store ID): StoreId{creationTime=1704891721747, random=6213541976307344766, storageEngineName='record', formatName='aligned', majorVersion=1, minorVersion=1}
+                                                                [neo4j/dde3faef] 
+2024-01-14 12:11:05.154+0000 INFO  [o.n.k.i.a.i.IndexingService] [neo4j/dde3faef] IndexingService.init: indexes not specifically mentioned above are ONLINE. Total 2 indexes. Processed in 10ms
+2024-01-14 12:11:05.157+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/dde3faef] Requirement `Database unavailable` makes database neo4j unavailable.
+2024-01-14 12:11:05.157+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/dde3faef] DatabaseId{dde3faef[neo4j]} is unavailable.
+2024-01-14 12:11:05.169+0000 INFO  [o.n.k.d.Database] [neo4j/dde3faef] Starting transaction log [C:\Users\小野喵\Desktop\tayi\neo4j\data\transactions\neo4j\neostore.transaction.db.0] at version=0
+2024-01-14 12:11:05.171+0000 INFO  [o.n.k.d.Database] [neo4j/dde3faef] Starting transaction log [C:\Users\小野喵\Desktop\tayi\neo4j\data\transactions\neo4j\checkpoint.0] at version=0
+2024-01-14 12:11:05.172+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [neo4j/dde3faef] Scanning log file with version 0 for checkpoint entries
+2024-01-14 12:11:05.175+0000 INFO  [o.n.k.i.a.i.IndexingService] [neo4j/dde3faef] IndexingService.start: indexes not specifically mentioned above are ONLINE. Total 2 indexes. Processed in 0ms
+2024-01-14 12:11:05.177+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/dde3faef] Fulfilling of requirement 'Database unavailable' makes database neo4j available.
+2024-01-14 12:11:05.177+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/dde3faef] DatabaseId{dde3faef[neo4j]} is ready.
+2024-01-14 12:11:05.181+0000 INFO  [o.n.g.f.DatabaseManagementServiceFactory] id: 258B31F5FEF5DA9904EAF814CEA52CB51FCF6ABCE1242CEC31468A0A251D61C9
+2024-01-14 12:11:05.181+0000 INFO  [o.n.g.f.DatabaseManagementServiceFactory] name: system
+2024-01-14 12:11:05.182+0000 INFO  [o.n.g.f.DatabaseManagementServiceFactory] creationDate: 2024-01-10T13:01:59.777Z
+2024-01-14 12:27:45.977+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/dde3faef] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 129 checkpoint started...
+2024-01-14 12:27:46.054+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/dde3faef] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 129 checkpoint completed in 74ms. Checkpoint flushed 46 pages (0% of total available pages), in 41 IOs. Checkpoint performed with IO limit: unlimited, paused in total 0 times( 0 millis).
+2024-01-14 12:27:46.065+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [neo4j/dde3faef] No log version pruned. The strategy used was '2 days'. 
+2024-01-14 13:06:00.314+0000 WARN  [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=431, gcTime=532, gcCount=1}
+2024-01-14 14:40:29.895+0000 WARN  [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1715, gcTime=1756, gcCount=1}

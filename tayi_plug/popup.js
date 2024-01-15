@@ -10,3 +10,5 @@ document.getElementById('searchButton').addEventListener('click', function() {
         })
         .catch(error => console.error('Error:', error));
 });
+
+
